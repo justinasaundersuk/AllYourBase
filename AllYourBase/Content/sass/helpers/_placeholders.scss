@@ -1,0 +1,26 @@
+﻿
+// Clearfix - self explanatory
+// The :before pseudo-element prevents top-margin collapse. The :after pseudo-element is used to clear the floats
+// For more information read:
+// http://nicolasgallagher.com/micro-clearfix-hack/
+// http://cssmojo.com/the-very-latest-clearfix-reloaded/
+//
+// Remember that %placeholders cannot be used in media queries, if you require this convert it to a mixin
+//
+// Example usage:
+//
+// .clearfix {
+//     @extend %clearfix
+// }
+//
+%clearfix {
+    &::before,
+    &::after {
+        display: table;
+        content: '';
+    }
+
+    &::after {
+        clear: both;
+    }
+}

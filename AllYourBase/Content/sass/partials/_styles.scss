@@ -1,0 +1,39 @@
+﻿.content-block {
+    @include teeter();
+    min-height: 300px;
+    background: $black;
+}
+
+.image-block {
+    @include pulsate(1.5s, 0s, none, infinite);
+    min-height: 600px;
+    background: inline-image('../images/bob.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.test p {
+    padding: 10px;
+    border: 1px solid $red;
+
+    @include min($bp-sm) {
+        padding: 50px;
+        background: $red;
+    }
+
+    @include min($bp-md) {
+        background: $green;
+    }
+}
+
+.demo {
+    background: $red;
+    color: $white;
+
+    @include min($bp-ms) { background: $blue; }
+    @include min($bp-sm) { background: $green; }
+    @include min($bp-md) { background: $dark-grey; }
+    @include min($bp-lg) { background: $yellow; }
+}
+
+.no-padding { padding: 0; }

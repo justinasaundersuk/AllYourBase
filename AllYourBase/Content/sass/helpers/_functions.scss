@@ -1,0 +1,9 @@
+﻿// Used for "min" and "max" media query mixins
+@function em($target, $context: 16) {
+    @return ($target / $context) + 0em;
+}
+
+@function calculate-rem($size) {
+    $rem-size: $size / 16px;
+    @return $rem-size * 1rem;
+}

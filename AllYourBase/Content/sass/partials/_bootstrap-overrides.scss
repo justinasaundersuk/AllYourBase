@@ -1,0 +1,15 @@
+﻿
+.row {
+    margin: 0;
+
+    &.no-col-padding [class*='col-']:only-child {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+.row.no-col-padding [class*='col-']:not(:first-child),
+.row.no-col-padding [class*='col-']:not(:last-child) {
+    padding-right: 0;
+    padding-left: 0;
+}
