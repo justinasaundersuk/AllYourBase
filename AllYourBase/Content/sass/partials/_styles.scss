@@ -37,3 +37,14 @@
 }
 
 .no-padding { padding: 0; }
+
+.test-alternate li {
+    @include all-but-first-last(3) {
+        @include odd() {
+            background: $blue;
+        }
+    }
+    @include first-last() {
+        background: $green;
+    }
+}

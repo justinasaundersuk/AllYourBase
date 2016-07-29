@@ -12044,3 +12044,12 @@ legend {
 .no-padding {
   padding: 0;
 }
+
+/* line 249, ../sass/vendors/family/_family.scss */
+.test-alternate li:nth-child(n + 3):nth-last-child(n + 3):nth-child(odd) {
+  background: #0065bd;
+}
+/* line 258, ../sass/vendors/family/_family.scss */
+.test-alternate li:first-child, .test-alternate li:last-child {
+  background: #008000;
+}
