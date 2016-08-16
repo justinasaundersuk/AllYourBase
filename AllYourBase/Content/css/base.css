@@ -15628,16 +15628,27 @@ legend {
 
 /* line 2, ../sass/base/_flexbox.scss */
 .flex-wrapper {
-  border: solid 1px #e7e7e7;
+  background: #333;
+  padding-bottom: 20px;
 }
 
-/* line 6, ../sass/base/_flexbox.scss */
+/* line 7, ../sass/base/_flexbox.scss */
 .flex-row {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (min-width: 48em) {
+  /* line 7, ../sass/base/_flexbox.scss */
+  .flex-row {
+    flex-direction: row;
+  }
+}
+/* line 15, ../sass/base/_flexbox.scss */
+.flex-row > .flex-item {
+  margin: 0 10px;
+}
 
-/* line 11, ../sass/base/_flexbox.scss */
+/* line 20, ../sass/base/_flexbox.scss */
 .flex-item {
   display: flex;
   flex: 1;
@@ -15645,39 +15656,56 @@ legend {
   flex-grow: 1;
   flex-shrink: 1;
 }
-/* line 18, ../sass/base/_flexbox.scss */
+/* line 27, ../sass/base/_flexbox.scss */
+.flex-item.one-third {
+  flex-basis: 100%;
+}
+/* line 28, ../sass/base/_flexbox.scss */
+.flex-item.two-third {
+  flex-basis: 100%;
+}
+@media only screen and (min-width: 48em) {
+  /* line 31, ../sass/base/_flexbox.scss */
+  .flex-item.one-third {
+    flex-basis: 265px;
+  }
+  /* line 32, ../sass/base/_flexbox.scss */
+  .flex-item.two-third {
+    flex-basis: 450px;
+    max-width: 450px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  /* line 39, ../sass/base/_flexbox.scss */
+  .flex-item.one-third {
+    flex-basis: 320px;
+  }
+  /* line 40, ../sass/base/_flexbox.scss */
+  .flex-item.two-third {
+    flex-basis: 620px;
+    max-width: 620px;
+  }
+}
+/* line 46, ../sass/base/_flexbox.scss */
 .flex-item.content {
   padding: 12px;
 }
-/* line 22, ../sass/base/_flexbox.scss */
+/* line 50, ../sass/base/_flexbox.scss */
 .flex-item.padded {
   padding: 12px;
 }
 
-/* line 27, ../sass/base/_flexbox.scss */
+/* line 55, ../sass/base/_flexbox.scss */
 .disable-flex {
   flex: none;
 }
 
-/* line 31, ../sass/base/_flexbox.scss */
+/* line 59, ../sass/base/_flexbox.scss */
 .bgyellow {
   background: #ffcd00;
 }
 
-/* line 32, ../sass/base/_flexbox.scss */
+/* line 60, ../sass/base/_flexbox.scss */
 .mb20 {
   margin-bottom: 20px;
-}
-
-@media only screen and (min-width: 30em) {
-  /* line 35, ../sass/base/_flexbox.scss */
-  .flex-row {
-    flex-direction: row;
-  }
-
-  /* line 39, ../sass/base/_flexbox.scss */
-  .content-limit {
-    overflow: hidden;
-    max-height: 390px;
-  }
 }

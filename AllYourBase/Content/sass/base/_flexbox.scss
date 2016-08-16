@@ -1,11 +1,20 @@
 ﻿
 .flex-wrapper {
-    border: solid 1px #e7e7e7;
+    background: #333;
+    padding-bottom: 20px;
 }
 
 .flex-row {
     display: flex;
     flex-direction: column;
+
+    @include min(768) {
+        flex-direction: row;
+    }
+
+    & > .flex-item {
+        margin: 0 10px;
+    }
 }
 
 .flex-item {
@@ -14,6 +23,25 @@
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
+
+    &.one-third { flex-basis: 100%; }
+    &.two-third { flex-basis: 100%; }
+
+    @include min(768) {
+        &.one-third  { flex-basis: 265px; }
+        &.two-third { 
+            flex-basis: 450px;
+            max-width: 450px;
+        }
+    }
+
+    @include min(992) {
+        &.one-third  { flex-basis: 320px; }
+        &.two-third { 
+            flex-basis: 620px;
+            max-width: 620px;
+        }
+    }
 
     &.content {
         padding: 12px;
@@ -31,13 +59,3 @@
 .bgyellow { background:#ffcd00; }
 .mb20 { margin-bottom: 20px; }
 
-@include min(480) {
-    .flex-row { 
-        flex-direction: row;
-    }
-
-    .content-limit {
-        overflow: hidden;
-        max-height: 390px;
-    }
-}
