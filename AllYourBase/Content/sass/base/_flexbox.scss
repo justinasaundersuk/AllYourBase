@@ -1,0 +1,43 @@
+﻿
+.flex-wrapper {
+    border: solid 1px #e7e7e7;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    &.content {
+        padding: 12px;
+    }
+
+    &.padded {
+        padding: 12px;
+    }
+}
+
+.disable-flex {
+    flex: none;
+}
+
+.bgyellow { background:#ffcd00; }
+.mb20 { margin-bottom: 20px; }
+
+@include min(480) {
+    .flex-row { 
+        flex-direction: row;
+    }
+
+    .content-limit {
+        overflow: hidden;
+        max-height: 390px;
+    }
+}

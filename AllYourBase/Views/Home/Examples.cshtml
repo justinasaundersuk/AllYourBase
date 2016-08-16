@@ -1,20 +1,93 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<h2>Sass examples</h2>
 
-<!-- TEST -->
+<div class="row">
+    <h3>Mid-Small (-ms) Bootstrap breakpoint (480px - 767px) addition</h3>
+
+    <div class="col-xs-12 no-padding">
+        <div class="demo">
+            <p class="visible-xs">Xtra Small (0px - 479px)</p>
+            <p class="visible-ms">Mid Small (480px - 767px)</p>
+            <p class="visible-sm">Small (768px - 991px)</p>
+            <p class="visible-md">MD (992px - 1199px)</p>
+            <p class="visible-lg">LG (1200px +)</p>
+        </div>
+    </div>
+</div>
+
+<br /><br />
+
+<div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <fieldset>
+            <legend>Radio Control Quality</legend>
+            <label for="accessible">
+                <input type="radio" value="accessible" name="quality" id="accessible"> <span>accessible</span>
+            </label>
+            <label for="pretty">
+                <input type="radio" value="pretty" name="quality" id="pretty"> <span>pretty</span>
+            </label>
+            <label for="accessible-and-pretty">
+                <input type="radio" value="pretty" name="quality" id="accessible-and-pretty" checked> <span>accessible and pretty</span>
+            </label>
+        </fieldset>
+    </div>
+</div>
+
+<br /><br />
+
+<ul class="test-alternate">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li>Five</li>
+    <li>Six</li>
+    <li>Seven</li>
+    <li>Eight</li>
+    <li>Nine</li>
+</ul>
+
+<br /><br />
 
 
-<div class="col-sm-8 publications-detail-links">
+@*<div class="row no-col-padding">
+        <div class="col-xs-5">
+            <div class="col-xs-12">
+                <div class="content-block">
+                    Small 1
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="content-block">
+                    Small 2
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-7">
+            <div class="image-block">
+            </div>
+        </div>
+    </div>*@
+
+@*<div class="test">
+        <p>This is the test line.</p>
+    </div>
+
+    <div class="row no-col-padding">
+        <div class="col-xs-12">One</div>
+    </div>*@
+
+
+<div class="clearfix"></div>
+
+
+
+
+@*<div class="col-sm-8 publications-detail-links">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 publication-hidden" data-page-guid="8231e51a-3d8b-46f4-a8ad-95ee2a7b810d">
         <a href="/help/publications/boosting-income" class="promo promo--default wobbly-overlay touch-replacement">
             <div class="promo__media  wobbly-overlay ">
@@ -159,4 +232,4 @@
         </a>
     </div>
 
-</div>
+</div>*@

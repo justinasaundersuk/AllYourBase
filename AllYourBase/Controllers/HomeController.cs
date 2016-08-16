@@ -13,16 +13,16 @@ namespace AllYourBase.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Flexbox()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Flexbox demo page";
 
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Examples()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Sass usage examples";
 
             return View();
         }
