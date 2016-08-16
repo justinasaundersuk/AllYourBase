@@ -2,6 +2,7 @@
 .flex-wrapper {
     background: #333;
     padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .flex-row {
@@ -10,14 +11,16 @@
 
     @include min(768) { flex-direction: row; }
 
-    & > .flex-item { 
+    & > .flex-item {
         margin: 0 10px;
-
-        & .flex-item {
+        
+        & > .flex-item:not(:last-of-type) {
             margin-bottom: 20px;
         }
     }
+
     & .flex-item-nofill { margin-bottom: 20px; }
+
 }
 
 .flex-item {
