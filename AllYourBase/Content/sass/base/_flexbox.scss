@@ -8,13 +8,16 @@
     display: flex;
     flex-direction: column;
 
-    @include min(768) {
-        flex-direction: row;
-    }
+    @include min(768) { flex-direction: row; }
 
-    & > .flex-item {
+    & > .flex-item { 
         margin: 0 10px;
+
+        & .flex-item {
+            margin-bottom: 20px;
+        }
     }
+    & .flex-item-nofill { margin-bottom: 20px; }
 }
 
 .flex-item {
@@ -24,10 +27,20 @@
     flex-grow: 1;
     flex-shrink: 1;
 
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
     &.one-third { flex-basis: 100%; }
     &.two-third { flex-basis: 100%; }
 
     @include min(768) {
+        & img {
+            width: auto;
+            height: auto;
+        }
+
         &.one-third  { flex-basis: 265px; }
         &.two-third { 
             flex-basis: 450px;
@@ -46,10 +59,6 @@
     &.content {
         padding: 12px;
     }
-
-    &.padded {
-        padding: 12px;
-    }
 }
 
 .disable-flex {
@@ -57,5 +66,6 @@
 }
 
 .bgyellow { background:#ffcd00; }
-.mb20 { margin-bottom: 20px; }
+.bgblue { background: $blue; }
+
 
