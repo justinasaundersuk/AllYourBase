@@ -1,36 +1,89 @@
-﻿
-$two-third-width: 620px;
-$gutter-width: 10px;
-
-.container.flex {
-    display: flex;
+﻿﻿
+.flex-wrapper {
+    background: #333;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.col-flex {
+.flex-row {
     display: flex;
+    flex-direction: column;
+
+    @include min(768) { flex-direction: row; }
+
+    & > .flex-item {
+        @include min(768) { margin: 0 10px; }
+        
+        & > .flex-item:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.flex-row-inner {
+    display: flex;
+    flex-direction: column;
+
+    @include min(768) { flex-direction: row; }
+
+    & > .flex-item:not(:last-of-type) {
+        margin-bottom: 20px;
+
+        @include min(768) { 
+            margin-right: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.flex-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
- 
-    &.two-third { max-width: $two-third-width; }
-       
-    &.columns {
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+    &.one-third { flex-basis: 100%; }
+    &.two-third { flex-basis: 100%; }
+
+    & .flex-column { 
         flex-direction: row;
-        > .col-flex ~ .col-flex {
-            margin-left: $gutter-width;
+        background: purple;
+    }
+
+    @include min(768) {
+        & img {
+            width: auto;
+            height: auto;
+        }
+
+        &.one-third  { flex-basis: 265px; }
+        &.two-third { 
+            flex-basis: 450px;
+            max-width: 450px;
         }
     }
-    
-    &.rows {
-        flex-direction: column;
-        > .col-flex ~ .col-flex {
-            margin-top: $gutter-width;
+
+    @include min(992) {
+        &.one-third  { flex-basis: 320px; }
+        &.two-third { 
+            flex-basis: 620px;
+            max-width: 620px;
         }
+    }
+
+    &.content {
+        padding: 12px;
     }
 }
 
-.bgred { background: red; }
-.bgblue { background: blue; color: white; }
-.bgpurple { background: purple; }
-.bgpink { background: pink; }
-.bgorange { background: orange; }
-.bgyellow { background: yellow; }
+
+
+.bgyellow { background:#ffcd00; }
+.bgblue { background: $blue; }
+

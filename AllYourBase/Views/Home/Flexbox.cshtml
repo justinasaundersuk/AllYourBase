@@ -1,22 +1,33 @@
-﻿@{
-    ViewBag.Title = "Flexbox";
-}
+﻿
+        ﻿@{
+            ViewBag.Title = "Flexbox";
+        }
 
-<h2>Flexbox</h2>
+        <h2>Flexbox</h2>
 
-<div class="container flex">
-    <div class="col-flex columns">
-        <div class="col-flex two-third bgred"><img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=620%C3%97390&w=620&h=390" /></div>
-        <div class="col-flex rows">
-            <div class="col-flex rows">
-                <div class="col-flex bgblue"></div>
-                <div class="col-flex bgorange"></div>
-                <div class="col-flex columns">
-                    <div class="col-flex bgyellow"></div>
-                    <div class="col-flex bgpurple"></div>
-                    <div class="col-flex bgpink"></div>
+        <div class="flex-wrapper">
+            <div class="flex-row">
+                <div class="flex-item two-third">
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=620%C3%97390&w=620&h=390" />
+                </div>
+                <div class="flex-item one-third mb20">
+                    <div class="flex-item-nofill bgblue">
+                        <p>111</p>
+                    </div>
+                    <div class="flex-item bgyellow">
+                        <p>111</p>
+                    </div>
+                    <div class="flex-item bgblue">
+                        <p>111</p>
+                    </div>
+                    <div class="flex-row-inner">
+                        <div class="flex-item bgblue">
+                            <p>111</p>
+                        </div>
+                        <div class="flex-item bgblue">
+                            <p>111</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
