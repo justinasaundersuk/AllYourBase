@@ -1,74 +1,48 @@
 ﻿
-.flex-wrapper {
-    background: #333;
-    padding-bottom: 20px;
-    padding-top: 20px;
+$gutter-width: 10px;
+$gutter-between-container-width: 20px;
+$one-third-width: 330px;
+$two-third-width: 620px;
+$full-width: calc($one-third-width + $two-third-width + $gutter-width);
+
+$column-padding: 10px;
+
+.container.flex {
+    display: flex;
+    margin-bottom: $gutter-between-container-width;
 }
 
-.flex-row {
+.col-flex {
     display: flex;
-    flex-direction: column;
-
-    @include min(768) { flex-direction: row; }
-
-    & > .flex-item {
-        margin: 0 10px;
-        
-        & > .flex-item:not(:last-of-type) {
-            margin-bottom: 20px;
-        }
-    }
-
-    & .flex-item-nofill { margin-bottom: 20px; }
-
-}
-
-.flex-item {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
 
-    & img {
-        width: 100%;
-        height: auto;
+    &:not(.columns):not(.rows):not(.no-padding) {
+        padding: $column-padding;
     }
 
-    &.one-third { flex-basis: 100%; }
-    &.two-third { flex-basis: 100%; }
+    &.columns {
+        flex-direction: row;
 
-    @include min(768) {
-        & img {
-            width: auto;
-            height: auto;
-        }
-
-        &.one-third  { flex-basis: 265px; }
-        &.two-third { 
-            flex-basis: 450px;
-            max-width: 450px;
+        > .col-flex ~ .col-flex {
+            margin-left: $gutter-width;
         }
     }
+    
+    &.rows {
+        flex-direction: column;
 
-    @include min(992) {
-        &.one-third  { flex-basis: 320px; }
-        &.two-third { 
-            flex-basis: 620px;
-            max-width: 620px;
+        > .col-flex ~ .col-flex {
+            margin-top: $gutter-width;
         }
     }
-
-    &.content {
-        padding: 12px;
-    }
+    &.one-third { max-width: $one-third-width; }
+    &.two-third { max-width: $two-third-width; }
 }
 
-.disable-flex {
-    flex: none;
-}
-
-.bgyellow { background:#ffcd00; }
-.bgblue { background: $blue; }
-
-
+.bgred { background: red; }
+.bgblue { background: blue; color: white; }
+.bgpurple { background: purple; }
+.bgpink { background: pink; }
+.bgorange { background: orange; }
+.bgyellow { background: yellow; }
