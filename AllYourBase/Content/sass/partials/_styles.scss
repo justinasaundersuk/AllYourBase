@@ -2,11 +2,11 @@
 // This is where the project specific styles will go.
 // Clear styles below as they are specific to AllYourBase Framework demos.
 
-.content-block {
+/*.content-block {
     @include teeter();
     min-height: 300px;
     background: $black;
-}
+}*/
 
 .image-block {
     @include pulsate(1.5s, 0s, none, infinite);

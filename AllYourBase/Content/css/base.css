@@ -15521,15 +15521,11 @@ legend {
   text-decoration: underline;
 }
 
-/* line 5, ../sass/partials/_styles.scss */
-.content-block {
-  outline: 1px solid transparent;
-  -webkit-animation: teeter 1s 0s none 1;
-  animation: teeter 1s 0s none 1;
-  min-height: 300px;
-  background: #000000;
-}
-
+/*.content-block {
+    @include teeter();
+    min-height: 300px;
+    background: $black;
+}*/
 /* line 11, ../sass/partials/_styles.scss */
 .image-block {
   -webkit-animation: pulsate infinite 1.5s 0s none;
@@ -15694,82 +15690,92 @@ body {
   flex-direction: column;
   flex-grow: 1;
   flex-shrink: 1;
+  overflow: hidden;
 }
-/* line 49, ../sass/base/_flexbox.scss */
+/* line 50, ../sass/base/_flexbox.scss */
 .flex-item img {
   width: 100%;
   height: auto;
 }
-/* line 54, ../sass/base/_flexbox.scss */
+/* line 55, ../sass/base/_flexbox.scss */
 .flex-item.one-third, .flex-item.two-third {
   flex-basis: 100%;
 }
 @media only screen and (min-width: 48em) {
-  /* line 57, ../sass/base/_flexbox.scss */
+  /* line 58, ../sass/base/_flexbox.scss */
   .flex-item img {
     width: auto;
     height: auto;
   }
-  /* line 62, ../sass/base/_flexbox.scss */
+  /* line 63, ../sass/base/_flexbox.scss */
   .flex-item.one-third {
     flex-basis: 250px;
   }
-  /* line 63, ../sass/base/_flexbox.scss */
+  /* line 64, ../sass/base/_flexbox.scss */
   .flex-item.two-third {
     flex-basis: 450px;
     max-width: 450px;
   }
 }
 @media only screen and (min-width: 62em) {
-  /* line 70, ../sass/base/_flexbox.scss */
+  /* line 71, ../sass/base/_flexbox.scss */
   .flex-item.one-third {
     flex-basis: 300px;
   }
-  /* line 71, ../sass/base/_flexbox.scss */
+  /* line 72, ../sass/base/_flexbox.scss */
   .flex-item.two-third {
     flex-basis: 620px;
     max-width: 620px;
   }
 }
 
-/* line 78, ../sass/base/_flexbox.scss */
-.no-vertical-fill {
-  width: 100%;
-}
-/* line 81, ../sass/base/_flexbox.scss */
-.no-vertical-fill.top {
-  margin-bottom: 20px;
+/* line 79, ../sass/base/_flexbox.scss */
+.content-block {
+  padding: 15px;
 }
 /* line 82, ../sass/base/_flexbox.scss */
-.no-vertical-fill.bottom {
+.content-block p {
+  margin: 0 0 8px;
+}
+
+/* line 85, ../sass/base/_flexbox.scss */
+.no-flex {
+  width: 100%;
+}
+/* line 88, ../sass/base/_flexbox.scss */
+.no-flex.top {
+  margin-bottom: 20px;
+}
+/* line 89, ../sass/base/_flexbox.scss */
+.no-flex.bottom {
   margin-top: 20px;
 }
-/* line 84, ../sass/base/_flexbox.scss */
-.no-vertical-fill img {
+/* line 91, ../sass/base/_flexbox.scss */
+.no-flex img {
   max-width: 100%;
 }
 
-/* line 88, ../sass/base/_flexbox.scss */
+/* line 94, ../sass/base/_flexbox.scss */
 .bgyellow {
   background: #ffcd00;
 }
 
-/* line 89, ../sass/base/_flexbox.scss */
+/* line 95, ../sass/base/_flexbox.scss */
 .bgblue {
   background: #0065bd;
 }
 
-/* line 90, ../sass/base/_flexbox.scss */
+/* line 96, ../sass/base/_flexbox.scss */
 .bghover {
   background: #33acba;
 }
 
-/* line 91, ../sass/base/_flexbox.scss */
+/* line 97, ../sass/base/_flexbox.scss */
 .bgred {
   background: #ff0000;
 }
 
-/* line 92, ../sass/base/_flexbox.scss */
+/* line 98, ../sass/base/_flexbox.scss */
 .bggreen {
   background: #008000;
 }

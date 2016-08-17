@@ -45,6 +45,7 @@
     flex-direction: column;
     flex-grow: 1;
     flex-shrink: 1;
+    overflow: hidden;
 
     & img {
         width: 100%;
@@ -75,7 +76,13 @@
     }
 }
 
-.no-vertical-fill {
+.content-block {
+    padding: 15px;
+
+    & p { margin: 0 0 8px; }
+}
+
+.no-flex {
     width: 100%;
     
     &.top { margin-bottom: 20px; }
@@ -84,10 +91,9 @@
     & img { max-width: 100%; }
 }
 
-
 .bgyellow { background: $yellow }
-.bgblue { background: $blue; }
-.bghover { background: $hover; }
-.bgred { background: $red; }
-.bggreen { background: $green; }
+.bgblue   { background: $blue; }
+.bghover  { background: $hover; }
+.bgred    { background: $red; }
+.bggreen  { background: $green; }
 
