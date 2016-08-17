@@ -1,29 +1,20 @@
 ﻿
-$gutter-width: 10px;
-$gutter-between-container-width: 20px;
-$one-third-width: 330px;
 $two-third-width: 620px;
-$full-width: calc($one-third-width + $two-third-width + $gutter-width);
-
-$column-padding: 10px;
+$gutter-width: 10px;
 
 .container.flex {
     display: flex;
-    margin-bottom: $gutter-between-container-width;
 }
 
 .col-flex {
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
-
-    &:not(.columns):not(.rows):not(.no-padding) {
-        padding: $column-padding;
-    }
-
+ 
+    &.two-third { max-width: $two-third-width; }
+       
     &.columns {
         flex-direction: row;
-
         > .col-flex ~ .col-flex {
             margin-left: $gutter-width;
         }
@@ -31,13 +22,10 @@ $column-padding: 10px;
     
     &.rows {
         flex-direction: column;
-
         > .col-flex ~ .col-flex {
             margin-top: $gutter-width;
         }
     }
-    &.one-third { max-width: $one-third-width; }
-    &.two-third { max-width: $two-third-width; }
 }
 
 .bgred { background: red; }

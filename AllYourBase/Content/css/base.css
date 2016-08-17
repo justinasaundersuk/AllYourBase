@@ -15626,74 +15626,65 @@ legend {
   font-family: "FontAwesome";
 }
 
-/* line 10, ../sass/base/_flexbox.scss */
+/* line 5, ../sass/base/_flexbox.scss */
 .container.flex {
   display: flex;
-  margin-bottom: 20px;
 }
 
-/* line 15, ../sass/base/_flexbox.scss */
+/* line 9, ../sass/base/_flexbox.scss */
 .col-flex {
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
 }
-/* line 20, ../sass/base/_flexbox.scss */
-.col-flex:not(.columns):not(.rows):not(.no-padding) {
-  padding: 10px;
-}
-/* line 24, ../sass/base/_flexbox.scss */
-.col-flex.columns {
-  flex-direction: row;
-}
-/* line 27, ../sass/base/_flexbox.scss */
-.col-flex.columns > .col-flex ~ .col-flex {
-  margin-left: 10px;
-}
-/* line 32, ../sass/base/_flexbox.scss */
-.col-flex.rows {
-  flex-direction: column;
-}
-/* line 35, ../sass/base/_flexbox.scss */
-.col-flex.rows > .col-flex ~ .col-flex {
-  margin-top: 10px;
-}
-/* line 39, ../sass/base/_flexbox.scss */
-.col-flex.one-third {
-  max-width: 330px;
-}
-/* line 40, ../sass/base/_flexbox.scss */
+/* line 14, ../sass/base/_flexbox.scss */
 .col-flex.two-third {
   max-width: 620px;
 }
+/* line 16, ../sass/base/_flexbox.scss */
+.col-flex.columns {
+  flex-direction: row;
+}
+/* line 18, ../sass/base/_flexbox.scss */
+.col-flex.columns > .col-flex ~ .col-flex {
+  margin-left: 10px;
+}
+/* line 23, ../sass/base/_flexbox.scss */
+.col-flex.rows {
+  flex-direction: column;
+}
+/* line 25, ../sass/base/_flexbox.scss */
+.col-flex.rows > .col-flex ~ .col-flex {
+  margin-top: 10px;
+}
 
-/* line 43, ../sass/base/_flexbox.scss */
+/* line 31, ../sass/base/_flexbox.scss */
 .bgred {
   background: red;
 }
 
-/* line 44, ../sass/base/_flexbox.scss */
+/* line 32, ../sass/base/_flexbox.scss */
 .bgblue {
   background: blue;
   color: white;
 }
 
-/* line 45, ../sass/base/_flexbox.scss */
+/* line 33, ../sass/base/_flexbox.scss */
 .bgpurple {
   background: purple;
 }
 
-/* line 46, ../sass/base/_flexbox.scss */
+/* line 34, ../sass/base/_flexbox.scss */
 .bgpink {
   background: pink;
 }
 
-/* line 47, ../sass/base/_flexbox.scss */
+/* line 35, ../sass/base/_flexbox.scss */
 .bgorange {
   background: orange;
 }
 
-/* line 48, ../sass/base/_flexbox.scss */
+/* line 36, ../sass/base/_flexbox.scss */
 .bgyellow {
   background: yellow;
 }
