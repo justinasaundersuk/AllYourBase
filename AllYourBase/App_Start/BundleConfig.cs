@@ -22,7 +22,9 @@ namespace AllYourBase
                       "~/Content/css/bootstrap.css"));
 
             bundles.Add(new StyleBundle("~/css/styles").Include(
-                      "~/Content/css/base.css"));
+                      "~/Content/css/base.css",
+                      "~/Content/css/bootstrap.css"
+                      ));
         }
     }
 }

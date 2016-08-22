@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\base.css" />
+    <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\images\bob.jpg" />
     <Content Include="Content\sass\base.css">
       <DependentUpon>base.scss</DependentUpon>
@@ -328,7 +329,7 @@
     <Content Include="Content\sass\vendors\bootstrap\_utilities.scss" />
     <Content Include="Content\sass\vendors\bootstrap\_variables.scss" />
     <Content Include="Content\sass\vendors\bootstrap\_wells.scss" />
-    <Content Include="Content\sass\vendors\_bootstrap.scss" />
+    <Content Include="Content\sass\vendors\bootstrap.scss" />
     <Content Include="Content\sass\helpers\_placeholders.scss" />
     <Content Include="Content\sass\vendors\family\_family.scss" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
