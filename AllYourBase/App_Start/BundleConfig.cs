@@ -19,12 +19,10 @@ namespace AllYourBase
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/css/bootstrap").Include(
-                      "~/Content/css/bootstrap.css"));
+                      "~/Content/css/vendors/bootstrap.css"));
 
             bundles.Add(new StyleBundle("~/css/styles").Include(
-                      "~/Content/css/base.css",
-                      "~/Content/css/bootstrap.css"
-                      ));
+                      "~/Content/css/base.css"));
         }
     }
 }

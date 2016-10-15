@@ -5,6 +5,7 @@
 @import "vendors/saffron/saffron";              // https://github.com/colindresj/saffron
 @import "vendors/family/family";
 @import "vendors/font-awesome";
+@import "vendors/hover/hover";                  // https://github.com/IanLunn/Hover
 
 @import "helpers/functions";
 @import "helpers/mixins";
@@ -12,7 +13,7 @@
 @import "helpers/general";
 
 //  @import "partials/bootstrap-overrides";     // optional
-//  @import "base/flexbox";                     // optional
+@import "base/flexbox";                     // optional
 //  @import "tests";
 
 @import "partials/styles";
