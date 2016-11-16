@@ -478,6 +478,7 @@
     <Content Include="css\base.css.map">
       <DependentUpon>base.css</DependentUpon>
     </Content>
+    <Content Include="Content\sass\partials\_examples.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
