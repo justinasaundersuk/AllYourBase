@@ -4,6 +4,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 /* line 8, ../sass/base/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -15487,7 +15488,28 @@ legend {
   border-radius: 1em;
 }
 
-/* line 4, ../sass/partials/_examples.scss */
+@font-face {
+  font-family: "defused";
+  src: url("../fonts/defused/defused-webfont.woff") format("woff"), url("../fonts/defused/defused-webfont.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+/* line 2, ../sass/partials/_examples.scss */
+.defused {
+  font-family: 'defused';
+}
+
+/* line 6, ../sass/partials/_examples.scss */
+.opensans {
+  font-family: 'Open Sans';
+}
+
+/* line 10, ../sass/partials/_examples.scss */
+.roboto {
+  font-family: 'Roboto';
+}
+
+/* line 16, ../sass/partials/_examples.scss */
 .collector-signup-ticker {
   padding: 0;
   position: relative;
@@ -15496,7 +15518,7 @@ legend {
   }*/
 }
 @media screen and (min-width: 992px) {
-  /* line 4, ../sass/partials/_examples.scss */
+  /* line 16, ../sass/partials/_examples.scss */
   .collector-signup-ticker {
     position: relative;
     display: flex;
@@ -15512,12 +15534,12 @@ legend {
   }
 }
 @media only screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 4, ../sass/partials/_examples.scss */
+  /* line 16, ../sass/partials/_examples.scss */
   .collector-signup-ticker {
     height: 102px;
   }
 }
-/* line 32, ../sass/partials/_examples.scss */
+/* line 44, ../sass/partials/_examples.scss */
 .collector-signup-ticker [class^=col-] {
   padding: 0;
   height: 70px;
@@ -15529,7 +15551,7 @@ legend {
   -ms-flex-align: center;
   -moz-box-align: center;
 }
-/* line 44, ../sass/partials/_examples.scss */
+/* line 56, ../sass/partials/_examples.scss */
 .collector-signup-ticker .item {
   position: absolute;
   top: 1rem;
@@ -15545,7 +15567,7 @@ legend {
   margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
-  /* line 44, ../sass/partials/_examples.scss */
+  /* line 56, ../sass/partials/_examples.scss */
   .collector-signup-ticker .item {
     top: 1.2rem;
     height: 32px;
@@ -15556,31 +15578,31 @@ legend {
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 44, ../sass/partials/_examples.scss */
+  /* line 56, ../sass/partials/_examples.scss */
   .collector-signup-ticker .item {
     top: 1rem;
   }
 }
 @media only screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* line 44, ../sass/partials/_examples.scss */
+  /* line 56, ../sass/partials/_examples.scss */
   .collector-signup-ticker .item {
     left: 1rem;
   }
 }
 @media only screen and (min-device-width: 768) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 44, ../sass/partials/_examples.scss */
+  /* line 56, ../sass/partials/_examples.scss */
   .collector-signup-ticker .item {
     left: 1rem;
   }
 }
-/* line 82, ../sass/partials/_examples.scss */
+/* line 94, ../sass/partials/_examples.scss */
 .collector-signup-ticker .live-updates {
   font-family: 'olivier';
   font-size: 30px;
   background: #ffcd00;
   color: #000000;
 }
-/* line 89, ../sass/partials/_examples.scss */
+/* line 101, ../sass/partials/_examples.scss */
 .collector-signup-ticker .ticker-wrapper {
   position: relative;
   min-height: 260px;
@@ -15591,14 +15613,14 @@ legend {
   padding: 0 1rem;
 }
 @media screen and (min-width: 992px) {
-  /* line 89, ../sass/partials/_examples.scss */
+  /* line 101, ../sass/partials/_examples.scss */
   .collector-signup-ticker .ticker-wrapper {
     min-height: 0;
     background-image: none;
     padding: 0;
   }
 }
-/* line 105, ../sass/partials/_examples.scss */
+/* line 117, ../sass/partials/_examples.scss */
 .collector-signup-ticker .ticker {
   background: #ffffff;
   color: #000000;
@@ -15608,28 +15630,28 @@ legend {
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
-  /* line 105, ../sass/partials/_examples.scss */
+  /* line 117, ../sass/partials/_examples.scss */
   .collector-signup-ticker .ticker {
     padding: 0 2rem 0 2rem;
   }
 }
 @media screen and (min-width: 992px) {
-  /* line 105, ../sass/partials/_examples.scss */
+  /* line 117, ../sass/partials/_examples.scss */
   .collector-signup-ticker .ticker {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
-  /* line 105, ../sass/partials/_examples.scss */
+  /* line 117, ../sass/partials/_examples.scss */
   .collector-signup-ticker .ticker {
     font-size: 22px;
   }
 }
-/* line 121, ../sass/partials/_examples.scss */
+/* line 133, ../sass/partials/_examples.scss */
 .collector-signup-ticker .pause {
   background: #f0f0f0;
 }
-/* line 124, ../sass/partials/_examples.scss */
+/* line 136, ../sass/partials/_examples.scss */
 .collector-signup-ticker .pause a {
   /*font-family: $brand-sans-serif;*/
   color: #000000;
@@ -15638,7 +15660,7 @@ legend {
   line-height: 26px;
   text-decoration: none;
 }
-/* line 132, ../sass/partials/_examples.scss */
+/* line 144, ../sass/partials/_examples.scss */
 .collector-signup-ticker .pause a:before {
   font-family: "glyphicons-halflings-regular";
   font-size: 26px;
@@ -15646,12 +15668,12 @@ legend {
   top: 2px;
   position: relative;
 }
-/* line 142, ../sass/partials/_examples.scss */
+/* line 154, ../sass/partials/_examples.scss */
 .collector-signup-ticker .cta {
   background: #ffcd00;
 }
 
-/* line 148, ../sass/partials/_examples.scss */
+/* line 160, ../sass/partials/_examples.scss */
 .animated {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -15683,7 +15705,7 @@ legend {
     transform: none;
   }
 }
-/* line 183, ../sass/partials/_examples.scss */
+/* line 195, ../sass/partials/_examples.scss */
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
@@ -15709,7 +15731,7 @@ legend {
     transform: translate3d(0, 200%, 0);
   }
 }
-/* line 213, ../sass/partials/_examples.scss */
+/* line 225, ../sass/partials/_examples.scss */
 .fadeOutDown {
   -webkit-animation-name: fadeOutDown;
   animation-name: fadeOutDown;

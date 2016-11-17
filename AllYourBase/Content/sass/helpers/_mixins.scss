@@ -199,6 +199,33 @@
 }
 
 
+//    Include font(s) via the file system
+//    Fonts folder should include woff and woff2 file formats (svg, ttf and eot are no longer needed)
+//    See: http://stackoverflow.com/questions/36105194/are-eot-ttf-and-svg-still-necessary-in-the-font-face-declaration
+
+//    Example usage:
+
+//    Within _fonts.scss:
+//
+//    @include fontface('defused','../fonts/defused/defused-webfont');
+//
+//    Then in use:
+//
+//    .defused {
+//        font-family: 'defused';
+//    }
+
+@mixin fontface($family, $src, $style: normal, $weight: normal) {
+    @font-face {
+        font-family: $family;
+        src: url('#{$src}.woff') format('woff'),
+        url('#{$src}.woff2') format('woff2');
+        font-style: $style;
+        font-weight: $weight;
+    }
+}
+
+
 // EXPERIMENTAL ---------------------------------------------------------------------------------------
 
 //    A more backwards-compatible opacity mixin
