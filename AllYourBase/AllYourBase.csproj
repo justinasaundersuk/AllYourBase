@@ -178,6 +178,9 @@
     <Content Include="Content\fonts\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Content\HtmlPage1.html" />
     <Content Include="Content\images\bob.jpg" />
+    <Content Include="Content\images\drawing.svg" />
+    <Content Include="Content\images\main-bg.png" />
+    <Content Include="Content\images\wiggly_02.svg" />
     <Content Include="Content\sass\base.css">
       <DependentUpon>base.scss</DependentUpon>
     </Content>
