@@ -180,7 +180,11 @@
     <Content Include="Content\images\bob.jpg" />
     <Content Include="Content\images\drawing.svg" />
     <Content Include="Content\images\main-bg.png" />
+    <Content Include="Content\images\wiggly-final.svg" />
     <Content Include="Content\images\wiggly_02.svg" />
+    <Content Include="Content\images\wiggly_03.svg" />
+    <Content Include="Content\images\wiggly_04.svg" />
+    <Content Include="Content\images\wiggly_smooth.svg" />
     <Content Include="Content\sass\base.css">
       <DependentUpon>base.scss</DependentUpon>
     </Content>
