@@ -11,7 +11,7 @@
 .image-block {
     @include pulsate(1.5s, 0s, none, infinite);
     min-height: 600px;
-    background: inline-image('../images/bob.jpg');
+    /*background: inline-image('../images/bob.jpg');*/
     background-repeat: no-repeat;
     background-size: cover;
 
