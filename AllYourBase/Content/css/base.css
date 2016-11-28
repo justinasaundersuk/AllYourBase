@@ -15738,7 +15738,7 @@ legend {
 }
 
 /* line 234, ../sass/partials/_examples.scss */
-.wobbly-test {
+.jumbotron-strip {
   width: 100%;
   position: relative;
   min-height: 378px;
@@ -15748,17 +15748,17 @@ legend {
 }
 @media only screen and (min-width: 48em) {
   /* line 234, ../sass/partials/_examples.scss */
-  .wobbly-test {
+  .jumbotron-strip {
     background-size: cover;
   }
 }
 /* line 246, ../sass/partials/_examples.scss */
-.wobbly-test:after {
+.jumbotron-strip:after {
   display: none;
 }
 @media only screen and (min-width: 48em) {
   /* line 246, ../sass/partials/_examples.scss */
-  .wobbly-test:after {
+  .jumbotron-strip:after {
     content: "";
     display: block;
     min-height: 24px;
@@ -15773,12 +15773,12 @@ legend {
 }
 @media only screen and (min-width: 75em) {
   /* line 246, ../sass/partials/_examples.scss */
-  .wobbly-test:after {
+  .jumbotron-strip:after {
     background-size: 100% 100%;
   }
 }
 /* line 267, ../sass/partials/_examples.scss */
-.wobbly-test .strapline {
+.jumbotron-strip .strapline {
   background-color: #ffce00;
   position: relative;
   display: block;
@@ -15788,7 +15788,7 @@ legend {
 }
 @media only screen and (min-width: 48em) {
   /* line 267, ../sass/partials/_examples.scss */
-  .wobbly-test .strapline {
+  .jumbotron-strip .strapline {
     margin-top: 0;
     width: 325px;
     min-height: 250px;
@@ -15796,19 +15796,19 @@ legend {
     float: right;
   }
   /* line 282, ../sass/partials/_examples.scss */
-  .wobbly-test .strapline.left {
+  .jumbotron-strip .strapline.left {
     margin-right: 0;
     margin-left: 10%;
     float: left;
   }
   /* line 287, ../sass/partials/_examples.scss */
-  .wobbly-test .strapline.right {
+  .jumbotron-strip .strapline.right {
     margin-right: 10%;
     float: right;
   }
 }
 /* line 293, ../sass/partials/_examples.scss */
-.wobbly-test .strapline:after {
+.jumbotron-strip .strapline:after {
   content: "";
   display: block;
   position: absolute;
@@ -15822,7 +15822,7 @@ legend {
   background-repeat: no-repeat;
 }
 /* line 246, ../sass/helpers/_mixins.scss */
-.no-svg .wobbly-test .strapline:after {
+.no-svg .jumbotron-strip .strapline:after {
   border-color: "ffce00";
   background-image: none;
 }
