@@ -234,12 +234,13 @@
 .jumbotron-strip {
     width: 100%;
     position: relative;
-    min-height: 378px;
-    height: auto;
+    min-height: 230px;
     background: url('../images/main-bg.jpg') no-repeat;
     border-top: 2px solid #ffce00;
 
     @include min($bp-sm) {
+        min-height: 380px;
+        overflow: hidden;   // limit strapline to 100% height of jumbotron
         background-size: cover;
     }
 
@@ -249,7 +250,7 @@
         @include min($bp-sm) {
             content: "";
             display: block;
-            min-height: 24px;
+            min-height: 26px;
             width: 100%;
             position: absolute;
             bottom: 0;
@@ -268,25 +269,24 @@
         background-color: #ffce00;
         position: relative;
         display: block;
-        margin-top: 378px;      // height of mobile image
+        margin-top: 230px;      // height of mobile image
         margin-bottom: 23px;    // allow for :after
         padding: 1rem 2rem;
+        text-align: center;
 
         @include min($bp-sm) {
-            margin-top: 0;
+            margin-top: 0;          // reset mobile margin
             width: 325px;
             min-height: 250px;
+            margin-bottom: 50px;
             margin-right: 10%;      // default to right
             float: right;           // default to right
+            text-align: left;
 
             &.left  { 
                 margin-right: 0;    // reset default
                 margin-left: 10%;
                 float: left;
-            }
-            &.right { 
-                margin-right: 10%;
-                float: right;
             }
         }
 

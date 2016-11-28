@@ -15741,23 +15741,24 @@ legend {
 .jumbotron-strip {
   width: 100%;
   position: relative;
-  min-height: 378px;
-  height: auto;
+  min-height: 230px;
   background: url("../images/main-bg.jpg") no-repeat;
   border-top: 2px solid #ffce00;
 }
 @media only screen and (min-width: 48em) {
   /* line 234, ../sass/partials/_examples.scss */
   .jumbotron-strip {
+    min-height: 380px;
+    overflow: hidden;
     background-size: cover;
   }
 }
-/* line 246, ../sass/partials/_examples.scss */
+/* line 247, ../sass/partials/_examples.scss */
 .jumbotron-strip:after {
   display: none;
 }
 @media only screen and (min-width: 48em) {
-  /* line 246, ../sass/partials/_examples.scss */
+  /* line 247, ../sass/partials/_examples.scss */
   .jumbotron-strip:after {
     content: "";
     display: block;
@@ -15772,39 +15773,37 @@ legend {
   }
 }
 @media only screen and (min-width: 75em) {
-  /* line 246, ../sass/partials/_examples.scss */
+  /* line 247, ../sass/partials/_examples.scss */
   .jumbotron-strip:after {
     background-size: 100% 100%;
   }
 }
-/* line 267, ../sass/partials/_examples.scss */
+/* line 268, ../sass/partials/_examples.scss */
 .jumbotron-strip .strapline {
   background-color: #ffce00;
   position: relative;
   display: block;
-  margin-top: 378px;
+  margin-top: 230px;
   margin-bottom: 23px;
   padding: 1rem 2rem;
+  text-align: center;
 }
 @media only screen and (min-width: 48em) {
-  /* line 267, ../sass/partials/_examples.scss */
+  /* line 268, ../sass/partials/_examples.scss */
   .jumbotron-strip .strapline {
     margin-top: 0;
     width: 325px;
     min-height: 250px;
+    margin-bottom: 50px;
     margin-right: 10%;
     float: right;
+    text-align: left;
   }
-  /* line 282, ../sass/partials/_examples.scss */
+  /* line 286, ../sass/partials/_examples.scss */
   .jumbotron-strip .strapline.left {
     margin-right: 0;
     margin-left: 10%;
     float: left;
-  }
-  /* line 287, ../sass/partials/_examples.scss */
-  .jumbotron-strip .strapline.right {
-    margin-right: 10%;
-    float: right;
   }
 }
 /* line 293, ../sass/partials/_examples.scss */
