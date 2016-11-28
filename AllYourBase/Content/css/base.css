@@ -15744,39 +15744,70 @@ legend {
   min-height: 378px;
   height: auto;
   background: url("../images/main-bg.jpg") no-repeat;
-  background-size: cover;
-  position: relative;
   border-top: 2px solid #ffce00;
 }
-/* line 244, ../sass/partials/_examples.scss */
+@media only screen and (min-width: 48em) {
+  /* line 234, ../sass/partials/_examples.scss */
+  .wobbly-test {
+    background-size: cover;
+  }
+}
+/* line 246, ../sass/partials/_examples.scss */
 .wobbly-test:after {
-  content: "";
-  display: block;
-  min-height: 24px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-image: url("/Content/images/wiggly_smooth.svg");
-  background-size: 1368px 26px;
+  display: none;
+}
+@media only screen and (min-width: 48em) {
+  /* line 246, ../sass/partials/_examples.scss */
+  .wobbly-test:after {
+    content: "";
+    display: block;
+    min-height: 24px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-image: url("/Content/images/wiggly_smooth.svg");
+    background-size: 1368px 26px;
+  }
 }
 @media only screen and (min-width: 75em) {
-  /* line 244, ../sass/partials/_examples.scss */
+  /* line 246, ../sass/partials/_examples.scss */
   .wobbly-test:after {
     background-size: 100% 100%;
   }
 }
-/* line 261, ../sass/partials/_examples.scss */
+/* line 267, ../sass/partials/_examples.scss */
 .wobbly-test .strapline {
   background-color: #ffce00;
   position: relative;
-  margin-right: 15%;
-  float: right;
-  width: 325px;
-  min-height: 250px;
+  display: block;
+  margin-top: 378px;
+  margin-bottom: 23px;
+  padding: 1rem 2rem;
 }
-/* line 269, ../sass/partials/_examples.scss */
+@media only screen and (min-width: 48em) {
+  /* line 267, ../sass/partials/_examples.scss */
+  .wobbly-test .strapline {
+    margin-top: 0;
+    width: 325px;
+    min-height: 250px;
+    margin-right: 10%;
+    float: right;
+  }
+  /* line 282, ../sass/partials/_examples.scss */
+  .wobbly-test .strapline.left {
+    margin-right: 0;
+    margin-left: 10%;
+    float: left;
+  }
+  /* line 287, ../sass/partials/_examples.scss */
+  .wobbly-test .strapline.right {
+    margin-right: 10%;
+    float: right;
+  }
+}
+/* line 293, ../sass/partials/_examples.scss */
 .wobbly-test .strapline:after {
   content: "";
   display: block;
