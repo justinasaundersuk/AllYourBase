@@ -427,6 +427,8 @@ h2 {
     min-height: 230px;
     background: url('../images/promo-bg.jpg') no-repeat;
     border-top:1px solid #fff;
+    max-height: 230px;
+    display: inline-block;
 
     @include min($bp-sm) {
         height: 370px;      // change to min-height if want overflow visible (jumbotron will stretch vertically)
@@ -458,14 +460,13 @@ h2 {
 
     & .jpromo-block {
         position: relative;
-        bottom: 0;
         padding: 1rem 2rem;
         text-align: center;
         width: 90%;
         display: block;
-        margin-top: 230px;      // height of mobile image
+        margin: 0 auto;
+        margin-top: 190px;      // height of mobile image minus the overhang
         
-
         @include min($bp-sm) {
             margin-top: 0;          // reset mobile margin
             width: 325px;

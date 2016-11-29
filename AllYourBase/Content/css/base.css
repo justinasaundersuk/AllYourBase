@@ -16140,6 +16140,8 @@ h2 {
   min-height: 230px;
   background: url("../images/promo-bg.jpg") no-repeat;
   border-top: 1px solid #fff;
+  max-height: 230px;
+  display: inline-block;
 }
 @media only screen and (min-width: 48em) {
   /* line 424, ../sass/partials/_examples.scss */
@@ -16150,12 +16152,12 @@ h2 {
     background-size: cover;
   }
 }
-/* line 438, ../sass/partials/_examples.scss */
+/* line 440, ../sass/partials/_examples.scss */
 .jpromo-full:after {
   display: none;
 }
 @media only screen and (min-width: 48em) {
-  /* line 438, ../sass/partials/_examples.scss */
+  /* line 440, ../sass/partials/_examples.scss */
   .jpromo-full:after {
     content: "";
     display: block;
@@ -16170,23 +16172,23 @@ h2 {
   }
 }
 @media only screen and (min-width: 75em) {
-  /* line 438, ../sass/partials/_examples.scss */
+  /* line 440, ../sass/partials/_examples.scss */
   .jpromo-full:after {
     background-size: 100% 100%;
   }
 }
-/* line 459, ../sass/partials/_examples.scss */
+/* line 461, ../sass/partials/_examples.scss */
 .jpromo-full .jpromo-block {
   position: relative;
-  bottom: 0;
   padding: 1rem 2rem;
   text-align: center;
   width: 90%;
   display: block;
-  margin-top: 230px;
+  margin: 0 auto;
+  margin-top: 190px;
 }
 @media only screen and (min-width: 48em) {
-  /* line 459, ../sass/partials/_examples.scss */
+  /* line 461, ../sass/partials/_examples.scss */
   .jpromo-full .jpromo-block {
     margin-top: 0;
     width: 325px;
@@ -16198,14 +16200,14 @@ h2 {
     top: 50%;
     transform: translateY(-50%);
   }
-  /* line 480, ../sass/partials/_examples.scss */
+  /* line 481, ../sass/partials/_examples.scss */
   .jpromo-full .jpromo-block.left {
     margin-right: 0;
     margin-left: 10%;
     float: left;
   }
 }
-/* line 487, ../sass/partials/_examples.scss */
+/* line 488, ../sass/partials/_examples.scss */
 .jpromo-full .jpromo-block:after {
   content: "";
   display: block;
@@ -16224,7 +16226,7 @@ h2 {
   border-color: "ffce00";
   background-image: none;
 }
-/* line 499, ../sass/partials/_examples.scss */
+/* line 500, ../sass/partials/_examples.scss */
 .jpromo-full .jpromo-block h1 {
   position: relative;
   z-index: 5;
