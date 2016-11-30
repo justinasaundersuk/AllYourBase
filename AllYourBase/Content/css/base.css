@@ -15928,7 +15928,7 @@ h2 {
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url("/Content/images/wiggly_smooth.svg");
+  background-image: url("../images/wiggly_smooth.svg");
   background-size: 1368px 26px;
 }
 @media only screen and (min-width: 75em) {
@@ -16074,7 +16074,7 @@ h2 {
     bottom: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-image: url("/Content/images/wiggly_smooth.svg");
+    background-image: url("../images/wiggly_smooth.svg");
     background-size: 1368px 26px;
   }
 }
@@ -16157,14 +16157,14 @@ h2 {
 .promo-full-container .promo-full:after {
   content: "";
   display: block;
-  min-height: 26px;
+  min-height: 16px;
   width: 100%;
   position: absolute;
-  bottom: -23px;
+  bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-image: url("/Content/images/social_wobbly.svg");
-  background-size: 100% 23px;
+  background-image: url("../images/promo_bottom.svg");
+  background-size: 100% 16px;
 }
 @media only screen and (min-width: 48em) {
   /* line 440, ../sass/partials/_examples.scss */
@@ -16177,7 +16177,7 @@ h2 {
     top: 0;
     left: 0;
     background-repeat: no-repeat;
-    background-image: url("/Content/images/promo_full_width.svg");
+    background-image: url("../images/promo_full_width.svg");
     background-size: 100% 100%;
   }
 }

@@ -189,6 +189,7 @@
     <Content Include="Content\images\old\wiggly_04.svg" />
     <Content Include="Content\images\promo-bg.jpg" />
     <Content Include="Content\images\promo-ma.jpg" />
+    <Content Include="Content\images\promo_bottom.svg" />
     <Content Include="Content\images\promo_full_width.svg" />
     <Content Include="Content\images\promo_full_width_ma.svg" />
     <Content Include="Content\images\social_wobbly.svg" />
