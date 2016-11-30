@@ -517,6 +517,12 @@ h2 {
         padding: 0;
     }
 
+    & .col-sm-4 {   // main container column for left-hand content
+        & h1 {
+            margin-top: 0;
+        }
+    }
+
     .promo-ma {
         display: block;
 
@@ -560,7 +566,7 @@ h2 {
                 @include svg-promo-background("ffce00");
 
                 @include min($bp-sm) {
-                    background-image: none;
+                    background-image: none;     // want the wobbly on the promo content block for mobile only
                 }
             }
 
