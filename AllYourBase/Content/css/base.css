@@ -16248,30 +16248,49 @@ h2 {
 }
 /* line 523, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma {
-  display: flex;
+  display: block;
 }
-/* line 526, ../sass/partials/_examples.scss */
+@media only screen and (min-width: 48em) {
+  /* line 523, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma {
+    display: flex;
+  }
+}
+/* line 528, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma img {
-  min-height: 335px;
+  min-height: 165px;
   max-width: 100%;
   display: block;
 }
-/* line 532, ../sass/partials/_examples.scss */
+@media only screen and (min-width: 48em) {
+  /* line 528, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma img {
+    min-height: 250px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  /* line 528, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma img {
+    min-height: 335px;
+  }
+}
+/* line 538, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma .col-sm-6 {
   padding: 0;
 }
-/* line 536, ../sass/partials/_examples.scss */
-.promo-ma-container .promo-ma .col-sm-6 {
-  flex: 1;
-  flex-direction: column;
+@media only screen and (min-width: 48em) {
+  /* line 538, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma .col-sm-6 {
+    flex: 1;
+  }
 }
-/* line 541, ../sass/partials/_examples.scss */
+/* line 544, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma .promo-content {
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   background: #ffce00;
 }
 @media only screen and (min-width: 48em) {
-  /* line 546, ../sass/partials/_examples.scss */
+  /* line 549, ../sass/partials/_examples.scss */
   .promo-ma-container .promo-ma:after {
     content: "";
     display: block;
@@ -16291,14 +16310,14 @@ h2 {
   }
 }
 @media only screen and (min-width: 75em) {
-  /* line 546, ../sass/partials/_examples.scss */
+  /* line 549, ../sass/partials/_examples.scss */
   .promo-ma-container .promo-ma:after {
     background-size: 100% 100%;
   }
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 566, ../sass/partials/_examples.scss */
+  /* line 569, ../sass/partials/_examples.scss */
   .container {
     width: 1140px;
   }

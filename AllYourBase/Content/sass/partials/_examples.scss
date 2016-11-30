@@ -521,25 +521,28 @@ h2 {
     }
 
     .promo-ma {
-        display: flex;
+        display: block;
+
+        @include min($bp-sm) { display: flex; }
 
         img {
-            min-height: 335px;
+            min-height: 165px;
+
+            @include min($bp-sm) { min-height: 250px; }
+            @include min($bp-md) { min-height: 335px; }
+
             max-width: 100%;
             display: block;
         }
 
         & .col-sm-6 {    // main promo image & content columns
             padding: 0;
-        }
 
-        & .col-sm-6 {
-            flex: 1;
-            flex-direction: column;
+            @include min($bp-sm) { flex: 1; }
         }
 
         & .promo-content {
-            padding: 1rem 2rem;
+            padding: 2rem 2rem;
             background: #ffce00;
         }
 
