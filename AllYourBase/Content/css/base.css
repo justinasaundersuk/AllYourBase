@@ -16190,7 +16190,7 @@ h2 {
 /* line 470, ../sass/partials/_examples.scss */
 .promo-full-container .promo-full .promo-block {
   position: relative;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   width: 90%;
   display: block;
@@ -16240,57 +16240,97 @@ h2 {
 .promo-full-container .promo-full .promo-block h1 {
   position: relative;
   z-index: 5;
+  margin-top: 0;
 }
 
-/* line 519, ../sass/partials/_examples.scss */
+/* line 520, ../sass/partials/_examples.scss */
 .promo-ma-container .col-sm-8 {
   padding: 0;
 }
-/* line 523, ../sass/partials/_examples.scss */
+/* line 524, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma {
   display: block;
 }
 @media only screen and (min-width: 48em) {
-  /* line 523, ../sass/partials/_examples.scss */
+  /* line 524, ../sass/partials/_examples.scss */
   .promo-ma-container .promo-ma {
     display: flex;
   }
 }
-/* line 528, ../sass/partials/_examples.scss */
-.promo-ma-container .promo-ma img {
-  min-height: 165px;
-  max-width: 100%;
-  display: block;
+/* line 529, ../sass/partials/_examples.scss */
+.promo-ma-container .promo-ma .promo-image {
+  width: 100%;
+  position: relative;
+  background: url("../images/promo-ma.jpg") no-repeat;
+  height: 230px;
+  display: inline-block;
 }
 @media only screen and (min-width: 48em) {
-  /* line 528, ../sass/partials/_examples.scss */
-  .promo-ma-container .promo-ma img {
-    min-height: 250px;
+  /* line 529, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma .promo-image {
+    height: 370px;
   }
 }
-@media only screen and (min-width: 62em) {
-  /* line 528, ../sass/partials/_examples.scss */
-  .promo-ma-container .promo-ma img {
-    min-height: 335px;
-  }
-}
-/* line 538, ../sass/partials/_examples.scss */
+/* line 541, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma .col-sm-6 {
   padding: 0;
 }
 @media only screen and (min-width: 48em) {
-  /* line 538, ../sass/partials/_examples.scss */
+  /* line 541, ../sass/partials/_examples.scss */
   .promo-ma-container .promo-ma .col-sm-6 {
     flex: 1;
   }
 }
-/* line 544, ../sass/partials/_examples.scss */
+/* line 547, ../sass/partials/_examples.scss */
 .promo-ma-container .promo-ma .promo-content {
   padding: 2rem 2rem;
-  background: #ffce00;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-left: 5%;
+  position: relative;
+  text-align: center;
+}
+/* line 556, ../sass/partials/_examples.scss */
+.promo-ma-container .promo-ma .promo-content:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20viewBox%3D%220%200%20304%20266%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20id%3D%22svg2%22%0A%20%20%20version%3D%221.1%22%3E%0A%20%20%3Cdefs%0A%20%20%20%20%20id%3D%22defs4%22%20%2F%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata7%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cpath%0A%20%20%20%20%20style%3D%22fill%3A%23ffce00%22%0A%20%20%20%20%20d%3D%22m%20215.29621%2C264.4709%20c%20-7.15%2C-0.45011%20-51.475%2C-1.0047%20-98.5%2C-1.23242%20C%2040.89436%2C262.87092%2030.47796%2C262.63406%2024.00724%2C261.12854%2014.46491%2C258.90835%209.00587%2C254.84266%206.47746%2C248.073%202.21782%2C236.6681%201.79551%2C230.66808%201.81086%2C181.7727%201.81886%2C156.10858%201.30801%2C127.91067%200.67549%2C119.11067%20-0.1549%2C107.55771%20-0.21335%2C90.74234%200.46519%2C58.61067%201.51441%2C8.92531%201.32837%2C10.13531%208.74469%2C4.76295%20c%203.36805%2C-2.4398%205.36432%2C-2.95587%2015.21412%2C-3.93309%2012.77641%2C-1.26758%2082.39699%2C-1.07282%20183.8374%2C0.51428%2068.68988%2C1.07469%2070.07769%2C1.19351%2079.68465%2C6.82239%205.02492%2C2.94418%207.85755%2C6.7095%2010.31787%2C13.71519%203.73535%2C10.6363%204.30502%2C20.37297%204.57701%2C78.22895%200.1448%2C30.8%200.58208%2C75.53532%200.97174%2C99.41182%200.97501%2C59.74429%200.51617%2C61.78211%20-14.5583%2C64.65688%20-8.33912%2C1.59031%20-50.22254%2C1.75645%20-73.49297%2C0.29153%20z%22%0A%20%20%20%20%20id%3D%22path4172%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 273, ../sass/helpers/_mixins.scss */
+.no-svg .promo-ma-container .promo-ma .promo-content:after {
+  border-color: "ffce00";
+  background-image: none;
 }
 @media only screen and (min-width: 48em) {
-  /* line 549, ../sass/partials/_examples.scss */
+  /* line 556, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma .promo-content:after {
+    background-image: none;
+  }
+}
+@media only screen and (min-width: 48em) {
+  /* line 547, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma .promo-content {
+    width: 100%;
+    margin: 0;
+    background: #ffce00;
+  }
+}
+/* line 577, ../sass/partials/_examples.scss */
+.promo-ma-container .promo-ma .promo-content h1 {
+  position: relative;
+  z-index: 5;
+  margin-top: 0;
+}
+@media only screen and (min-width: 48em) {
+  /* line 584, ../sass/partials/_examples.scss */
   .promo-ma-container .promo-ma:after {
     content: "";
     display: block;
@@ -16299,6 +16339,19 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
+    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20viewBox%3D%220%200%20304%20266%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20id%3D%22svg2%22%0A%20%20%20version%3D%221.1%22%3E%0A%20%20%3Cdefs%0A%20%20%20%20%20id%3D%22defs4%22%20%2F%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata7%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cpath%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%22%0A%20%20%20%20%20d%3D%22m%20215.29621%2C264.4709%20c%20-7.15%2C-0.45011%20-51.475%2C-1.0047%20-98.5%2C-1.23242%20C%2040.89436%2C262.87092%2030.47796%2C262.63406%2024.00724%2C261.12854%2014.46491%2C258.90835%209.00587%2C254.84266%206.47746%2C248.073%202.21782%2C236.6681%201.79551%2C230.66808%201.81086%2C181.7727%201.81886%2C156.10858%201.30801%2C127.91067%200.67549%2C119.11067%20-0.1549%2C107.55771%20-0.21335%2C90.74234%200.46519%2C58.61067%201.51441%2C8.92531%201.32837%2C10.13531%208.74469%2C4.76295%20c%203.36805%2C-2.4398%205.36432%2C-2.95587%2015.21412%2C-3.93309%2012.77641%2C-1.26758%2082.39699%2C-1.07282%20183.8374%2C0.51428%2068.68988%2C1.07469%2070.07769%2C1.19351%2079.68465%2C6.82239%205.02492%2C2.94418%207.85755%2C6.7095%2010.31787%2C13.71519%203.73535%2C10.6363%204.30502%2C20.37297%204.57701%2C78.22895%200.1448%2C30.8%200.58208%2C75.53532%200.97174%2C99.41182%200.97501%2C59.74429%200.51617%2C61.78211%20-14.5583%2C64.65688%20-8.33912%2C1.59031%20-50.22254%2C1.75645%20-73.49297%2C0.29153%20z%22%0A%20%20%20%20%20id%3D%22path4172%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  /* line 273, ../sass/helpers/_mixins.scss */
+  .no-svg .promo-ma-container .promo-ma:after {
+    border-color: "ffffff";
+    background-image: none;
+  }
+}
+@media only screen and (min-width: 48em) and (min-width: 48em) {
+  /* line 584, ../sass/partials/_examples.scss */
+  .promo-ma-container .promo-ma:after {
     background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20id%3D%22svg4138%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20viewBox%3D%220%200%20650%20330%22%0A%20%20%20%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata4144%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cdefs%0A%20%20%20%20%20id%3D%22defs4142%22%20%2F%3E%0A%20%20%3Cpath%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%22%0A%20%20%20%20%20d%3D%22M%200%2C165%200%2C0%2069.16667%2C0%20c%2038.04166%2C0%2068.86521%2C0.30145%2068.49678%2C0.66989%20C%20137.29501%2C1.03833%20114.83251%2C1.66773%2087.74678%2C2.06856%2035.61148%2C2.8401%2031.34025%2C3.2169%2020.1468%2C8.03219%2013.08769%2C11.06894%206.52153%2C18.31758%204.64564%2C25.14451%202.81132%2C31.82017%201.51529%2C75.47413%201.64395%2C126.25%20c%200.0498%2C19.6625%200.0759%2C55.21251%200.0579%2C79.00001%20-0.0661%2C87.44842%20-0.16114%2C83.43992%202.18732%2C92.25%201.17288%2C4.4%203.36513%2C10.475%204.87167%2C13.5%204.4292%2C8.89346%2012.70308%2C12.81715%2031.73916%2C15.05157%206.37562%2C0.74835%2045.30398%2C0.6974%20133.5%2C-0.17472%20101.38373%2C-1.00254%20127.74927%2C-0.99112%20142%2C0.0615%2011.8755%2C0.87719%2054.36413%2C1.50682%20132.19856%2C1.95903%2063.08421%2C0.36651%20115.02171%2C0.98953%20115.41667%2C1.38449%200.39495%2C0.39498%20-126.2569%2C0.71813%20-281.44856%2C0.71813%20L%200%2C330.00001%200%2C165%20Z%20m%20634.33106%2C163.54015%20c%205.69089%2C-1.02937%207.44345%2C-1.84799%2010.5%2C-4.90454%20l%203.66894%2C-3.66893%200%2C-151.91002%20C%20648.5%2C16.44806%20648.496%2C16.14106%20646.44803%2C13.32333%20643.98663%2C9.93667%20637.34549%2C6.43937%20630.5%2C4.92491%20627.15333%2C4.18451%20598.05476%2C3.68942%20542.5%2C3.42765%20496.85%2C3.21255%20449.6%2C2.55571%20437.5%2C1.96801%20423.63244%2C1.29445%20389.8089%2C1.11726%20346%2C1.48867%20307.775%2C1.81273%20268.85%2C1.67947%20259.5%2C1.19252%20248.46305%2C0.61771%20313.96892%2C0.25329%20446.25%2C0.15358%20L%20650%2C0%20l%200%2C165%200%2C165.00001%20-11.25%2C-0.11213%20-11.25%2C-0.11212%206.83106%2C-1.23561%20z%22%0A%20%20%20%20%20id%3D%22path4692%22%20%2F%3E%0A%3C%2Fsvg%3E%0A");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -16309,15 +16362,16 @@ h2 {
     background-image: none;
   }
 }
+
 @media only screen and (min-width: 75em) {
-  /* line 549, ../sass/partials/_examples.scss */
+  /* line 584, ../sass/partials/_examples.scss */
   .promo-ma-container .promo-ma:after {
     background-size: 100% 100%;
   }
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 569, ../sass/partials/_examples.scss */
+  /* line 608, ../sass/partials/_examples.scss */
   .container {
     width: 1140px;
   }

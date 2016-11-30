@@ -469,7 +469,7 @@ h2 {
 
         & .promo-block {
             position: relative;
-            padding: 1rem 2rem;
+            padding: 2rem 2rem;
             text-align: center;
             width: 90%;
             display: block;
@@ -509,6 +509,7 @@ h2 {
             & h1 { 
                 position: relative;
                 z-index: 5;
+                margin-top: 0;
             }
         }
     }
@@ -525,14 +526,16 @@ h2 {
 
         @include min($bp-sm) { display: flex; }
 
-        img {
-            min-height: 165px;
+        & .promo-image {
+            width: 100%;
+            position: relative;
+            background: url('../images/promo-ma.jpg') no-repeat;
+            height: 230px;
+            display: inline-block;
 
-            @include min($bp-sm) { min-height: 250px; }
-            @include min($bp-md) { min-height: 335px; }
-
-            max-width: 100%;
-            display: block;
+            @include min($bp-sm) {
+                height: 370px;
+            }
         }
 
         & .col-sm-6 {    // main promo image & content columns
@@ -543,8 +546,39 @@ h2 {
 
         & .promo-content {
             padding: 2rem 2rem;
-            background: #ffce00;
-        }
+            width: 90%;
+            margin-top: -30px;
+            margin-left: 5%;
+            position: relative;
+            text-align: center;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                @include svg-promo-background("ffce00");
+
+                @include min($bp-sm) {
+                    background-image: none;
+                }
+            }
+
+            @include min($bp-sm) {
+                width: 100%;
+                margin: 0;
+                background: #ffce00;
+            }
+
+            & h1 { 
+                position: relative;
+                z-index: 5;
+                margin-top: 0;
+            }
+        } 
 
         &:after {
             @include min($bp-sm) {
@@ -555,7 +589,11 @@ h2 {
                 position: absolute;
                 top: 0;
                 left: 0;
-                @include svg-promo-ma-background("ffffff");
+                @include svg-promo-background("ffffff");
+
+                @include min($bp-sm) {
+                   @include svg-promo-ma-background("ffffff");
+                }
             }
 
             @include min($bp-lg) {
