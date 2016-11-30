@@ -461,10 +461,6 @@ h2 {
                 background-image: url('../images/promo_full_width.svg');
                 background-size: 100% 100%;
             }
-
-            @include min($bp-lg) {
-                background-size: 100% 100%;
-            }
         }
 
         & .promo-block {
@@ -547,10 +543,11 @@ h2 {
         & .promo-content {
             padding: 2rem 2rem;
             width: 90%;
-            margin-top: -30px;
+            margin-top: -40px;
             margin-left: 5%;
             position: relative;
             text-align: center;
+            z-index: 5;
 
             &:after {
                 content: "";
@@ -571,6 +568,7 @@ h2 {
                 width: 100%;
                 margin: 0;
                 background: #ffce00;
+                z-index: 0;     // reset z-index
             }
 
             & h1 { 
@@ -581,6 +579,17 @@ h2 {
         } 
 
         &:after {
+            content: "";
+            display: block;
+            min-height: 16px;
+            width: 100%;
+            position: absolute;
+            top: 214px; // mobile image 230px high, minus the height of the svg
+            left: 0;
+            background-repeat: no-repeat;
+            background-image: url('../images/promo_bottom.svg');
+            background-size: 100% 16px;
+
             @include min($bp-sm) {
                 content: "";
                 display: block;
