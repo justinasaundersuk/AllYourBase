@@ -180,24 +180,18 @@
     <Content Include="Content\images\arrows\arrow-right-dark.svg" />
     <Content Include="Content\images\arrows\arrow-right-info.svg" />
     <Content Include="Content\images\arrows\arrow-right-light.svg" />
-    <Content Include="Content\images\bob.jpg" />
-    <Content Include="Content\images\drawing.svg" />
     <Content Include="Content\images\jumbotron_cutaway.svg" />
     <Content Include="Content\images\main-bg.jpg" />
-    <Content Include="Content\images\main-bg.png" />
     <Content Include="Content\images\old\bob.jpg" />
     <Content Include="Content\images\old\drawing.svg" />
     <Content Include="Content\images\old\wiggly_02.svg" />
     <Content Include="Content\images\old\wiggly_03.svg" />
     <Content Include="Content\images\old\wiggly_04.svg" />
     <Content Include="Content\images\promo-bg.jpg" />
+    <Content Include="Content\images\promo-ma.jpg" />
     <Content Include="Content\images\promo_full_width.svg" />
     <Content Include="Content\images\promo_full_width_ma.svg" />
     <Content Include="Content\images\social_wobbly.svg" />
-    <Content Include="Content\images\wiggly-final.svg" />
-    <Content Include="Content\images\wiggly_02.svg" />
-    <Content Include="Content\images\wiggly_03.svg" />
-    <Content Include="Content\images\wiggly_04.svg" />
     <Content Include="Content\images\wiggly_smooth.svg" />
     <Content Include="Content\sass\base.css">
       <DependentUpon>base.scss</DependentUpon>
@@ -510,6 +504,7 @@
     <Content Include="Content\fonts\font-awesome\FontAwesome.otf" />
     <Content Include="Content\fonts\defused\defused-webfont.woff" />
     <Content Include="Content\fonts\defused\defused-webfont.woff2" />
+    <Content Include=".gitignore" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\examples.js" />

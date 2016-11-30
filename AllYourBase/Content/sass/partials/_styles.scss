@@ -41,7 +41,7 @@
     @include min($bp-lg) { background: $yellow; }
 }
 
-/*.no-padding { padding: 0; }*/
+.no-padding { padding: 0; }
 
 // Only apply col padding to xs viewport
 .padding-xs {
