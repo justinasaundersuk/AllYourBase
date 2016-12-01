@@ -442,7 +442,6 @@ $yellow-hex: #ffcd00;
     }
 }
 
-
 .promos-live {
     background: $white;
     display: flex;
@@ -484,10 +483,12 @@ $yellow-hex: #ffcd00;
             border: 2px solid #ebf0f3;
             background: #ebf0f3;
         }
+        &.twitter {
+            background: #ebf0f3;
+        }
 
+        // needed? (did have white background color but was unnecessary)
         & .content-container {
-            background: #fff;
-                
             & img {
                 max-height: 300px;
                 width: 100%;
@@ -527,17 +528,9 @@ $yellow-hex: #ffcd00;
                     text-align: center; 
                 }
 
-                & .message {
-                    padding: 0 15px;
-                }
-
-                & .status, .buttons {
-                    margin-top: 20px;
-                }
-
-                & .buttons .btn {
-                    width: 95%;
-                }
+                & .message { padding: 0 15px; }
+                & .status, .buttons { margin-top: 20px; }
+                & .buttons .btn { width: 95%; }
             }
         }
     }
