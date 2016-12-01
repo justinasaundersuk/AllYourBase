@@ -1,0 +1,464 @@
+﻿
+
+// ----------------------------------- BEGIN MC SITE REFRESH ----------------------------------
+// Note: Will need to convert pixel values to REMs once it's living within the MC project
+
+$yellow-hex: #ffcd00;
+
+.jumbotron-cutaway-container {
+    & .jumbotron-cutaway {
+        width: 100%;
+        position: relative;
+        min-height: 230px;
+        background: url('../images/main-bg.jpg') no-repeat;
+        border-top: 3px solid $yellow;
+
+        @include min($bp-sm) {
+            min-height: 380px;      // change to min-height if want overflow visible (jumbotron will stretch vertically)
+            overflow: visible;   // limit strapline to 100% height of jumbotron | can be removed if using min-height
+            background-size: cover;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            min-height: 26px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-image: url('../images/wiggly_smooth.svg');
+            background-size: 1368px 26px;
+
+            @include min($bp-lg) {
+                background-size: 100% 100%;
+            }
+        }
+
+        & .strapline-button {
+            position: absolute;
+            bottom: 55px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            width: 85%;
+            max-width: 300px;       // 20px under iphone 5 320px width
+            display: block;
+            margin: 0 auto;
+
+            & .btn {
+                width: 100%;
+            }
+        }
+
+        & .strapline {
+            background-color: $yellow;
+            position: relative;
+            display: block;
+            margin-top: 230px;      // height of mobile image
+            margin-bottom: 23px;    // allow for :after
+            padding: 1rem 2rem;
+            text-align: center;
+
+            @include min($bp-sm) {
+                margin-top: 0;          // reset mobile margin
+                width: 325px;
+                min-height: 250px;
+                max-height: 290px;      // stop the strapline hitting the cutaway
+                margin-bottom: 50px;
+                margin-right: 10%;      // default to right
+                float: right;           // default to right
+                text-align: left;
+
+                &.left  { 
+                    margin-right: 0;    // reset default
+                    margin-left: 10%;
+                    float: left;
+                }
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -23px;
+                left: 0;
+                min-height: 23px;
+                width: 100%;
+                @include svg-jumbotron-strip("ffce00");
+            }
+        }
+    }
+
+    & .cutaway {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        padding: 1rem 3rem 0 3rem;
+        top: -40px;
+        margin-bottom: -20px;   // account for top -40px offset but leave space between the next block
+
+        @include min($bp-sm) {
+            top: -60px;
+            margin-bottom: -40px;
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            @include svg-jumbotron-cutaway("ffffff");
+        }
+
+        & h1 { 
+            position: relative;
+            margin-bottom: 0;
+        }
+    }
+
+    & .row.content > div:first-of-type p {
+        padding: 0 3rem;
+        position: relative;
+        font-size: 16px;
+    }
+
+    & .list-bank {
+        list-style-type: none;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 0 3rem;
+        margin-top: 1rem;
+
+        @include min($bp-sm) {
+            margin-top: 0;
+            padding: 0;
+        }
+
+        & li {
+            margin-left: 0;
+            border: 3px solid #dde5ea;
+            border-bottom: 0;
+
+            &:first-of-type {
+                @include tab-radius(8px);
+            }
+
+            &:last-of-type {
+                @include tab-radius(0, 8px);
+                border-bottom: 3px solid #dde5ea;
+            }
+
+            & a {
+                display: block;
+                padding: 12px 12px;
+                color: #333;
+                font-weight: normal;
+                text-decoration: none;
+                @include arrow-right('../images/arrows/arrow-right-info.svg');
+
+                &:hover {
+                    text-decoration: none;
+                    font-weight: bold;
+                    background: #ebf0f3;
+                }
+            }
+        }
+    }
+}
+
+.jumbotron-strip {
+    width: 100%;
+    position: relative;
+    min-height: 230px;
+    background: url('../images/main-bg.jpg') no-repeat;
+    border-top: 3px solid $yellow;
+
+    @include min($bp-sm) {
+        height: 380px;      // change to min-height if want overflow visible (jumbotron will stretch vertically)
+        overflow: hidden;   // limit strapline to 100% height of jumbotron | can be removed if using min-height
+        background-size: cover;
+    }
+
+    &:after {
+        display: none;
+
+        @include min($bp-sm) {
+            content: "";
+            display: block;
+            min-height: 26px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-image: url('../images/wiggly_smooth.svg');
+            background-size: 1368px 26px;
+        }
+
+        @include min($bp-lg) {
+            background-size: 100% 100%;
+        }
+    }
+
+    & .strapline {
+        background-color: $yellow;
+        position: relative;
+        display: block;
+        margin-top: 230px;      // height of mobile image
+        margin-bottom: 23px;    // allow for :after
+        padding: 1rem 2rem;
+        text-align: center;
+
+        @include min($bp-sm) {
+            margin-top: 0;          // reset mobile margin
+            width: 325px;
+            min-height: 250px;
+            margin-bottom: 50px;
+            margin-right: 10%;      // default to right
+            float: right;           // default to right
+            text-align: left;
+
+            &.left  { 
+                margin-right: 0;    // reset default
+                margin-left: 10%;
+                float: left;
+            }
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -23px;
+            left: 0;
+            min-height: 23px;
+            width: 100%;
+            @include svg-jumbotron-strip("ffce00");
+        }
+    }
+}
+
+.promo-full-container {
+    padding-bottom: 30px;   // adjust for overhang on promo-block
+
+    .promo-full {
+        width: 100%;
+        position: relative;
+        background: url('../images/promo-bg.jpg') no-repeat;
+        height: 230px;
+        display: inline-block;
+
+        @include min($bp-sm) {
+            height: 370px;      // change to min-height if want overflow visible (jumbotron will stretch vertically)
+            overflow: hidden;   // limit strapline to 100% height of jumbotron. Note: can be removed if using min-height
+            margin-bottom: 0;
+            max-height: unset;
+            background-size: cover;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            min-height: 16px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-image: url('../images/promo_bottom.svg');
+            background-size: 100% 16px;
+
+            @include min($bp-sm) {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-repeat: no-repeat;
+                background-image: url('../images/promo_full_width.svg');
+                background-size: 100% 100%;
+            }
+        }
+
+        & .promo-block {
+            position: relative;
+            padding: 2rem 2rem;
+            text-align: center;
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+            margin-top: 190px;      // height of mobile image minus the overhang
+            z-index: 5;
+
+            @include min($bp-sm) {
+                margin-top: 0;          // reset mobile margin
+                width: 325px;
+                min-height: 250px;
+                margin-bottom: 50px;
+                margin-right: 10%;      // default to right
+                float: right;           // default to right
+                text-align: left;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &.left  { 
+                    margin-right: 0;    // reset default
+                    margin-left: 10%;
+                    float: left;
+                }
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                @include svg-promo-background("ffce00");
+            }
+
+            & h1 { 
+                position: relative;
+                z-index: 5;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+.promo-ma-container {
+    & .col-sm-8 {   // main container column for right-hand content
+        padding: 0;
+    }
+
+    & .col-sm-4 {   // main container column for left-hand content
+        & h1 {
+            margin-top: 0;
+        }
+    }
+
+    .promo-ma {
+        display: block;
+
+        @include min($bp-sm) { display: flex; }
+
+        & .promo-image {
+            width: 100%;
+            position: relative;
+            background: url('../images/promo-ma.jpg') no-repeat;
+            height: 230px;
+            display: inline-block;
+
+            @include min($bp-sm) {
+                height: 370px;
+            }
+        }
+
+        & .col-sm-6 {    // main promo image & content columns
+            padding: 0;
+
+            @include min($bp-sm) { flex: 1; }
+        }
+
+        & .promo-content {
+            padding: 2rem 2rem;
+            width: 90%;
+            margin-top: -40px;
+            margin-left: 5%;
+            position: relative;
+            text-align: center;
+            z-index: 5;
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                @include svg-promo-background("ffce00");
+
+                @include min($bp-sm) {
+                    background-image: none;     // want the wobbly on the promo content block for mobile only
+                }
+            }
+
+            @include min($bp-sm) {
+                width: 100%;
+                margin: 0;
+                background: $yellow;
+                z-index: 0;     // reset z-index
+            }
+
+            & h1 { 
+                position: relative;
+                z-index: 5;
+                margin-top: 0;
+            }
+        } 
+
+        &:after {
+            content: "";
+            display: block;
+            min-height: 16px;
+            width: 100%;
+            position: absolute;
+            top: 214px; // mobile image 230px high, minus the height of the svg
+            left: 0;
+            background-repeat: no-repeat;
+            background-image: url('../images/promo_bottom.svg');
+            background-size: 100% 16px;
+
+            @include min($bp-sm) {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include svg-promo-background("ffffff");
+
+                @include min($bp-sm) {
+                   @include svg-promo-ma-background("ffffff");
+                }
+            }
+
+            @include min($bp-lg) {
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+
+h2 { 
+    margin: 30px 0 5px 20px;
+    display: block;
+    border-bottom: 1px dashed #333;
+}
+
+
+@include min(1200) {
+    .container {
+        width: 1140px;
+    }
+}
+
+// jumbotron cutaway:     data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20id%3D%22svg2%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20viewBox%3D%220%200%20626%20430%22%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata7%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cg%0A%20%20%20%20%20transform%3D%22translate%282907.5258%2C-286.13042%29%22%0A%20%20%20%20%20id%3D%22layer1%22%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20d%3D%22m%20-2452.7143%2C714.36803%20c%20-22.275%2C-0.70234%20-49.05%2C-1.84897%20-59.5%2C-2.54806%20-13.8035%2C-0.92343%20-60.162%2C-1.32127%20-169.5%2C-1.45459%20-106.6291%2C-0.13002%20-153.8523%2C-0.52519%20-162%2C-1.35563%20-27.8499%2C-2.83853%20-41.3934%2C-8.06486%20-47.3812%2C-18.28402%20-3.3658%2C-5.74411%20-8.156%2C-20.65323%20-10.2923%2C-32.03372%20-1.5304%2C-8.15241%20-1.75%2C-17.02345%20-1.8382%2C-74.25844%20-0.063%2C-40.90828%20-0.5388%2C-70.00366%20-1.2835%2C-78.5%20-3.1944%2C-36.44732%20-3.4603%2C-45.60693%20-2.5836%2C-89%200.4833%2C-23.925%200.7379%2C-55.13837%200.5657%2C-69.36304%20-0.2916%2C-24.09488%20-0.1664%2C-26.34579%201.8318%2C-32.92432%201.8446%2C-6.07299%203.0081%2C-7.92389%208.313%2C-13.22448%204.5548%2C-4.55099%207.7378%2C-6.75307%2012.1683%2C-8.41824%2014.1558%2C-5.32038%2011.7439%2C-5.1955%20122%2C-6.31645%20103.2857%2C-1.05009%20123.695%2C-0.80109%20195%2C2.37899%2012.65%2C0.56417%2064.85%2C1.40992%20116%2C1.87944%2091.024%2C0.83554%20100.9395%2C1.21484%20116.3166%2C4.44951%2025.0093%2C5.26088%2036.8032%2C16.75709%2042.1491%2C41.08535%201.849%2C8.41445%202.5411%2C14.63334%205.0585%2C45.45324%200.5616%2C6.875%201.5106%2C17.9%202.1088%2C24.5%201.0366%2C11.43443%200.9297%2C24.71769%20-0.7236%2C90%20-0.4666%2C18.42118%20-0.1819%2C29.81127%201.2248%2C49%202.3894%2C32.59406%202.8887%2C129.57033%200.7286%2C141.48731%20-2.2696%2C12.52039%20-8.8751%2C20.09401%20-21.3956%2C24.53133%20-13.2354%2C4.6907%20-60.7676%2C5.63374%20-146.9672%2C2.91582%20z%22%0A%20%20%20%20%20%20%20id%3D%22path3019%22%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23ff0000%22%20%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A
+// promo full-width:      data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20id%3D%22svg3355%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20viewBox%3D%220%200%20961.99987%20371.00008%22%0A%20%20%20%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata3360%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cg%0A%20%20%20%20%20transform%3D%22translate%2880.999958%2C-351.14792%29%22%0A%20%20%20%20%20id%3D%22layer1%22%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23ff0000%22%0A%20%20%20%20%20%20%20d%3D%22m%20-80.856339%2C648.398%200.14366%2C-73.75008%201.2579%2C29.50008%20c%201.69519%2C39.7551%206.21058%2C68.6361%2012.94945%2C82.8263%204.56175%2C9.6057%2014.23781%2C19.3957%2023.72586%2C24.0051%209.57073%2C4.6495%2026.20223%2C8.1065%2046.2502395%2C9.6136%2016.7786305%2C1.2612%2016.2823905%2C1.2821%20-33.7207595%2C1.4175%20l%20-50.75%2C0.1375%200.14365%2C-73.75%20z%20m%20183.856349%2C72.6856%20c%20109.64739%2C-5.0976%20202.08379%2C-5.6433%20406.5%2C-2.3995%20113.78376%2C1.8055%20287.50616%2C2.1199%20303.49996%2C0.5492%2014.1711%2C-1.3917%2021.9974%2C-2.7022%2028.5%2C-4.7721%2020.642%2C-6.5708%2034.4957%2C-22.258%2037.9836%2C-43.0108%201.2381%2C-7.3664%201.3171%2C-6.1676%201.4139%2C21.4476%20l%200.1025%2C29.25%20-397.24996%2C-0.1487%20c%20-218.48751%2C-0.082%20-389.824999%2C-0.4938%20-380.75%2C-0.9157%20z%20M%20879.61727%2C509.39792%20c%20-1.2396%2C-73.79968%20-4.0614%2C-97.93818%20-13.8216%2C-118.23484%20-9.2607%2C-19.25787%20-25.6337%2C-28.99968%20-56.222%2C-33.45161%20-24.9054%2C-3.62483%20-40.8658%2C-4.07246%20-132.0737%2C-3.70423%20-48.95%2C0.19763%20-104.75%2C0.40184%20-124%2C0.45381%20-49.17016%2C0.13273%20-258.62067%2C-2.10047%20-259.28467%2C-2.76454%20-0.3018%2C-0.30173%20131.6014%2C-0.54859%20293.11797%2C-0.54859%20l%20293.6667%2C0%200%2C99.5%20c%200%2C54.725%20-0.1571%2C99.5%20-0.3491%2C99.5%20-0.192%2C0%20-0.6571%2C-18.3375%20-1.0336%2C-40.75%20z%20m%20-960.472139%2C-98.5%20-0.14512%2C-59.75%20123.75%2C0.16362%20c%20110.609869%2C0.14625%20117.803759%2C0.24515%2067.749999%2C0.93142%20-70.319579%2C0.96412%20-97.116919%2C2.73894%20-127.052289%2C8.41484%20-33.22718%2C6.30003%20-49.02986%2C16.35934%20-55.58653%2C35.38397%20-3.25105%2C9.43316%20-5.89315%2C30.34269%20-7.78448%2C61.60615%20-0.53713%2C8.87866%20-0.83246%2C-5.94229%20-0.93158%2C-46.75%20z%22%0A%20%20%20%20%20%20%20id%3D%22path3401%22%20%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A
+// promo multiple action: data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20id%3D%22svg3420%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20viewBox%3D%220%200%20650%20330%22%0A%20%20%20%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata3425%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cg%0A%20%20%20%20%20transform%3D%22translate%28-920.00866%2C12.781384%29%22%0A%20%20%20%20%20id%3D%22layer1%22%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23ff0000%22%0A%20%20%20%20%20%20%20d%3D%22m%20920.00866%2C152.21862%200%2C-165.000004%2072.75%2C0.16484%20c%2040.01254%2C0.0907%2068.25004%2C0.48781%2062.75004%2C0.88255%20-5.5%2C0.39473%20-24.625%2C0.78433%20-42.5%2C0.86578%20-34.40574%2C0.15677%20-53.31034%2C1.1176896%20-62.51514%2C3.1776396%20-12.9587%2C2.90002%20-22.6655%2C10.37415%20-25.5646%2C19.6844504%20-0.6819%2C2.1897%20-1.2677%2C12.37927%20-1.4214%2C24.72474%20-0.1439%2C11.55%20-0.8224%2C29.1%20-1.5078%2C39%20-1.2129%2C17.51763%20-1.1291%2C30.711494%200.6511%2C102.500004%200.384%2C15.48672%200.1374%2C36.69131%20-0.6281%2C54%20-1.3161%2C29.75891%20-0.8603%2C39.34465%202.4967%2C52.50316%204.8774%2C19.11852%209.6111%2C23.46951%2029.4892%2C27.10525%208.9163%2C1.63081%2016.8117%2C1.66527%20128.50004%2C0.56095%20104.3658%2C-1.03192%20124.0421%2C-0.98431%20160%2C0.38711%2024.5972%2C0.93813%2076.2061%2C1.74439%20129%2C2.0153%2048.4%2C0.24836%2094.75%2C0.81659%20103%2C1.26273%208.412%2C0.45489%20-110.0638%2C0.88897%20-269.75%2C0.98833%20l%20-284.75004%2C0.17717%200%2C-165%20z%20m%20633.23774%2C163.47139%20c%207.5581%2C-1.50395%209.7953%2C-2.77207%2013.321%2C-7.55092%20l%202.4413%2C-3.30903%200%2C-149.34556%20c%200%2C-148.9003644%20-0.01%2C-149.3576144%20-2.0633%2C-153.3900444%20-2.6064%2C-5.10892%20-9.1997%2C-8.30135%20-20.259%2C-9.80927%20-4.9493%2C-0.67483%20-35.4346%2C-1.07453%20-83%2C-1.08824%20-52.2789%2C-0.0151%20-83.8586%2C-0.46949%20-103.6777%2C-1.4918596%20-22.1135%2C-1.14074%20-44.5221%2C-1.34764%20-100%2C-0.92334%20-39.325%2C0.30076%20-79.375%2C0.14046%20-89%2C-0.35623%20-11.6005%2C-0.59864%2052.7035%2C-0.95429%20190.75%2C-1.05499%20l%20208.25%2C-0.15191%200%2C165.000004%200%2C165%20-11.75%2C-0.094%20-11.75%2C-0.094%206.7377%2C-1.34068%20z%22%0A%20%20%20%20%20%20%20id%3D%22path3445%22%20%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A
+// social:                data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20id%3D%22svg3492%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20viewBox%3D%220%200%20304%2023%22%3E%0A%20%20%3Cmetadata%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cg%0A%20%20%20%20%20transform%3D%22translate%28-165.80056%2C-456.60008%29%22%0A%20%20%20%20%20id%3D%22layer1%22%3E%0A%20%20%20%20%3Cpath%0A%20%20%20%20%20%20%20style%3D%22fill%3A%23#{$bg-color}%22%0A%20%20%20%20%20%20%20d%3D%22m%20397.11332%2C478.52816%20c%20-11.55%2C-0.40203%20-28.65%2C-1.20378%20-38%2C-1.78167%20-9.35%2C-0.57789%20-49.92994%2C-1.07224%20-90.17764%2C-1.09856%20-76.59141%2C-0.0501%20-85.33952%2C-0.45809%20-93.32236%2C-4.35252%20-4.40799%2C-2.15044%20-7.71865%2C-6.61454%20-9.22968%2C-12.44533%20l%20-0.58308%2C-2.25%20151.90638%2C0%20151.90638%2C0%200%2C5.49712%20c%200%2C4.84819%20-0.4018%2C5.94186%20-3.40363%2C9.26453%20-6.84982%2C7.58194%20-19.49135%2C8.89307%20-69.09637%2C7.16643%20z%22%0A%20%20%20%20%20%20%20id%3D%22path3519%22%20%2F%3E%0A%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A
+// promo block:           data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20viewBox%3D%220%200%20304%20266%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20id%3D%22svg2%22%0A%20%20%20version%3D%221.1%22%3E%0A%20%20%3Cdefs%0A%20%20%20%20%20id%3D%22defs4%22%20%2F%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata7%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cpath%0A%20%20%20%20%20style%3D%22fill%3A%23ff0000%22%0A%20%20%20%20%20d%3D%22m%20215.29621%2C264.4709%20c%20-7.15%2C-0.45011%20-51.475%2C-1.0047%20-98.5%2C-1.23242%20C%2040.89436%2C262.87092%2030.47796%2C262.63406%2024.00724%2C261.12854%2014.46491%2C258.90835%209.00587%2C254.84266%206.47746%2C248.073%202.21782%2C236.6681%201.79551%2C230.66808%201.81086%2C181.7727%201.81886%2C156.10858%201.30801%2C127.91067%200.67549%2C119.11067%20-0.1549%2C107.55771%20-0.21335%2C90.74234%200.46519%2C58.61067%201.51441%2C8.92531%201.32837%2C10.13531%208.74469%2C4.76295%20c%203.36805%2C-2.4398%205.36432%2C-2.95587%2015.21412%2C-3.93309%2012.77641%2C-1.26758%2082.39699%2C-1.07282%20183.8374%2C0.51428%2068.68988%2C1.07469%2070.07769%2C1.19351%2079.68465%2C6.82239%205.02492%2C2.94418%207.85755%2C6.7095%2010.31787%2C13.71519%203.73535%2C10.6363%204.30502%2C20.37297%204.57701%2C78.22895%200.1448%2C30.8%200.58208%2C75.53532%200.97174%2C99.41182%200.97501%2C59.74429%200.51617%2C61.78211%20-14.5583%2C64.65688%20-8.33912%2C1.59031%20-50.22254%2C1.75645%20-73.49297%2C0.29153%20z%22%0A%20%20%20%20%20id%3D%22path4172%22%20%2F%3E%0A%3C%2Fsvg%3E%0A
+// promo multiple action: data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%20standalone%3D%22no%22%3F%3E%0A%3Csvg%0A%20%20%20xmlns%3Adc%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%22%0A%20%20%20xmlns%3Acc%3D%22http%3A%2F%2Fcreativecommons.org%2Fns%23%22%0A%20%20%20xmlns%3Ardf%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%22%0A%20%20%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20id%3D%22svg4138%22%0A%20%20%20preserveAspectRatio%3D%22none%22%0A%20%20%20viewBox%3D%220%200%20650%20330%22%0A%20%20%20%3E%0A%20%20%3Cmetadata%0A%20%20%20%20%20id%3D%22metadata4144%22%3E%0A%20%20%20%20%3Crdf%3ARDF%3E%0A%20%20%20%20%20%20%3Ccc%3AWork%0A%20%20%20%20%20%20%20%20%20rdf%3Aabout%3D%22%22%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Aformat%3Eimage%2Fsvg%2Bxml%3C%2Fdc%3Aformat%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atype%0A%20%20%20%20%20%20%20%20%20%20%20rdf%3Aresource%3D%22http%3A%2F%2Fpurl.org%2Fdc%2Fdcmitype%2FStillImage%22%20%2F%3E%0A%20%20%20%20%20%20%20%20%3Cdc%3Atitle%3E%3C%2Fdc%3Atitle%3E%0A%20%20%20%20%20%20%3C%2Fcc%3AWork%3E%0A%20%20%20%20%3C%2Frdf%3ARDF%3E%0A%20%20%3C%2Fmetadata%3E%0A%20%20%3Cdefs%0A%20%20%20%20%20id%3D%22defs4142%22%20%2F%3E%0A%20%20%3Cpath%0A%20%20%20%20%20style%3D%22fill%3A%23ff0000%22%0A%20%20%20%20%20d%3D%22M%200%2C165%200%2C0%2069.16667%2C0%20c%2038.04166%2C0%2068.86521%2C0.30145%2068.49678%2C0.66989%20C%20137.29501%2C1.03833%20114.83251%2C1.66773%2087.74678%2C2.06856%2035.61148%2C2.8401%2031.34025%2C3.2169%2020.1468%2C8.03219%2013.08769%2C11.06894%206.52153%2C18.31758%204.64564%2C25.14451%202.81132%2C31.82017%201.51529%2C75.47413%201.64395%2C126.25%20c%200.0498%2C19.6625%200.0759%2C55.21251%200.0579%2C79.00001%20-0.0661%2C87.44842%20-0.16114%2C83.43992%202.18732%2C92.25%201.17288%2C4.4%203.36513%2C10.475%204.87167%2C13.5%204.4292%2C8.89346%2012.70308%2C12.81715%2031.73916%2C15.05157%206.37562%2C0.74835%2045.30398%2C0.6974%20133.5%2C-0.17472%20101.38373%2C-1.00254%20127.74927%2C-0.99112%20142%2C0.0615%2011.8755%2C0.87719%2054.36413%2C1.50682%20132.19856%2C1.95903%2063.08421%2C0.36651%20115.02171%2C0.98953%20115.41667%2C1.38449%200.39495%2C0.39498%20-126.2569%2C0.71813%20-281.44856%2C0.71813%20L%200%2C330.00001%200%2C165%20Z%20m%20634.33106%2C163.54015%20c%205.69089%2C-1.02937%207.44345%2C-1.84799%2010.5%2C-4.90454%20l%203.66894%2C-3.66893%200%2C-151.91002%20C%20648.5%2C16.44806%20648.496%2C16.14106%20646.44803%2C13.32333%20643.98663%2C9.93667%20637.34549%2C6.43937%20630.5%2C4.92491%20627.15333%2C4.18451%20598.05476%2C3.68942%20542.5%2C3.42765%20496.85%2C3.21255%20449.6%2C2.55571%20437.5%2C1.96801%20423.63244%2C1.29445%20389.8089%2C1.11726%20346%2C1.48867%20307.775%2C1.81273%20268.85%2C1.67947%20259.5%2C1.19252%20248.46305%2C0.61771%20313.96892%2C0.25329%20446.25%2C0.15358%20L%20650%2C0%20l%200%2C165%200%2C165.00001%20-11.25%2C-0.11213%20-11.25%2C-0.11212%206.83106%2C-1.23561%20z%22%0A%20%20%20%20%20id%3D%22path4692%22%20%2F%3E%0A%3C%2Fsvg%3E%0A

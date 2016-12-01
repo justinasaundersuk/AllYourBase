@@ -490,6 +490,8 @@
     <Content Include="Content\fonts\defused\defused-webfont.woff" />
     <Content Include="Content\fonts\defused\defused-webfont.woff2" />
     <Content Include=".gitignore" />
+    <Content Include="Content\sass\partials\_mc-site-refresh.scss" />
+    <Content Include="Content\sass\helpers\_mixins-mc.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\examples.js" />
