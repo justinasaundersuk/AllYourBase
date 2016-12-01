@@ -1,7 +1,7 @@
 ﻿@import "base/variables";
 @import "base/normalize";
 
-@import "vendors/bootstrap";                // built separately
+@import "vendors/bootstrap";                    // built separately
 @import "vendors/saffron/saffron";              // https://github.com/colindresj/saffron
 @import "vendors/family/family";
 @import "vendors/font-awesome";
@@ -13,8 +13,8 @@
 @import "helpers/general";
 
 //  @import "partials/bootstrap-overrides";     // optional
-@import "base/flexbox";                     // optional
+@import "base/flexbox";                         // optional
 
 @import "partials/fonts";
-@import "partials/examples";
 @import "partials/styles";
+@import "partials/examples";

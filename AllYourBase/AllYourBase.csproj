@@ -194,20 +194,10 @@
     <Content Include="Content\images\promo_full_width_ma.svg" />
     <Content Include="Content\images\social_wobbly.svg" />
     <Content Include="Content\images\wiggly_smooth.svg" />
-    <Content Include="Content\sass\base.css">
-      <DependentUpon>base.scss</DependentUpon>
-    </Content>
-    <Content Include="Content\sass\base.min.css">
-      <DependentUpon>base.css</DependentUpon>
-    </Content>
     <Content Include="Content\sass\vendors\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\sass\vendors\bootstrap\_theme.css" />
     <Content Include="Content\sass\vendors\bootstrap\_theme.min.css" />
     <Content Include="Content\sass\vendors\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="css\base.css" />
-    <Content Include="css\base.min.css">
-      <DependentUpon>base.css</DependentUpon>
-    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -223,9 +213,6 @@
     <Content Include="config.rb" />
     <Content Include="Content\sass\helpers\_family.scss" />
     <Content Include="Content\sass\partials\_bootstrap-overrides.scss" />
-    <Content Include="Content\sass\base.css.map">
-      <DependentUpon>base.css</DependentUpon>
-    </Content>
     <Content Include="Content\sass\vendors\saffron\entrances\_drop-in.scss" />
     <Content Include="Content\sass\vendors\saffron\entrances\_fade-in-down.scss" />
     <Content Include="Content\sass\vendors\saffron\entrances\_fade-in-left.scss" />
@@ -493,9 +480,6 @@
     <Content Include="Content\sass\vendors\hover\_hacks.scss" />
     <Content Include="Content\sass\vendors\hover\_mixins.scss" />
     <Content Include="Content\sass\vendors\hover\_options.scss" />
-    <Content Include="css\base.css.map">
-      <DependentUpon>base.css</DependentUpon>
-    </Content>
     <Content Include="Content\sass\partials\_examples.scss" />
     <Content Include="Content\sass\partials\_fonts.scss" />
     <Content Include="Content\fonts\font-awesome\fontawesome-webfont.eot" />
@@ -558,6 +542,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

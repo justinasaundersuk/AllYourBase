@@ -238,13 +238,16 @@ h2 {
     border-bottom: 1px dashed #333;
 }
 
+
+// TODO: Jumbotron cutaway - add "strapline" as per strip jumbotron //
+
 .jumbotron-cutaway-container {
     & .jumbotron-cutaway {
         width: 100%;
         position: relative;
         min-height: 230px;
         background: url('../images/main-bg.jpg') no-repeat;
-        border-top: 2px solid #ffce00;
+        border-top: 3px solid #ffce00;
 
         @include min($bp-sm) {
             min-height: 380px;      // change to min-height if want overflow visible (jumbotron will stretch vertically)
@@ -268,6 +271,60 @@ h2 {
                 background-size: 100% 100%;
             }
         }
+
+        & .strapline-button {
+            position: absolute;
+            bottom: 55px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            width: 85%;
+            max-width: 300px;       // 20px under iphone 5 320px width
+            display: block;
+            margin: 0 auto;
+
+            & .btn {
+                width: 100%;
+            }
+        }
+
+        & .strapline {
+            background-color: #ffce00;
+            position: relative;
+            display: block;
+            margin-top: 230px;      // height of mobile image
+            margin-bottom: 23px;    // allow for :after
+            padding: 1rem 2rem;
+            text-align: center;
+
+            @include min($bp-sm) {
+                margin-top: 0;          // reset mobile margin
+                width: 325px;
+                min-height: 250px;
+                max-height: 290px;      // stop the strapline hitting the cutaway
+                margin-bottom: 50px;
+                margin-right: 10%;      // default to right
+                float: right;           // default to right
+                text-align: left;
+
+                &.left  { 
+                    margin-right: 0;    // reset default
+                    margin-left: 10%;
+                    float: left;
+                }
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                bottom: -23px;
+                left: 0;
+                min-height: 23px;
+                width: 100%;
+                @include svg-background("ffce00");
+            }
+        }
     }
 
     & .cutaway {
@@ -275,8 +332,13 @@ h2 {
         display: block;
         margin: 0 auto;
         padding: 1rem 3rem 0 3rem;
-        top: -60px;
-        margin-bottom: -40px;   // account for top -60px offset but leave space between the next block
+        top: -40px;
+        margin-bottom: -20px;   // account for top -40px offset but leave space between the next block
+
+        @include min($bp-sm) {
+            top: -60px;
+            margin-bottom: -40px;
+        }
 
         &:before {
             content: "";
@@ -325,8 +387,6 @@ h2 {
             &:last-of-type {
                 @include tab-radius(0, 8px);
                 border-bottom: 3px solid #dde5ea;
-
-                //arrow-right-light.svg
             }
 
             & a {
@@ -352,7 +412,7 @@ h2 {
     position: relative;
     min-height: 230px;
     background: url('../images/main-bg.jpg') no-repeat;
-    border-top: 2px solid #ffce00;
+    border-top: 3px solid #ffce00;
 
     @include min($bp-sm) {
         height: 380px;      // change to min-height if want overflow visible (jumbotron will stretch vertically)
