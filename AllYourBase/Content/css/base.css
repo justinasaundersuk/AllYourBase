@@ -15488,164 +15488,6 @@ legend {
   border-radius: 1em;
 }
 
-/* line 1, ../sass/base/_flexbox.scss */
-body {
-  margin-bottom: 50px;
-}
-
-/* line 5, ../sass/base/_flexbox.scss */
-.flex-row {
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px 0 10px;
-}
-@media only screen and (min-width: 48em) {
-  /* line 5, ../sass/base/_flexbox.scss */
-  .flex-row {
-    flex-direction: row;
-    margin: 20px 0 0 0;
-  }
-}
-/* line 15, ../sass/base/_flexbox.scss */
-.flex-row > .flex-item {
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 48em) {
-  /* line 15, ../sass/base/_flexbox.scss */
-  .flex-row > .flex-item {
-    margin: 0 10px;
-  }
-}
-/* line 20, ../sass/base/_flexbox.scss */
-.flex-row > .flex-item > .flex-item:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-
-/* line 24, ../sass/base/_flexbox.scss */
-.flex-row:first-of-type {
-  margin-top: 0;
-}
-
-/* line 26, ../sass/base/_flexbox.scss */
-.flex-row-inner {
-  display: flex;
-  flex-direction: column;
-}
-@media only screen and (min-width: 48em) {
-  /* line 26, ../sass/base/_flexbox.scss */
-  .flex-row-inner {
-    flex-direction: row;
-  }
-}
-/* line 32, ../sass/base/_flexbox.scss */
-.flex-row-inner > .flex-item:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-@media only screen and (min-width: 48em) {
-  /* line 32, ../sass/base/_flexbox.scss */
-  .flex-row-inner > .flex-item:not(:last-of-type) {
-    margin-right: 20px;
-    margin-bottom: 0;
-  }
-}
-
-/* line 42, ../sass/base/_flexbox.scss */
-.flex-item {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  flex-grow: 1;
-  flex-shrink: 1;
-  overflow: hidden;
-}
-/* line 50, ../sass/base/_flexbox.scss */
-.flex-item img {
-  width: 100%;
-  height: auto;
-}
-/* line 55, ../sass/base/_flexbox.scss */
-.flex-item.one-third, .flex-item.two-third {
-  flex-basis: 100%;
-}
-@media only screen and (min-width: 48em) {
-  /* line 58, ../sass/base/_flexbox.scss */
-  .flex-item img {
-    width: auto;
-    height: auto;
-  }
-  /* line 63, ../sass/base/_flexbox.scss */
-  .flex-item.one-third {
-    flex-basis: 250px;
-  }
-  /* line 64, ../sass/base/_flexbox.scss */
-  .flex-item.two-third {
-    flex-basis: 450px;
-    max-width: 450px;
-  }
-}
-@media only screen and (min-width: 62em) {
-  /* line 71, ../sass/base/_flexbox.scss */
-  .flex-item.one-third {
-    flex-basis: 300px;
-  }
-  /* line 72, ../sass/base/_flexbox.scss */
-  .flex-item.two-third {
-    flex-basis: 620px;
-    max-width: 620px;
-  }
-}
-
-/* line 79, ../sass/base/_flexbox.scss */
-.content-block {
-  padding: 15px;
-}
-/* line 82, ../sass/base/_flexbox.scss */
-.content-block p {
-  margin: 0 0 8px;
-}
-
-/* line 85, ../sass/base/_flexbox.scss */
-.no-flex {
-  width: 100%;
-}
-/* line 88, ../sass/base/_flexbox.scss */
-.no-flex.top {
-  margin-bottom: 20px;
-}
-/* line 89, ../sass/base/_flexbox.scss */
-.no-flex.bottom {
-  margin-top: 20px;
-}
-/* line 91, ../sass/base/_flexbox.scss */
-.no-flex img {
-  max-width: 100%;
-}
-
-/* line 94, ../sass/base/_flexbox.scss */
-.bgyellow {
-  background: #ffcd00;
-}
-
-/* line 95, ../sass/base/_flexbox.scss */
-.bgblue {
-  background: #0065bd;
-}
-
-/* line 96, ../sass/base/_flexbox.scss */
-.bghover {
-  background: #33acba;
-}
-
-/* line 97, ../sass/base/_flexbox.scss */
-.bgred {
-  background: #ff0000;
-}
-
-/* line 98, ../sass/base/_flexbox.scss */
-.bggreen {
-  background: #008000;
-}
-
 @font-face {
   font-family: "defused";
   src: url("../fonts/defused/defused-webfont.woff") format("woff"), url("../fonts/defused/defused-webfont.woff2") format("woff2");
@@ -16398,6 +16240,66 @@ body {
 }
 
 /* line 446, ../sass/partials/_mc-site-refresh.scss */
+.promos-live {
+  background: #ffffff;
+}
+/* line 449, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 {
+  margin: 0 15px 0 15px;
+  padding: 0;
+}
+/* line 453, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4:after {
+  content: "";
+  display: block;
+  min-height: 16px;
+  width: 100%;
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  background-repeat: no-repeat;
+  background-image: url("../images/social_wobbly.svg");
+  background-size: 100% 16px;
+}
+/* line 465, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4.instagram {
+  border: 2px solid #ebf0f3;
+  background: #ebf0f3;
+}
+/* line 469, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4.instagram .content-container {
+  background: #fff;
+}
+/* line 472, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4.instagram .content-container img {
+  max-height: 300px;
+  width: 100%;
+  border: 15px solid #fff;
+}
+/* line 478, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4.instagram .content-container .content {
+  padding: 15px;
+  background: #ebf0f3;
+  border: 1px solid red;
+  position: relative;
+}
+/* line 484, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4.instagram .content-container .content i {
+  display: block;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  top: -30px;
+  padding: 8px 12px;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 50px;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+/* line 505, ../sass/partials/_mc-site-refresh.scss */
 h2 {
   margin: 30px 0 5px 20px;
   display: block;
@@ -16405,8 +16307,43 @@ h2 {
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 454, ../sass/partials/_mc-site-refresh.scss */
+  /* line 513, ../sass/partials/_mc-site-refresh.scss */
   .container {
     width: 1140px;
   }
+}
+/* line 3, ../sass/helpers/_flexbox.scss */
+.row-flex, .row-flex > div[class*='col-'] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1 1 auto;
+}
+
+/* line 11, ../sass/helpers/_flexbox.scss */
+.row-flex-wrap {
+  align-content: flex-start;
+  flex: 0;
+}
+
+/*.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+	 margin:-.2px; /* hack adjust for wrapping 
+}*/
+/* line 20, ../sass/helpers/_flexbox.scss */
+.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
+  width: 100%;
+}
+
+/* line 25, ../sass/helpers/_flexbox.scss */
+.flex-col {
+  display: flex;
+  flex: 1 100%;
+  flex-flow: column nowrap;
+}
+
+/* line 31, ../sass/helpers/_flexbox.scss */
+.flex-grow {
+  display: flex;
+  flex: 2;
 }

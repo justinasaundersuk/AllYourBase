@@ -13,7 +13,7 @@
 @import "helpers/general";
 
 //  @import "partials/bootstrap-overrides";     // optional
-@import "base/flexbox";                         // optional
+//  @import "base/flexbox";                     // optional
 
 @import "partials/fonts";
 @import "partials/styles";
@@ -22,3 +22,4 @@
 // mc specific
 @import "helpers/mixins-mc";
 @import "partials/mc-site-refresh";
+@import "helpers/flexbox";

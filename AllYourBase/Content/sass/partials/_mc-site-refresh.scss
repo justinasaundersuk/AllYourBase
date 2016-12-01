@@ -443,6 +443,65 @@ $yellow-hex: #ffcd00;
 }
 
 
+.promos-live {
+    background: $white;
+
+    & .col-sm-4 {
+        margin: 0 15px 0 15px;
+        padding: 0;
+
+        &:after {
+            content: "";
+            display: block;
+            min-height: 16px;
+            width: 100%;
+            position: absolute;
+            bottom: -16px;
+            left: 0;
+            background-repeat: no-repeat;
+            background-image: url('../images/social_wobbly.svg');
+            background-size: 100% 16px;
+        }
+        &.instagram {
+            border: 2px solid #ebf0f3;
+            background: #ebf0f3;
+
+            & .content-container {
+                background: #fff;
+                
+                & img {
+                    max-height: 300px;
+                    width: 100%;
+                    border: 15px solid #fff;
+                }
+
+                & .content {
+                    padding: 15px;
+                    background: #ebf0f3;
+                    border:1px solid red;
+                    position: relative;
+
+                    & i {
+                        display: block;
+                        width: 66px;
+                        height: 66px;
+                        position: absolute;
+                        top: -30px;
+                        padding: 8px 12px;
+                        background: #fff;
+                        border-radius: 8px;
+                        font-size: 50px;
+                        text-align: center;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 h2 { 
     margin: 30px 0 5px 20px;
     display: block;
