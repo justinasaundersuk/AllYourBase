@@ -1,17 +1,18 @@
 ﻿
 // Intended for reusable usage
-.row-flex, .row-flex > div[class*='col-'] {  
+/*.row-flex, .row-flex > div[class*='col-'] {  
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;
     flex: 1 1 auto;
-}
 
-.row-flex-wrap {
+}*/
+
+/*.row-flex-wrap {
     align-content: flex-start;
     flex:0;
-}
+}*/
 
 /*.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
 	 margin:-.2px; /* hack adjust for wrapping 
@@ -22,7 +23,7 @@
 }*/
 
 
-.flex-col {
+/*.flex-col {
     display: flex;
     flex: 1 100%;
 	flex-flow: column nowrap;
@@ -31,4 +32,4 @@
 .flex-grow {
 	display: flex;
     flex: 2;
-}
+}*/

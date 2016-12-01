@@ -445,10 +445,27 @@ $yellow-hex: #ffcd00;
 
 .promos-live {
     background: $white;
+    display: flex;
+
+    @include min($bp-sm) {
+        .row-flex, .row-flex > div[class*='col-'] {  
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            flex: 1 1 auto;
+        }
+    }
 
     & .col-sm-4 {
-        margin: 0 15px 0 15px;
         padding: 0;
+        display: block;
+        flex: 1;
+        margin-top: 30px;
+
+        @include min($bp-sm) {
+            margin: 0 7px 0 7px;
+        }
 
         &:after {
             content: "";
@@ -462,6 +479,7 @@ $yellow-hex: #ffcd00;
             background-image: url('../images/social_wobbly.svg');
             background-size: 100% 16px;
         }
+        
         &.instagram {
             border: 2px solid #ebf0f3;
             background: #ebf0f3;
