@@ -16266,40 +16266,64 @@ legend {
   border: 2px solid #ebf0f3;
   background: #ebf0f3;
 }
-/* line 469, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.instagram .content-container {
+/* line 470, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container {
   background: #fff;
 }
-/* line 472, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.instagram .content-container img {
+/* line 473, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container img {
   max-height: 300px;
   width: 100%;
   border: 15px solid #fff;
+  margin-bottom: 10px;
 }
-/* line 478, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.instagram .content-container .content {
+/* line 480, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content {
   padding: 15px;
   background: #ebf0f3;
-  border: 1px solid red;
   position: relative;
+  width: 100%;
 }
-/* line 484, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.instagram .content-container .content i {
+/* line 486, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content i {
   display: block;
   width: 66px;
   height: 66px;
-  position: absolute;
-  top: -30px;
+  position: relative;
+  top: -35px;
   padding: 8px 12px;
-  background: #fff;
+  margin: 0 auto;
   border-radius: 8px;
   font-size: 50px;
+  background: #fff;
+  color: #ffcd00;
   text-align: center;
-  left: 0;
-  right: 0;
+}
+/* line 501, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content p {
+  position: relative;
+  color: #333333;
+}
+/* line 506, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content .account {
+  top: -15px;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 512, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content .message {
+  padding: 0 15px;
+}
+/* line 516, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content .status, .promos-live .col-sm-4 .content-container .content .buttons {
+  margin-top: 20px;
+}
+/* line 520, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .content .buttons .btn {
+  width: 95%;
 }
 
-/* line 505, ../sass/partials/_mc-site-refresh.scss */
+/* line 529, ../sass/partials/_mc-site-refresh.scss */
 h2 {
   margin: 30px 0 5px 20px;
   display: block;
@@ -16307,7 +16331,7 @@ h2 {
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 513, ../sass/partials/_mc-site-refresh.scss */
+  /* line 537, ../sass/partials/_mc-site-refresh.scss */
   .container {
     width: 1140px;
   }
@@ -16330,11 +16354,9 @@ h2 {
 /*.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
 	 margin:-.2px; /* hack adjust for wrapping 
 }*/
-/* line 20, ../sass/helpers/_flexbox.scss */
-.container-flex > div[class*='col-'] div, .row-flex > div[class*='col-'] div {
-  width: 100%;
-}
-
+/*.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+	width:100%;
+}*/
 /* line 25, ../sass/helpers/_flexbox.scss */
 .flex-col {
   display: flex;

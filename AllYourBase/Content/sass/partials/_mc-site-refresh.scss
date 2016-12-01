@@ -465,36 +465,60 @@ $yellow-hex: #ffcd00;
         &.instagram {
             border: 2px solid #ebf0f3;
             background: #ebf0f3;
+        }
 
-            & .content-container {
-                background: #fff;
+        & .content-container {
+            background: #fff;
                 
-                & img {
-                    max-height: 300px;
-                    width: 100%;
-                    border: 15px solid #fff;
+            & img {
+                max-height: 300px;
+                width: 100%;
+                border: 15px solid #fff;
+                margin-bottom: 10px;
+            }
+
+            & .content {
+                padding: 15px;
+                background: #ebf0f3;
+                position: relative;
+                width: 100%;
+
+                & i {
+                    display: block;
+                    width: 66px;
+                    height: 66px;
+                    position: relative;
+                    top: -35px;
+                    padding: 8px 12px;
+                    margin: 0 auto;
+                    border-radius: 8px;
+                    font-size: 50px;
+                    background: #fff;
+                    color: $yellow;
+                    text-align: center;
                 }
 
-                & .content {
-                    padding: 15px;
-                    background: #ebf0f3;
-                    border:1px solid red;
+                & p {
                     position: relative;
+                    color: #333333;
+                }
 
-                    & i {
-                        display: block;
-                        width: 66px;
-                        height: 66px;
-                        position: absolute;
-                        top: -30px;
-                        padding: 8px 12px;
-                        background: #fff;
-                        border-radius: 8px;
-                        font-size: 50px;
-                        text-align: center;
-                        left: 0;
-                        right: 0;
-                    }
+                & .account {         // account name
+                    top: -15px;
+                    font-weight: bold;
+                    text-align: center; 
+                }
+
+                & .message {
+                    padding: 0 15px;
+                }
+
+                & .status, .buttons {
+                    margin-top: 20px;
+                }
+
+                & .buttons .btn {
+                    width: 95%;
                 }
             }
         }
