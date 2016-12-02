@@ -486,23 +486,29 @@ $yellow-hex: #ffcd00;
 
         &.twitter {
             background: #ebf0f3;
+            border: 2px solid #ebf0f3;
         }
 
         &.facebook {
             background: #ebf0f3;
+            border: 2px solid #ffffff;
         }
 
         & .content-container {
             position: relative;
 
             &.live:after {
-                content: "";
+                content: "LIVE";
                 width: 100px;
                 height: 30px;
                 background: $yellow;
                 position: absolute;
+                text-align: center;
+                font-weight: bold;
+                padding-top: 5px;
                 top: 0;
                 right: 30px;
+                @include tab-radius(0, 8px);
 
             }
 
