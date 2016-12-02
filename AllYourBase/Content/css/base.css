@@ -16278,90 +16278,100 @@ legend {
   left: 0;
   background-repeat: no-repeat;
   background-image: url("../images/social_wobbly.svg");
-  background-size: 100% 16px;
+  background-size: 102% 16px;
 }
 /* line 482, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4.instagram {
-  border: 2px solid #ebf0f3;
   background: #ebf0f3;
 }
-/* line 487, ../sass/partials/_mc-site-refresh.scss */
+/* line 486, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4.twitter {
   background: #ebf0f3;
-  border: 2px solid #ebf0f3;
 }
-/* line 492, ../sass/partials/_mc-site-refresh.scss */
+/* line 489, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4.twitter i {
+  border: 1px solid #ebf0f3;
+}
+/* line 494, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4.facebook {
   background: #ebf0f3;
   border: 2px solid #ffffff;
 }
-/* line 497, ../sass/partials/_mc-site-refresh.scss */
+/* line 499, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container {
   position: relative;
 }
-/* line 500, ../sass/partials/_mc-site-refresh.scss */
+/* line 502, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container.live:after {
   content: "LIVE";
+  position: absolute;
   width: 100px;
   height: 30px;
-  background: #ffcd00;
-  position: absolute;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 5px;
   top: 0;
   right: 30px;
+  padding-top: 5px;
+  background: #ffcd00;
+  text-align: center;
+  font-weight: bold;
   border-radius: 0 0 8px 8px;
   background-clip: padding-box;
 }
-/* line 515, ../sass/partials/_mc-site-refresh.scss */
+/* line 517, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-sm-4 .content-container .image-border {
+  border: 2px solid #ebf0f3;
+}
+/* line 521, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container img {
   max-height: 300px;
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 520, ../sass/partials/_mc-site-refresh.scss */
+/* line 526, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container img.bordered {
   border: 15px solid #fff;
 }
-/* line 525, ../sass/partials/_mc-site-refresh.scss */
+/* line 531, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .tweets {
-  min-height: 300px;
+  min-height: 302px;
+  box-sizing: border-box;
   position: relative;
   padding: 30px;
   padding-top: 45px;
   background: #fff;
   margin-bottom: 10px;
+  border: 2px solid #ebf0f3;
+  border-bottom: 2px solid #fff;
+  border-bottom: none;
 }
-/* line 533, ../sass/partials/_mc-site-refresh.scss */
+/* line 543, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .tweets .tweet {
   border: 1px solid #d8e1e7;
   border-radius: 8px;
   padding: 6px 20px;
   margin-bottom: 5px;
 }
-/* line 539, ../sass/partials/_mc-site-refresh.scss */
+/* line 549, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .tweets .tweet p {
   margin: 0;
   font-size: 12px;
 }
-/* line 543, ../sass/partials/_mc-site-refresh.scss */
+/* line 553, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .tweets .tweet p:first-of-type {
   font-weight: bold;
   margin-bottom: 2px;
 }
-/* line 548, ../sass/partials/_mc-site-refresh.scss */
+/* line 558, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .tweets .tweet span {
   font-size: 10px;
   font-weight: normal;
   color: #5f7c8e;
 }
-/* line 553, ../sass/partials/_mc-site-refresh.scss */
+/* line 563, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .tweets .tweet a {
   color: #05cffa;
   font-weight: bold;
 }
-/* line 560, ../sass/partials/_mc-site-refresh.scss */
+/* line 570, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container i {
   display: block;
   width: 66px;
@@ -16376,7 +16386,7 @@ legend {
   color: #ffcd00;
   text-align: center;
 }
-/* line 575, ../sass/partials/_mc-site-refresh.scss */
+/* line 585, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .content {
   padding: 15px;
   background: #ebf0f3;
@@ -16384,30 +16394,30 @@ legend {
   width: 100%;
   margin-top: -45px;
 }
-/* line 582, ../sass/partials/_mc-site-refresh.scss */
+/* line 592, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .content p {
   position: relative;
   color: #333333;
 }
-/* line 587, ../sass/partials/_mc-site-refresh.scss */
+/* line 597, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .content .account {
   font-weight: bold;
   text-align: center;
 }
-/* line 592, ../sass/partials/_mc-site-refresh.scss */
+/* line 602, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .content .message {
   padding: 0 15px;
 }
-/* line 593, ../sass/partials/_mc-site-refresh.scss */
+/* line 603, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .content .status, .promos-live .col-sm-4 .content-container .content .buttons {
   margin-top: 20px;
 }
-/* line 594, ../sass/partials/_mc-site-refresh.scss */
+/* line 604, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-sm-4 .content-container .content .buttons .btn {
   width: 95%;
 }
 
-/* line 601, ../sass/partials/_mc-site-refresh.scss */
+/* line 611, ../sass/partials/_mc-site-refresh.scss */
 h2 {
   margin: 30px 0 5px 20px;
   display: block;
@@ -16415,7 +16425,7 @@ h2 {
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 609, ../sass/partials/_mc-site-refresh.scss */
+  /* line 619, ../sass/partials/_mc-site-refresh.scss */
   .container {
     width: 1140px;
   }

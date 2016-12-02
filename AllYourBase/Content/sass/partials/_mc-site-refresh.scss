@@ -476,17 +476,19 @@ $yellow-hex: #ffcd00;
             left: 0;
             background-repeat: no-repeat;
             background-image: url('../images/social_wobbly.svg');
-            background-size: 100% 16px;
+            background-size: 102% 16px;
         }
         
         &.instagram {
-            border: 2px solid #ebf0f3;
             background: #ebf0f3;
         }
 
         &.twitter {
             background: #ebf0f3;
-            border: 2px solid #ebf0f3;
+
+            & i {
+                border: 1px solid #ebf0f3;  // only the twitter social icon has a border
+            }
         }
 
         &.facebook {
@@ -499,17 +501,21 @@ $yellow-hex: #ffcd00;
 
             &.live:after {
                 content: "LIVE";
+                position: absolute;
                 width: 100px;
                 height: 30px;
-                background: $yellow;
-                position: absolute;
-                text-align: center;
-                font-weight: bold;
-                padding-top: 5px;
                 top: 0;
                 right: 30px;
+                padding-top: 5px;
+                background: $yellow;
+                text-align: center;
+                font-weight: bold;
                 @include tab-radius(0, 8px);
 
+            }
+
+            & .image-border {
+                border: 2px solid #ebf0f3;
             }
 
             & img {
@@ -523,15 +529,19 @@ $yellow-hex: #ffcd00;
             }
 
             & .tweets {
-                min-height: 300px;
+                min-height: 302px;  // allow for 2px border
+                box-sizing: border-box;
                 position: relative;
                 padding: 30px;
                 padding-top: 45px;
                 background: #fff;
                 margin-bottom: 10px;
+                border: 2px solid #ebf0f3;
+                border-bottom: 2px solid #fff;
+                border-bottom: none;
 
                 & .tweet {
-                    border:1px solid #d8e1e7;
+                    border: 1px solid #d8e1e7;
                     border-radius: 8px;
                     padding: 6px 20px;
                     margin-bottom: 5px;
