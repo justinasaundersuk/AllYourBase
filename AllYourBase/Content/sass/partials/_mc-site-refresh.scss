@@ -483,17 +483,87 @@ $yellow-hex: #ffcd00;
             border: 2px solid #ebf0f3;
             background: #ebf0f3;
         }
+
         &.twitter {
             background: #ebf0f3;
         }
 
-        // needed? (did have white background color but was unnecessary)
+        &.facebook {
+            background: #ebf0f3;
+        }
+
         & .content-container {
+            position: relative;
+
+            &.live:after {
+                content: "";
+                width: 100px;
+                height: 30px;
+                background: $yellow;
+                position: absolute;
+                top: 0;
+                right: 30px;
+
+            }
+
             & img {
                 max-height: 300px;
                 width: 100%;
-                border: 15px solid #fff;
                 margin-bottom: 10px;
+
+                &.bordered {
+                    border: 15px solid #fff;
+                }
+            }
+
+            & .tweets {
+                min-height: 300px;
+                position: relative;
+                padding: 30px;
+                padding-top: 45px;
+                background: #fff;
+                margin-bottom: 10px;
+
+                & .tweet {
+                    border:1px solid #d8e1e7;
+                    border-radius: 8px;
+                    padding: 6px 20px;
+                    margin-bottom: 5px;
+
+                    p {
+                        margin: 0;
+                        font-size: 12px;
+
+                        &:first-of-type {
+                            font-weight: bold;
+                            margin-bottom: 2px;
+                        }
+                    }
+                    span {
+                        font-size: 10px;
+                        font-weight: normal;
+                        color: #5f7c8e;
+                    }
+                    a {
+                        color: #05cffa;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            & i {
+                display: block;
+                width: 66px;
+                height: 66px;
+                position: relative;
+                top: -45px;
+                padding: 8px 12px;
+                margin: 0 auto;
+                border-radius: 8px;
+                font-size: 50px;
+                background: #fff;
+                color: $yellow;
+                text-align: center;
             }
 
             & .content {
@@ -501,21 +571,7 @@ $yellow-hex: #ffcd00;
                 background: #ebf0f3;
                 position: relative;
                 width: 100%;
-
-                & i {
-                    display: block;
-                    width: 66px;
-                    height: 66px;
-                    position: relative;
-                    top: -35px;
-                    padding: 8px 12px;
-                    margin: 0 auto;
-                    border-radius: 8px;
-                    font-size: 50px;
-                    background: #fff;
-                    color: $yellow;
-                    text-align: center;
-                }
+                margin-top: -45px;      // account for the social icon
 
                 & p {
                     position: relative;
@@ -523,7 +579,6 @@ $yellow-hex: #ffcd00;
                 }
 
                 & .account {         // account name
-                    top: -15px;
                     font-weight: bold;
                     text-align: center; 
                 }
