@@ -606,9 +606,13 @@ $yellow-hex: #ffcd00;
                     position: relative;
                     display: block;
                     padding: 0 15px;
-                    height: 85px;           // set to four lines, may need to change depending on font size / line height
+                    max-height: 85px;           // set to four lines, may need to change depending on font size / line height
                     overflow: hidden;
                     word-break: break-word;
+
+                    @include min($bp-md) {
+                        height: 85px;
+                    }
                 }
 
                 & .status, .buttons { margin-top: 20px; }

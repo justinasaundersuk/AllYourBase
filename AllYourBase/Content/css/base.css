@@ -16429,24 +16429,30 @@ legend {
   position: relative;
   display: block;
   padding: 0 15px;
-  height: 85px;
+  max-height: 85px;
   overflow: hidden;
   word-break: break-word;
 }
-/* line 614, ../sass/partials/_mc-site-refresh.scss */
+@media only screen and (min-width: 62em) {
+  /* line 605, ../sass/partials/_mc-site-refresh.scss */
+  .promos-live .col-md-4 .content-container .content .message {
+    height: 85px;
+  }
+}
+/* line 618, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-md-4 .content-container .content .status, .promos-live .col-md-4 .content-container .content .buttons {
   margin-top: 20px;
 }
-/* line 615, ../sass/partials/_mc-site-refresh.scss */
+/* line 619, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-md-4 .content-container .content .buttons .btn {
   width: 95%;
 }
-/* line 617, ../sass/partials/_mc-site-refresh.scss */
+/* line 621, ../sass/partials/_mc-site-refresh.scss */
 .promos-live .col-md-4 .content-container .content .status {
   font-size: 11px;
 }
 
-/* line 624, ../sass/partials/_mc-site-refresh.scss */
+/* line 628, ../sass/partials/_mc-site-refresh.scss */
 h2 {
   margin: 30px 0 5px 20px;
   display: block;
@@ -16454,7 +16460,7 @@ h2 {
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 632, ../sass/partials/_mc-site-refresh.scss */
+  /* line 636, ../sass/partials/_mc-site-refresh.scss */
   .container {
     width: 1140px;
   }
