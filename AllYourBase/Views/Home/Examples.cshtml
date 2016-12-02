@@ -62,7 +62,7 @@
 <div class="promos-live">
     <div class="container">
         <div class="row row-flex">
-            <div class="col-xs-12 col-sm-4 instagram">
+            <div class="col-xs-12 col-md-4 instagram">
                 <div class="content-container">
                     <div class="image-border">
                         <img src="~/Content/images/oldguy-nurse.jpg" class="img-responsive bordered" />
@@ -72,8 +72,8 @@
                         <p class="account">@@francescabridge</p>
                         <p class="message">This year we want to raise even more money for <a href="#">@@MarieCurieUK</a> so not only will selected P&amp;G products trigg...</p>
                         <div class="row status">
-                            <div class="col-xs-6 text-left">32K views</div>
-                            <div class="col-xs-6 text-right">7 comments</div>
+                            <div class="col-xs-6 text-center">32K<br/>views</div>
+                            <div class="col-xs-6 text-center">7<br />comments</div>
                         </div>
                         <div class="row buttons">
                             <div class="col-xs-6 text-left no-padding"><a href="#" class="btn btn-default">Share</a></div>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 twitter">
+            <div class="col-xs-12 col-md-4 twitter">
                 <div class="content-container live">
                     <div class="tweets">
                         <div class="tweet">
@@ -101,11 +101,11 @@
                     <i class="fa fa-twitter" aria-hidden="true"></i>
                     <div class="content">
                         <p class="account">@@francescabridge</p>
-                        <p class="message">This year we want to raise even more money for <a href="#">@@MarieCurieUK</a> so not only will selected P&amp;G products trigg...</p>
+                        <p class="message">his year we want to raise even This year we want to raise even This year we want to raise even more money for <a href="#">@@MarieCurieUK</a> so not only will selected P&amp;G products trigg</p>
                         <div class="row status">
-                            <div class="col-xs-4 text-left">3 retweets</div>
-                            <div class="col-xs-4 text-center no-padding">5 likes</div>
-                            <div class="col-xs-4 text-right">7 comments</div>
+                            <div class="col-xs-4 text-center">300<br />retweets</div>
+                            <div class="col-xs-4 text-center no-padding">1245<br />likes</div>
+                            <div class="col-xs-4 text-center">707<br />comments</div>
                         </div>
                         <div class="row buttons">
                             <div class="col-xs-6 text-left no-padding"><a href="#" class="btn btn-default">Share</a></div>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4 facebook">
+            <div class="col-xs-12 col-md-4 facebook">
                 <div class="content-container">
                     <img src="~/Content/images/oldguy-nurse.jpg" class="img-responsive" />
                     <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -122,9 +122,9 @@
                         <p class="account">@@francescabridge</p>
                         <p class="message">This year we want to raise even more money for <a href="#">@@MarieCurieUK</a> so not only will selected P&amp;G products trigg...</p>
                         <div class="row status">
-                            <div class="col-xs-4 text-left">3 retweets</div>
-                            <div class="col-xs-4 text-center no-padding">5 likes</div>
-                            <div class="col-xs-4 text-right">7 comments</div>
+                            <div class="col-xs-4 text-center">3<br />retweets</div>
+                            <div class="col-xs-4 text-center no-padding">5<br />likes</div>
+                            <div class="col-xs-4 text-center">7<br />comments</div>
                         </div>
                         <div class="row buttons">
                             <div class="col-xs-6 text-left no-padding"><a href="#" class="btn btn-default">Share</a></div>
@@ -298,6 +298,12 @@
     <p class="roboto">Paragraph using Google webfont Roboto.</p>
     <p class="defused">Paragraph using Defused font via mixin.</p>*@
 
-@*<div style="border:1px solid red;">test block</div>*@
+<div style="height: 100px;"></div>
+
+<script>
+$(function() {
+    $('.promos-live .message').dotdotdot();
+});
+</script>
 
 <script src="~/Scripts/examples.js"></script>

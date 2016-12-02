@@ -446,7 +446,7 @@ $yellow-hex: #ffcd00;
     background: $white;
     display: flex;
 
-    @include min($bp-sm) {
+    @include min($bp-md) {
         .row-flex, .row-flex > div[class*='col-'] {  
             display: -webkit-box;
             display: -moz-box;
@@ -456,15 +456,14 @@ $yellow-hex: #ffcd00;
         }
     }
 
-    & .col-sm-4 {
+    & .col-md-4 {
         padding: 0;
         display: block;
         flex: 1;
+        min-width: 0;
         margin-top: 30px;
 
-        @include min($bp-sm) {
-            margin: 0 7px 0 7px;
-        }
+        @include min($bp-sm) { margin: 0 7px 0 7px; }
 
         &:after {
             content: "";
@@ -479,9 +478,7 @@ $yellow-hex: #ffcd00;
             background-size: 102% 16px;
         }
         
-        &.instagram {
-            background: #ebf0f3;
-        }
+        &.instagram { background: #ebf0f3; }
 
         &.twitter {
             background: #ebf0f3;
@@ -514,9 +511,7 @@ $yellow-hex: #ffcd00;
 
             }
 
-            & .image-border {
-                border: 2px solid #ebf0f3;
-            }
+            & .image-border { border: 2px solid #ebf0f3; }
 
             & img {
                 max-height: 300px;
@@ -529,22 +524,30 @@ $yellow-hex: #ffcd00;
             }
 
             & .tweets {
+                position: relative;
                 min-height: 302px;  // allow for 2px border
                 box-sizing: border-box;
-                position: relative;
-                padding: 30px;
+                padding: 20px;
                 padding-top: 45px;
                 background: #fff;
                 margin-bottom: 10px;
                 border: 2px solid #ebf0f3;
-                border-bottom: 2px solid #fff;
                 border-bottom: none;
+                padding-bottom: 50px;
+
+                @include min($bp-md) { 
+                    padding: 30px;
+                    padding-top: 45px;
+                }
 
                 & .tweet {
                     border: 1px solid #d8e1e7;
                     border-radius: 8px;
                     padding: 6px 20px;
                     margin-bottom: 5px;
+                    
+                    @include min($bp-md) { padding: 6px 8px; }
+                    @include min($bp-lg) { padding: 6px 20px; }
 
                     p {
                         margin: 0;
@@ -594,14 +597,24 @@ $yellow-hex: #ffcd00;
                     color: #333333;
                 }
 
-                & .account {         // account name
+                & .account {            // account name
                     font-weight: bold;
-                    text-align: center; 
+                    text-align: center;
                 }
 
-                & .message { padding: 0 15px; }
+                & .message { 
+                    position: relative;
+                    display: block;
+                    padding: 0 15px;
+                    height: 85px;           // set to four lines, may need to change depending on font size / line height
+                    overflow: hidden;
+                    word-break: break-word;
+                }
+
                 & .status, .buttons { margin-top: 20px; }
                 & .buttons .btn { width: 95%; }
+
+                & .status { font-size: 11px; }
             }
         }
     }

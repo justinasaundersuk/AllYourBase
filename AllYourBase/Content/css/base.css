@@ -16244,7 +16244,7 @@ legend {
   background: #ffffff;
   display: flex;
 }
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: 62em) {
   /* line 450, ../sass/partials/_mc-site-refresh.scss */
   .promos-live .row-flex, .promos-live .row-flex > div[class*='col-'] {
     display: -webkit-box;
@@ -16255,20 +16255,21 @@ legend {
   }
 }
 /* line 459, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 {
+.promos-live .col-md-4 {
   padding: 0;
   display: block;
   flex: 1;
+  min-width: 0;
   margin-top: 30px;
 }
 @media only screen and (min-width: 48em) {
   /* line 459, ../sass/partials/_mc-site-refresh.scss */
-  .promos-live .col-sm-4 {
+  .promos-live .col-md-4 {
     margin: 0 7px 0 7px;
   }
 }
-/* line 469, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4:after {
+/* line 468, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4:after {
   content: "";
   display: block;
   min-height: 16px;
@@ -16280,29 +16281,29 @@ legend {
   background-image: url("../images/social_wobbly.svg");
   background-size: 102% 16px;
 }
-/* line 482, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.instagram {
+/* line 481, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4.instagram {
+  background: #ebf0f3;
+}
+/* line 483, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4.twitter {
   background: #ebf0f3;
 }
 /* line 486, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.twitter {
-  background: #ebf0f3;
-}
-/* line 489, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.twitter i {
+.promos-live .col-md-4.twitter i {
   border: 1px solid #ebf0f3;
 }
-/* line 494, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4.facebook {
+/* line 491, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4.facebook {
   background: #ebf0f3;
   border: 2px solid #ffffff;
 }
-/* line 499, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container {
+/* line 496, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container {
   position: relative;
 }
-/* line 502, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container.live:after {
+/* line 499, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container.live:after {
   content: "LIVE";
   position: absolute;
   width: 100px;
@@ -16316,63 +16317,82 @@ legend {
   border-radius: 0 0 8px 8px;
   background-clip: padding-box;
 }
-/* line 517, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .image-border {
+/* line 514, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .image-border {
   border: 2px solid #ebf0f3;
 }
-/* line 521, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container img {
+/* line 516, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container img {
   max-height: 300px;
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 526, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container img.bordered {
+/* line 521, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container img.bordered {
   border: 15px solid #fff;
 }
-/* line 531, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .tweets {
+/* line 526, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .tweets {
+  position: relative;
   min-height: 302px;
   box-sizing: border-box;
-  position: relative;
-  padding: 30px;
+  padding: 20px;
   padding-top: 45px;
   background: #fff;
   margin-bottom: 10px;
   border: 2px solid #ebf0f3;
-  border-bottom: 2px solid #fff;
   border-bottom: none;
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 62em) {
+  /* line 526, ../sass/partials/_mc-site-refresh.scss */
+  .promos-live .col-md-4 .content-container .tweets {
+    padding: 30px;
+    padding-top: 45px;
+  }
 }
 /* line 543, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .tweets .tweet {
+.promos-live .col-md-4 .content-container .tweets .tweet {
   border: 1px solid #d8e1e7;
   border-radius: 8px;
   padding: 6px 20px;
   margin-bottom: 5px;
 }
-/* line 549, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .tweets .tweet p {
+@media only screen and (min-width: 62em) {
+  /* line 543, ../sass/partials/_mc-site-refresh.scss */
+  .promos-live .col-md-4 .content-container .tweets .tweet {
+    padding: 6px 8px;
+  }
+}
+@media only screen and (min-width: 75em) {
+  /* line 543, ../sass/partials/_mc-site-refresh.scss */
+  .promos-live .col-md-4 .content-container .tweets .tweet {
+    padding: 6px 20px;
+  }
+}
+/* line 552, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .tweets .tweet p {
   margin: 0;
   font-size: 12px;
 }
-/* line 553, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .tweets .tweet p:first-of-type {
+/* line 556, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .tweets .tweet p:first-of-type {
   font-weight: bold;
   margin-bottom: 2px;
 }
-/* line 558, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .tweets .tweet span {
+/* line 561, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .tweets .tweet span {
   font-size: 10px;
   font-weight: normal;
   color: #5f7c8e;
 }
-/* line 563, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .tweets .tweet a {
+/* line 566, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .tweets .tweet a {
   color: #05cffa;
   font-weight: bold;
 }
-/* line 570, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container i {
+/* line 573, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container i {
   display: block;
   width: 66px;
   height: 66px;
@@ -16386,38 +16406,47 @@ legend {
   color: #ffcd00;
   text-align: center;
 }
-/* line 585, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .content {
+/* line 588, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content {
   padding: 15px;
   background: #ebf0f3;
   position: relative;
   width: 100%;
   margin-top: -45px;
 }
-/* line 592, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .content p {
+/* line 595, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content p {
   position: relative;
   color: #333333;
 }
-/* line 597, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .content .account {
+/* line 600, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content .account {
   font-weight: bold;
   text-align: center;
 }
-/* line 602, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .content .message {
+/* line 605, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content .message {
+  position: relative;
+  display: block;
   padding: 0 15px;
+  height: 85px;
+  overflow: hidden;
+  word-break: break-word;
 }
-/* line 603, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .content .status, .promos-live .col-sm-4 .content-container .content .buttons {
+/* line 614, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content .status, .promos-live .col-md-4 .content-container .content .buttons {
   margin-top: 20px;
 }
-/* line 604, ../sass/partials/_mc-site-refresh.scss */
-.promos-live .col-sm-4 .content-container .content .buttons .btn {
+/* line 615, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content .buttons .btn {
   width: 95%;
 }
+/* line 617, ../sass/partials/_mc-site-refresh.scss */
+.promos-live .col-md-4 .content-container .content .status {
+  font-size: 11px;
+}
 
-/* line 611, ../sass/partials/_mc-site-refresh.scss */
+/* line 624, ../sass/partials/_mc-site-refresh.scss */
 h2 {
   margin: 30px 0 5px 20px;
   display: block;
@@ -16425,7 +16454,7 @@ h2 {
 }
 
 @media only screen and (min-width: 75em) {
-  /* line 619, ../sass/partials/_mc-site-refresh.scss */
+  /* line 632, ../sass/partials/_mc-site-refresh.scss */
   .container {
     width: 1140px;
   }
