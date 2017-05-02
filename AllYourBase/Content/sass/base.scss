@@ -1,22 +1,22 @@
 ﻿@import "base/variables";
 @import "base/normalize";
 
-@import "vendors/bootstrap";                    // built separately
+@import "vendors/bootstrap";                        // built separately
 
-//@import "vendors/saffron/saffron";              // https://github.com/colindresj/saffron
-//@import "vendors/family/family";                // https://github.com/LukyVj/family.scss
+//@import "vendors/saffron/saffron";                // https://github.com/colindresj/saffron
+//@import "vendors/family/family";                  // https://github.com/LukyVj/family.scss
 //@import "vendors/font-awesome";
-//@import "vendors/hover/hover";                // https://github.com/IanLunn/Hover
+//@import "vendors/hover/hover";                    // https://github.com/IanLunn/Hover
 
 @import "helpers/functions";
 @import "helpers/mixins";
 @import "helpers/form-elements";
 @import "helpers/general";
 
-//  @import "partials/bootstrap-overrides";     // optional
-@import "base/flexbox";                         // optional
+// @import "partials/bootstrap-overrides";          // optional
+// @import "base/flexbox";                          // optional
 
 @import "partials/fonts";
 @import "partials/styles";
 
-// @import "partials/examples";                 // demo use
+// @import "partials/examples";                     // demo use
