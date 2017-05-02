@@ -6,14 +6,8 @@
     <title>@ViewBag.Title - All Your Base - SASS & CSS</title>
     @Styles.Render("~/css/bootstrap")
     @Styles.Render("~/css/styles")
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-
-    <style>
-        h2 { margin-bottom: 30px; }
-        .container.body-content { margin-top: 75px; }
-    </style>
-
 </head>
+
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -28,15 +22,17 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Sass examples", "Examples", "Home")</li>
+                    <li>@Html.ActionLink("Sandbox", "Sandbox", "Home")</li>
                     <li>@Html.ActionLink("Flexbox", "Flexbox", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    @*<div class="container body-content">*@
+    <!-- Purely to create space under the demo nav -->
+    <span style="height: 50px; display: block;"></span>
+
     @RenderBody()
-    @*</div>*@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

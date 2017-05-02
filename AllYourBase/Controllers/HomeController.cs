@@ -26,5 +26,12 @@ namespace AllYourBase.Controllers
 
             return View();
         }
+
+        public ActionResult Sandbox()
+        {
+            ViewBag.Message = "Sandbox";
+
+            return View();
+        }
     }
 }

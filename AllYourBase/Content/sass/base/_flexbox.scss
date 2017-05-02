@@ -1,7 +1,4 @@
-﻿body {
-    margin-bottom: 50px;
-}
-
+﻿
 .flex-row {
     display: flex;
     flex-direction: column;
@@ -13,6 +10,7 @@
     }
 
     & > .flex-item {
+        background: $grey;      // temporary
         margin-bottom: 20px;
 
         @include min(768) { margin: 0 10px; }
@@ -90,12 +88,6 @@
 
     & img { max-width: 100%; }
 }
-
-.bgyellow { background: $yellow }
-.bgblue   { background: $blue; }
-.bghover  { background: $hover; }
-.bgred    { background: $red; }
-.bggreen  { background: $green; }
 
 
 
