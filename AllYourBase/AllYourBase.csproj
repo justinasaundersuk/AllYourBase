@@ -174,24 +174,6 @@
     <Content Include="Content\css\vendors\bootstrap.css" />
     <Content Include="Content\Examples\Ticker-JSON-markup.html" />
     <Content Include="Content\fonts\font-awesome\fontawesome-webfont.svg" />
-    <Content Include="Content\images\arrows\arrow-right-dark.svg" />
-    <Content Include="Content\images\arrows\arrow-right-info.svg" />
-    <Content Include="Content\images\arrows\arrow-right-light.svg" />
-    <Content Include="Content\images\jumbotron_cutaway.svg" />
-    <Content Include="Content\images\main-bg.jpg" />
-    <Content Include="Content\images\oldguy-nurse.jpg" />
-    <Content Include="Content\images\old\bob.jpg" />
-    <Content Include="Content\images\old\drawing.svg" />
-    <Content Include="Content\images\old\wiggly_02.svg" />
-    <Content Include="Content\images\old\wiggly_03.svg" />
-    <Content Include="Content\images\old\wiggly_04.svg" />
-    <Content Include="Content\images\promo-bg.jpg" />
-    <Content Include="Content\images\promo-ma.jpg" />
-    <Content Include="Content\images\promo_bottom.svg" />
-    <Content Include="Content\images\promo_full_width.svg" />
-    <Content Include="Content\images\promo_full_width_ma.svg" />
-    <Content Include="Content\images\social_wobbly.svg" />
-    <Content Include="Content\images\wiggly_smooth.svg" />
     <Content Include="Content\sass\vendors\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\sass\vendors\bootstrap\_theme.css" />
     <Content Include="Content\sass\vendors\bootstrap\_theme.min.css" />
@@ -517,6 +499,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
     <Folder Include="Content\sass\vendors\font-awesome\fonts\" />
     <Folder Include="css\" />
   </ItemGroup>
