@@ -1,10 +1,7 @@
-﻿function publicationCategoryClear() {
-    $(".publications-detail-links .publication-visible").each(function (i) {
-        if (i % 2 === 0 && i !== 0) {
-            $(this).css("clear", "both");
-            $(this).css("border", "4px solid blue");
-        }
-    });
-}
-
-publicationCategoryClear();
+﻿
+// filter items on button click
+$('.filter-button').on('click', function () {
+    var $grid = $('.grid');
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+});

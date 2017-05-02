@@ -8864,30 +8864,24 @@ legend {
   cursor: pointer;
   margin-bottom: 20px;
 }
-/* line 7, ../sass/helpers/_flip.scss */
-.flip-container img {
-  width: 100%;
-  height: auto;
-}
 
-/* line 13, ../sass/helpers/_flip.scss */
+/* line 8, ../sass/helpers/_flip.scss */
 .flip-container.hover .front {
   transform: rotateY(180deg);
 }
 
-/* line 14, ../sass/helpers/_flip.scss */
+/* line 9, ../sass/helpers/_flip.scss */
 .flip-container.hover .back {
   transform: rotateY(0deg);
 }
 
-/* line 16, ../sass/helpers/_flip.scss */
+/* line 11, ../sass/helpers/_flip.scss */
 .flip-container, .front, .back {
   width: 100%;
-  height: 340px;
 }
 
 /* flip speed goes here */
-/* line 22, ../sass/helpers/_flip.scss */
+/* line 16, ../sass/helpers/_flip.scss */
 .flipper {
   transition: 0.6s;
   transform-style: preserve-3d;
@@ -8895,25 +8889,32 @@ legend {
 }
 
 /* hide back of pane during swap */
-/* line 30, ../sass/helpers/_flip.scss */
+/* line 23, ../sass/helpers/_flip.scss */
 .front, .back {
   backface-visibility: hidden;
   transition: 0.6s;
   transform-style: preserve-3d;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
+/* line 31, ../sass/helpers/_flip.scss */
+.front img, .back img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
 
-/* line 39, ../sass/helpers/_flip.scss */
+/* line 38, ../sass/helpers/_flip.scss */
 .front {
   z-index: 2;
   transform: rotateY(0deg);
 }
 
-/* line 44, ../sass/helpers/_flip.scss */
+/* line 43, ../sass/helpers/_flip.scss */
 .back {
   transform: rotateY(-180deg);
+  position: absolute;
 }
 
 /* line 49, ../sass/helpers/_flip.scss */
@@ -8947,3 +8948,17 @@ legend {
     min-height: 300px;
     background: $black;
 }*/
+/* line 11, ../sass/partials/_styles.scss */
+.grid .row {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 15, ../sass/partials/_styles.scss */
+.grid .row [class*='col-'] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 19, ../sass/partials/_styles.scss */
+.grid .row h2 {
+  text-transform: uppercase;
+}

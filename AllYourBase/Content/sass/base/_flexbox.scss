@@ -10,7 +10,6 @@
     }
 
     & > .flex-item {
-        background: $grey;      // temporary
         margin-bottom: 20px;
 
         @include min(768) { margin: 0 10px; }
