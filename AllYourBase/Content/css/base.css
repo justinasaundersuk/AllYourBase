@@ -8880,7 +8880,6 @@ legend {
   width: 100%;
 }
 
-/* flip speed goes here */
 /* line 16, ../sass/helpers/_flip.scss */
 .flipper {
   transition: 0.6s;
@@ -8888,7 +8887,6 @@ legend {
   position: relative;
 }
 
-/* hide back of pane during swap */
 /* line 23, ../sass/helpers/_flip.scss */
 .front, .back {
   backface-visibility: hidden;
@@ -8915,8 +8913,8 @@ legend {
 .back {
   transform: rotateY(-180deg);
   position: absolute;
-  background: #333;
-  color: #fff;
+  background: #333333;
+  color: #ffffff;
   padding: 0 20px;
   overflow: hidden;
   padding-bottom: 60px;
@@ -8957,66 +8955,99 @@ legend {
   font-style: normal;
   font-weight: normal;
 }
-/* line 5, ../sass/partials/_styles.scss */
+/* line 2, ../sass/partials/_footer.scss */
+html {
+  height: 100%;
+}
+
+/* line 6, ../sass/partials/_footer.scss */
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 12, ../sass/partials/_footer.scss */
+.page-wrapper {
+  flex: 1;
+}
+
+/* line 16, ../sass/partials/_footer.scss */
+.site-footer {
+  background: #000000;
+}
+/* line 19, ../sass/partials/_footer.scss */
+.site-footer ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+/* line 23, ../sass/partials/_footer.scss */
+.site-footer ul li {
+  display: inline-block;
+  padding: 30px 20px;
+  color: #ffcd00;
+}
+
+/* line 2, ../sass/partials/_styles.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 9, ../sass/partials/_styles.scss */
+/* line 7, ../sass/partials/_styles.scss */
 .grid .row {
   padding-left: 8px;
   padding-right: 8px;
 }
-/* line 13, ../sass/partials/_styles.scss */
+/* line 11, ../sass/partials/_styles.scss */
 .grid .row [class*='col-'] {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 18, ../sass/partials/_styles.scss */
+/* line 16, ../sass/partials/_styles.scss */
 .grid .row h2 {
   text-transform: uppercase;
 }
 
-/* line 23, ../sass/partials/_styles.scss */
+/* line 21, ../sass/partials/_styles.scss */
 .filter-nav {
   margin-bottom: 20px;
 }
-/* line 26, ../sass/partials/_styles.scss */
+/* line 24, ../sass/partials/_styles.scss */
 .filter-nav .row {
   padding: 0;
 }
-/* line 30, ../sass/partials/_styles.scss */
+/* line 28, ../sass/partials/_styles.scss */
 .filter-nav [class*='col-'] {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 35, ../sass/partials/_styles.scss */
+/* line 33, ../sass/partials/_styles.scss */
 .filter-nav nav {
   float: right;
 }
-/* line 39, ../sass/partials/_styles.scss */
+/* line 37, ../sass/partials/_styles.scss */
 .filter-nav a {
   display: inline-block;
   width: 180px;
-  padding: 8px 0;
-  border: 1px solid #333;
+  padding: 5px 0;
+  border: 1px solid #333333;
   text-align: center;
   text-transform: uppercase;
-  color: #333;
+  color: #333333;
   font-weight: bold;
   text-decoration: none;
 }
-/* line 50, ../sass/partials/_styles.scss */
+/* line 48, ../sass/partials/_styles.scss */
 .filter-nav a:last-of-type {
   padding-right: 0;
 }
-/* line 54, ../sass/partials/_styles.scss */
+/* line 52, ../sass/partials/_styles.scss */
 .filter-nav a:hover, .filter-nav a.active {
-  background: #333;
-  color: #fff;
+  background: #333333;
+  color: #ffffff;
 }
 
-/* line 61, ../sass/partials/_styles.scss */
+/* line 59, ../sass/partials/_styles.scss */
 .isotope-item {
   z-index: 2;
 }

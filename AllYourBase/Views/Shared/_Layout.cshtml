@@ -32,12 +32,27 @@
     <!-- Purely to create space under the demo nav -->
     <span style="height: 70px; display: block;"></span>
 
-    @RenderBody()
+    <div class="page-wrapper">
+
+        @RenderBody()
+
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
 
     @RenderSection("scripts", required: false)
+
+    <footer class="site-footer">
+        <ul>
+            <li>Dam Digital, 20 Irving Street, London. WC2H 7AU</li>
+            <li><a href="mailto:info@dam-digital.com">info@dam-digital.com</a></li>
+            <li>@@dam-digital</li>
+            <li>Privacy policy</li>
+            <li>Cookie policy</li>
+            <li>Legal wotsits</li>
+        </ul>
+    </footer>
 
     <script src="~/Scripts/isotope.pkgd.min.js"></script>
     <script src="~/Scripts/jquery.matchHeight-min.js" type="text/javascript"></script>

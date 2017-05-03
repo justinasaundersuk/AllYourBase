@@ -1,9 +1,7 @@
 ﻿
-// This is where the project specific styles will go.
-// Clear styles below as they are specific to AllYourBase Framework demos.
-
 html {
-    overflow-y: scroll; 
+    // stops content jumping when transitioning from scrollbar to no scrollbar
+    overflow-y: scroll;
 }
 
 .grid .row {
@@ -39,11 +37,11 @@ html {
     & a { 
         display: inline-block;
         width: 180px;
-        padding: 8px 0;
-        border:1px solid #333;
+        padding: 5px 0;
+        border:1px solid $dark-grey;
         text-align: center;
         text-transform: uppercase;
-        color: #333;
+        color: $dark-grey;
         font-weight: bold;
         text-decoration: none;
 
@@ -52,8 +50,8 @@ html {
         }
 
         &:hover, &.active {
-            background: #333;
-            color: #fff;
+            background: $dark-grey;
+            color: $white;
         }
     }
 }

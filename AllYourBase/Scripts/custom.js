@@ -19,17 +19,28 @@ $(window).load(function () {
 // filter items on button click
 $('.filter-button').on('click', function (e) {
     e.preventDefault();
+
     var $grid = $('.grid');
     var filterValue = $(this).attr('data-filter');
+
+    // if we need to reset the isotope filters at any point...
+    //$(".isotope-reset").click(function () {
+    //    $grid.isotope({
+    //        filter: '*'
+    //    });
+    //});
+
     $grid.isotope({
         filter: filterValue,
         transitionDuration: '1s',
-        stagger: 30
+        stagger: 80
     });
+
     // set button active state
     $('.filter-button').removeClass('active');
     $(this).addClass('active');
 });
+
 
 // handle the flip toggle
 $(".flip-container").on('mouseenter mouseleave click', function () {
