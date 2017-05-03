@@ -2,19 +2,17 @@
 // This is where the project specific styles will go.
 // Clear styles below as they are specific to AllYourBase Framework demos.
 
-/*.content-block {
-    @include teeter();
-    min-height: 300px;
-    background: $black;
-}*/
+html {
+    overflow-y: scroll; 
+}
 
 .grid .row {
     padding-left: 8px;
     padding-right: 8px;
 
     & [class*='col-'] {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     & h2 {
@@ -30,8 +28,8 @@
     }
 
     & [class*='col-'] {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     & nav {
@@ -53,9 +51,13 @@
             padding-right: 0;
         }
 
-        &:hover {
+        &:hover, &.active {
             background: #333;
             color: #fff;
         }
     }
+}
+
+.isotope-item {
+	z-index: 2;
 }

@@ -8862,7 +8862,7 @@ legend {
   perspective: 1000;
   transform-style: preserve-3d;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* line 8, ../sass/helpers/_flip.scss */
@@ -8919,33 +8919,34 @@ legend {
   color: #fff;
   padding: 0 20px;
   overflow: hidden;
+  padding-bottom: 60px;
 }
-/* line 51, ../sass/helpers/_flip.scss */
+/* line 52, ../sass/helpers/_flip.scss */
 .back h2 {
   margin-bottom: 24px;
 }
-/* line 56, ../sass/helpers/_flip.scss */
+/* line 54, ../sass/helpers/_flip.scss */
 .back p {
   font-size: 14px;
   line-height: 18px;
 }
 
-/* line 63, ../sass/helpers/_flip.scss */
+/* line 61, ../sass/helpers/_flip.scss */
 .vertical.flip-container {
   position: relative;
 }
 
-/* line 64, ../sass/helpers/_flip.scss */
+/* line 62, ../sass/helpers/_flip.scss */
 .vertical .back {
   transform: rotateX(180deg);
 }
 
-/* line 65, ../sass/helpers/_flip.scss */
+/* line 63, ../sass/helpers/_flip.scss */
 .vertical.flip-container:hover .back {
   transform: rotateX(0deg);
 }
 
-/* line 66, ../sass/helpers/_flip.scss */
+/* line 64, ../sass/helpers/_flip.scss */
 .vertical.flip-container:hover .front {
   transform: rotateX(180deg);
 }
@@ -8956,44 +8957,44 @@ legend {
   font-style: normal;
   font-weight: normal;
 }
-/*.content-block {
-    @include teeter();
-    min-height: 300px;
-    background: $black;
-}*/
-/* line 11, ../sass/partials/_styles.scss */
+/* line 5, ../sass/partials/_styles.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 9, ../sass/partials/_styles.scss */
 .grid .row {
   padding-left: 8px;
   padding-right: 8px;
 }
-/* line 15, ../sass/partials/_styles.scss */
+/* line 13, ../sass/partials/_styles.scss */
 .grid .row [class*='col-'] {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-/* line 20, ../sass/partials/_styles.scss */
+/* line 18, ../sass/partials/_styles.scss */
 .grid .row h2 {
   text-transform: uppercase;
 }
 
-/* line 25, ../sass/partials/_styles.scss */
+/* line 23, ../sass/partials/_styles.scss */
 .filter-nav {
   margin-bottom: 20px;
 }
-/* line 28, ../sass/partials/_styles.scss */
+/* line 26, ../sass/partials/_styles.scss */
 .filter-nav .row {
   padding: 0;
 }
-/* line 32, ../sass/partials/_styles.scss */
+/* line 30, ../sass/partials/_styles.scss */
 .filter-nav [class*='col-'] {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-/* line 37, ../sass/partials/_styles.scss */
+/* line 35, ../sass/partials/_styles.scss */
 .filter-nav nav {
   float: right;
 }
-/* line 41, ../sass/partials/_styles.scss */
+/* line 39, ../sass/partials/_styles.scss */
 .filter-nav a {
   display: inline-block;
   width: 180px;
@@ -9005,12 +9006,17 @@ legend {
   font-weight: bold;
   text-decoration: none;
 }
-/* line 52, ../sass/partials/_styles.scss */
+/* line 50, ../sass/partials/_styles.scss */
 .filter-nav a:last-of-type {
   padding-right: 0;
 }
-/* line 56, ../sass/partials/_styles.scss */
-.filter-nav a:hover {
+/* line 54, ../sass/partials/_styles.scss */
+.filter-nav a:hover, .filter-nav a.active {
   background: #333;
   color: #fff;
+}
+
+/* line 61, ../sass/partials/_styles.scss */
+.isotope-item {
+  z-index: 2;
 }

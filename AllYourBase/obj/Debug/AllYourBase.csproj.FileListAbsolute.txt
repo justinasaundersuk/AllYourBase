@@ -107,3 +107,4 @@ C:\Users\Justin\Documents\GitHub\AllYourBase\AllYourBase\bin\Microsoft.Owin.Secu
 C:\Users\Justin\Documents\GitHub\AllYourBase\AllYourBase\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Justin\Documents\GitHub\AllYourBase\AllYourBase\obj\Debug\AllYourBase.dll
 C:\Users\Justin\Documents\GitHub\AllYourBase\AllYourBase\obj\Debug\AllYourBase.pdb
+C:\Users\Justin\Documents\GitHub\AllYourBase\AllYourBase\obj\Debug\AllYourBase.csprojResolveAssemblyReference.cache
