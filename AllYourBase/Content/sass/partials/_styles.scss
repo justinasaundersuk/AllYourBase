@@ -8,6 +8,7 @@ body {
     min-height: 100%;   // for sticky footer
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .page-wrapper {
@@ -49,8 +50,6 @@ body {
     }
 }
 
-
-
 .filter-nav {
     margin-bottom: 20px;
     font-family: swissboldcondensed;
@@ -58,7 +57,6 @@ body {
     & .row {
         padding: 0;
     }
-
 
     & a { 
         display: inline-block;
@@ -89,8 +87,8 @@ body {
 }
 
 .grid .row {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 0;
+    padding-right: 0;
 
     & [class*='col-'] {
         padding-left: 5px;

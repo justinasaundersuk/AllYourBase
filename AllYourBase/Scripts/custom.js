@@ -20,29 +20,55 @@ $(window).load(function () {
 $('.filter-button').on('click', function (e) {
     e.preventDefault();
 
-    var $grid = $('.grid');
+    var grid = $('.grid');
     var filterValue = $(this).attr('data-filter');
+    var footer = $('.site-footer');
 
-    // if we need to reset the isotope filters at any point...
-    $(".filter-button-reset").click(function (e) {
-        e.preventDefault();
+    // Hide the footer, fade back in after a delay
+    hideFadeInFooter(footer);
 
-        $grid.isotope({
-            filter: '*'
-        });
+    if (filterValue == 'undefined') {
+        // Home will be the only button with no value
+        clearFilter(grid);
+    }
+    else {
+        // otherwise, apply the filter
+        applyFilter(grid, filterValue);
+    }
+
+    // Set navigation button active state
+    setActiveButton($(this));
+});
+
+function clearFilter(grid) {
+    grid.isotope({
+        filter: '*'
     });
+}
 
-    $grid.isotope({
+function applyFilter(grid, filterValue) {
+    grid.isotope({
         filter: filterValue,
         transitionDuration: '1s',
         stagger: 80
     });
+}
 
-    // set button active state
+function hideFadeInFooter(element) {
+    // hide the footer, otherwise will appear below the grid items
+    $(element).hide();
+
+    // fade the footer back into view with a delay
+    $(element).delay(600).fadeIn(800);
+}
+
+function setActiveButton(buttonObj) {
+    // remove all button active states
     $('.filter-button').removeClass('active');
-    $(this).addClass('active');
-});
+    $('.filter-button.reset').removeClass('active');
 
+    $(buttonObj).addClass('active');
+}
 
 // handle the flip toggle
 $(".flip-container").on('mouseenter mouseleave click', function () {

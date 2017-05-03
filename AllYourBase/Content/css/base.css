@@ -9183,26 +9183,27 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
-/* line 13, ../sass/partials/_styles.scss */
+/* line 14, ../sass/partials/_styles.scss */
 .page-wrapper {
   flex: 1;
 }
 
-/* line 17, ../sass/partials/_styles.scss */
+/* line 18, ../sass/partials/_styles.scss */
 .logo {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 62em) {
-  /* line 17, ../sass/partials/_styles.scss */
+  /* line 18, ../sass/partials/_styles.scss */
   .logo {
     margin-bottom: 0;
   }
 }
 
-/* line 26, ../sass/partials/_styles.scss */
+/* line 27, ../sass/partials/_styles.scss */
 .row-flex {
   display: flex;
   justify-content: flex-start;
@@ -9210,37 +9211,37 @@ body {
   margin-top: auto;
 }
 @media only screen and (min-width: 62em) {
-  /* line 26, ../sass/partials/_styles.scss */
+  /* line 27, ../sass/partials/_styles.scss */
   .row-flex {
     flex-direction: row;
   }
 }
-/* line 36, ../sass/partials/_styles.scss */
+/* line 37, ../sass/partials/_styles.scss */
 .row-flex .logo img {
   width: 100%;
   max-width: 317px;
   height: auto;
 }
-/* line 42, ../sass/partials/_styles.scss */
+/* line 43, ../sass/partials/_styles.scss */
 .row-flex nav {
   margin-left: auto;
   margin-top: auto;
 }
-/* line 47, ../sass/partials/_styles.scss */
+/* line 48, ../sass/partials/_styles.scss */
 .row-flex .filter-options {
   display: flex;
 }
 
-/* line 54, ../sass/partials/_styles.scss */
+/* line 53, ../sass/partials/_styles.scss */
 .filter-nav {
   margin-bottom: 20px;
   font-family: swissboldcondensed;
 }
-/* line 58, ../sass/partials/_styles.scss */
+/* line 57, ../sass/partials/_styles.scss */
 .filter-nav .row {
   padding: 0;
 }
-/* line 63, ../sass/partials/_styles.scss */
+/* line 61, ../sass/partials/_styles.scss */
 .filter-nav a {
   display: inline-block;
   width: 140px;
@@ -9254,32 +9255,32 @@ body {
   font-size: 16px;
   margin-right: 5px;
 }
-/* line 76, ../sass/partials/_styles.scss */
+/* line 74, ../sass/partials/_styles.scss */
 .filter-nav a:last-of-type {
   padding-right: 0;
 }
-/* line 80, ../sass/partials/_styles.scss */
+/* line 78, ../sass/partials/_styles.scss */
 .filter-nav a:hover, .filter-nav a.active {
   background: #333333;
   color: #ffffff;
 }
 
-/* line 87, ../sass/partials/_styles.scss */
+/* line 85, ../sass/partials/_styles.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 91, ../sass/partials/_styles.scss */
+/* line 89, ../sass/partials/_styles.scss */
 .grid .row {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 0;
+  padding-right: 0;
 }
-/* line 95, ../sass/partials/_styles.scss */
+/* line 93, ../sass/partials/_styles.scss */
 .grid .row [class*='col-'] {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 100, ../sass/partials/_styles.scss */
+/* line 98, ../sass/partials/_styles.scss */
 .grid .row h2 {
   text-transform: uppercase;
 }
