@@ -16,7 +16,46 @@
         padding-left: 8px;
         padding-right: 8px;
     }
+
     & h2 {
         text-transform: uppercase;
+    }
+}
+
+.filter-nav {
+    margin-bottom: 20px;
+
+    & .row {
+        padding: 0;
+    }
+
+    & [class*='col-'] {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    & nav {
+        float: right;
+    }
+
+    & a { 
+        display: inline-block;
+        width: 180px;
+        padding: 8px 0;
+        border:1px solid #333;
+        text-align: center;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &:hover {
+            background: #333;
+            color: #fff;
+        }
     }
 }

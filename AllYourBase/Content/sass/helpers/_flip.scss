@@ -43,6 +43,20 @@
 .back {
     transform: rotateY(-180deg);
     position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 0 20px;
+    overflow: hidden;
+
+    & h2 {
+        margin-bottom: 24px;
+        
+    }
+
+    & p {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 //	Some vertical flip updates 

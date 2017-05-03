@@ -8915,24 +8915,37 @@ legend {
 .back {
   transform: rotateY(-180deg);
   position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 0 20px;
+  overflow: hidden;
+}
+/* line 51, ../sass/helpers/_flip.scss */
+.back h2 {
+  margin-bottom: 24px;
+}
+/* line 56, ../sass/helpers/_flip.scss */
+.back p {
+  font-size: 14px;
+  line-height: 18px;
 }
 
-/* line 49, ../sass/helpers/_flip.scss */
+/* line 63, ../sass/helpers/_flip.scss */
 .vertical.flip-container {
   position: relative;
 }
 
-/* line 50, ../sass/helpers/_flip.scss */
+/* line 64, ../sass/helpers/_flip.scss */
 .vertical .back {
   transform: rotateX(180deg);
 }
 
-/* line 51, ../sass/helpers/_flip.scss */
+/* line 65, ../sass/helpers/_flip.scss */
 .vertical.flip-container:hover .back {
   transform: rotateX(0deg);
 }
 
-/* line 52, ../sass/helpers/_flip.scss */
+/* line 66, ../sass/helpers/_flip.scss */
 .vertical.flip-container:hover .front {
   transform: rotateX(180deg);
 }
@@ -8958,7 +8971,46 @@ legend {
   padding-left: 8px;
   padding-right: 8px;
 }
-/* line 19, ../sass/partials/_styles.scss */
+/* line 20, ../sass/partials/_styles.scss */
 .grid .row h2 {
   text-transform: uppercase;
+}
+
+/* line 25, ../sass/partials/_styles.scss */
+.filter-nav {
+  margin-bottom: 20px;
+}
+/* line 28, ../sass/partials/_styles.scss */
+.filter-nav .row {
+  padding: 0;
+}
+/* line 32, ../sass/partials/_styles.scss */
+.filter-nav [class*='col-'] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* line 37, ../sass/partials/_styles.scss */
+.filter-nav nav {
+  float: right;
+}
+/* line 41, ../sass/partials/_styles.scss */
+.filter-nav a {
+  display: inline-block;
+  width: 180px;
+  padding: 8px 0;
+  border: 1px solid #333;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 52, ../sass/partials/_styles.scss */
+.filter-nav a:last-of-type {
+  padding-right: 0;
+}
+/* line 56, ../sass/partials/_styles.scss */
+.filter-nav a:hover {
+  background: #333;
+  color: #fff;
 }
