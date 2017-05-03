@@ -2,5 +2,14 @@
 // Via google fonts url import
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
-// Via file system using fontFace mixin
-@include fontface('defused','../fonts/defused/defused-webfont');
+// Swiss Condensed
+@include fontface('swisscondensed','../fonts/swiss-condensed/swiss-condensed');
+
+// Swiss Bold Condensed
+@include fontface('swissboldcondensed','../fonts/swiss-bold-condensed/swiss-bold-condensed');
+
+// Avenir Medium
+@include fontface('avenir','../fonts/avenir-medium/avenirlt-medium');
+
+// Swiss Roman Condensed
+@include fontface('swissroman','../fonts/swiss-roman-condensed/swiss-roman-condensed');

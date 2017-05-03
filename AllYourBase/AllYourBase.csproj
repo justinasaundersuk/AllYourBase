@@ -177,6 +177,7 @@
     <Content Include="Content\images\dam-a.jpg" />
     <Content Include="Content\images\dam-d.jpg" />
     <Content Include="Content\images\dam-m.jpg" />
+    <Content Include="Content\images\logo-damdigital.png" />
     <Content Include="Content\images\look-andrex.jpg" />
     <Content Include="Content\images\look-byron.jpg" />
     <Content Include="Content\images\look-girl.jpg" />
@@ -464,8 +465,6 @@
     <Content Include="Content\fonts\font-awesome\fontawesome-webfont.woff" />
     <Content Include="Content\fonts\font-awesome\fontawesome-webfont.woff2" />
     <Content Include="Content\fonts\font-awesome\FontAwesome.otf" />
-    <Content Include="Content\fonts\defused\defused-webfont.woff" />
-    <Content Include="Content\fonts\defused\defused-webfont.woff2" />
     <Content Include=".gitignore" />
     <Content Include="Content\sass\vendors\font-awesome\_animated.scss" />
     <Content Include="Content\sass\vendors\font-awesome\_bordered-pulled.scss" />
@@ -482,6 +481,14 @@
     <Content Include="Content\sass\vendors\font-awesome\_variables.scss" />
     <Content Include="Content\sass\helpers\_flip.scss" />
     <Content Include="Content\sass\partials\_footer.scss" />
+    <Content Include="Content\fonts\swiss-condensed\swiss-condensed.woff" />
+    <Content Include="Content\fonts\swiss-condensed\swiss-condensed.woff2" />
+    <Content Include="Content\fonts\swiss-roman-condensed\swiss-roman-condensed.woff" />
+    <Content Include="Content\fonts\swiss-roman-condensed\swiss-roman-condensed.woff2" />
+    <Content Include="Content\fonts\avenir-medium\avenir-medium.woff" />
+    <Content Include="Content\fonts\avenir-medium\avenir-medium.woff2" />
+    <Content Include="Content\fonts\swiss-bold-condensed\swiss-bold-condensed.woff" />
+    <Content Include="Content\fonts\swiss-bold-condensed\swiss-bold-condensed.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\examples.js" />

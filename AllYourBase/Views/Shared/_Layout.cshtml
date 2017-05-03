@@ -3,34 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - All Your Base - SASS & CSS</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/css/bootstrap")
     @Styles.Render("~/css/styles")
 </head>
 
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("AllYourBase Sass Framework", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Sass examples", "Examples", "Home")</li>
-                    <li>@Html.ActionLink("Sandbox", "Sandbox", "Home")</li>
-                    <li>@Html.ActionLink("Flexbox", "Flexbox", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Purely to create space under the demo nav -->
-    <span style="height: 70px; display: block;"></span>
 
     <div class="page-wrapper">
 
@@ -44,13 +22,18 @@
     @RenderSection("scripts", required: false)
 
     <footer class="site-footer">
-        <ul>
+        <ul class="dam-info">
             <li>Dam Digital, 20 Irving Street, London. WC2H 7AU</li>
             <li><a href="mailto:info@dam-digital.com">info@dam-digital.com</a></li>
             <li>@@dam-digital</li>
             <li>Privacy policy</li>
             <li>Cookie policy</li>
             <li>Legal wotsits</li>
+        </ul>
+        <ul class="dam-social">
+            <li>FB</li>
+            <li>TW</li>
+            <li>IG</li>
         </ul>
     </footer>
 

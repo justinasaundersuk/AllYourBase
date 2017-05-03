@@ -1,7 +1,91 @@
 ﻿
 html {
-    // stops content jumping when transitioning from scrollbar to no scrollbar
-    overflow-y: scroll;
+    height: 100%;
+    overflow-y: scroll;  // stops content jumping when transitioning from scrollbar to no scrollbar
+}
+
+body {
+    min-height: 100%;   // for sticky footer
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper {
+    flex: 1;    // for sticky footer
+}
+
+.logo { 
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    @include min($bp-md) {
+        margin-bottom: 0;
+    }
+}
+
+.row-flex {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: auto;
+
+    @include min($bp-md) {
+        flex-direction: row;
+    }
+
+    & .logo img {
+        width: 100%;
+        max-width: 317px;
+        height: auto;
+    }
+
+    & nav {
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    & .filter-options {
+        display: flex;
+    }
+}
+
+
+
+.filter-nav {
+    margin-bottom: 20px;
+    font-family: swissboldcondensed;
+
+    & .row {
+        padding: 0;
+    }
+
+
+    & a { 
+        display: inline-block;
+        width: 140px;
+        padding: 5px 0;
+        border:1px solid $dark-grey;
+        text-align: center;
+        text-transform: uppercase;
+        color: $dark-grey;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 16px;
+        margin-right: 5px;
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &:hover, &.active {
+            background: $dark-grey;
+            color: $white;
+        }
+    }
+}
+
+.isotope-item {
+	z-index: 2;
 }
 
 .grid .row {
@@ -18,44 +102,3 @@ html {
     }
 }
 
-.filter-nav {
-    margin-bottom: 20px;
-
-    & .row {
-        padding: 0;
-    }
-
-    & [class*='col-'] {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    & nav {
-        float: right;
-    }
-
-    & a { 
-        display: inline-block;
-        width: 180px;
-        padding: 5px 0;
-        border:1px solid $dark-grey;
-        text-align: center;
-        text-transform: uppercase;
-        color: $dark-grey;
-        font-weight: bold;
-        text-decoration: none;
-
-        &:last-of-type {
-            padding-right: 0;
-        }
-
-        &:hover, &.active {
-            background: $dark-grey;
-            color: $white;
-        }
-    }
-}
-
-.isotope-item {
-	z-index: 2;
-}

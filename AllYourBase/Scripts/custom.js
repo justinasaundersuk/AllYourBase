@@ -24,11 +24,13 @@ $('.filter-button').on('click', function (e) {
     var filterValue = $(this).attr('data-filter');
 
     // if we need to reset the isotope filters at any point...
-    //$(".isotope-reset").click(function () {
-    //    $grid.isotope({
-    //        filter: '*'
-    //    });
-    //});
+    $(".filter-button-reset").click(function (e) {
+        e.preventDefault();
+
+        $grid.isotope({
+            filter: '*'
+        });
+    });
 
     $grid.isotope({
         filter: filterValue,

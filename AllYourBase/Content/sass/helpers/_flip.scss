@@ -48,12 +48,15 @@
     padding: 0 20px;
     overflow: hidden;
     padding-bottom: 60px;
+    font-family: swissroman;
 
-    & h2 { margin-bottom: 24px; }
+    & h2 { 
+        margin-bottom: 24px;
+        font-weight: bold;
+    }
 
     & p {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 16px;
     }
 }
 
