@@ -11,6 +11,16 @@ body {
     justify-content: center;
 }
 
+h1, h2 {
+    font-family: $swissboldcondensed;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: $swissroman;
+    font-size: $base-font-size;
+}
+
 .page-wrapper {
     flex: 1;    // for sticky footer
 }
@@ -57,7 +67,7 @@ body {
 
 .filter-nav {
     margin-bottom: 20px;
-    font-family: swissboldcondensed;
+    font-family: $swissboldcondensed;
 
     & .row {
         padding: 0;
@@ -99,9 +109,62 @@ body {
         padding-left: 5px;
         padding-right: 5px;
     }
+}
 
-    & h2 {
-        text-transform: uppercase;
+.at-a-glance {
+    margin-bottom: 30px;
+
+    & .row {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    & [class*='col-'] {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    h1 { 
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    & h2 { margin-top: 0; }
+}
+
+nav.case-studies {
+    margin: 30px 0;
+
+    .chevron {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 40px;
+        font-family: dam;
+        font-size: 50px;
+        color: $light-grey;
+    }
+
+    & .previous a, & .next a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    & .previous {
+        & a:before {
+            @extend .chevron;
+            content: "\e902";
+        }
+    }
+
+    & .next {
+        & a:after {
+            @extend .chevron;
+            content: "\e905";
+        }
     }
 }
 
+.full-width-panel {
+
+}

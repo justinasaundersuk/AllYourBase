@@ -1,29 +1,41 @@
-﻿// Breakpoints
+﻿// breakpoints
 $bp-ms: 480;
 $bp-sm: 768;
 $bp-md: 992;
 $bp-lg: 1200;
 
-// Colours
+// colours
 $white: #ffffff;
 $black: #000000;
 $green: #0097a9;
-$yellow: rgb(255, 205, 0);
+$yellow: #fce80d;
 $dark-grey: #333333;
-$light-grey: #537385;
+$light-grey: #9a9999;
 $light-green: #d9f3ca;
 $dark-green: #537381;
 $blue: #0065bd;
 $hover: #33acba;
 $grey: #d8e1e7;
 $red: #ff0000;
-$green: #008000;
+$green: #8dc63f;
 
-// rgba transparency
-$green-transparency: rgba(0, 151, 169, .8);
+// font families
+$avenir: avenir, Arial, Helvetica, sans-serif;
+$swissboldcondensed: swissboldcondensed, Arial, Helvetica, sans-serif;
+$swisscondensed: swisscondensed, Arial, Helvetica, sans-serif;
+$swissroman: swissroman, Arial, Helvetica, sans-serif;
 
-// Fonts
+// fonts
 $basefont-size: 16;                    // Used in "em" function for media query min() and max() mixins
 $base-font-size: 16px;
 $base-line-height: 20px;
 $baseline-px: ($basefont-size * 1px);  // Used in "rem" mixin, base font size in px
+
+// dam font specific unicode values
+$dam_font_angle-left-bold: "\e900";
+$dam_font_angle-left-light: "\e901";
+$dam_font_angle-left-normal: "\e902";
+$dam_font_angle-right-bold: "\e903";
+$dam_font_angle-right-light: "\e904";
+$dam_font_angle-right-normal: "\e905";
+

@@ -1,1 +1,14 @@
 ﻿
+.full-width {
+    width: 100%;
+    height: auto;
+}
+
+.infobox {
+    padding: 30px 20px;
+    border: 1px solid $light-grey;
+}
+
+.bg-green {
+    background-color: $green;
+}
