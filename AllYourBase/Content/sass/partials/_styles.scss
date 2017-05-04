@@ -24,6 +24,10 @@ body {
     }
 }
 
+.container-fluid.grid {
+    max-width: 99.9%;       // fix for known isotope rendering bug in firefox
+}
+
 .row-flex {
     display: flex;
     justify-content: flex-start;
@@ -83,7 +87,7 @@ body {
 }
 
 .isotope-item {
-	z-index: 2;
+    z-index: 2;
 }
 
 .grid .row {
