@@ -172,6 +172,8 @@
   <ItemGroup>
     <Content Include="Content\css\base.css" />
     <Content Include="Content\css\vendors\bootstrap.css" />
+    <Content Include="Content\css\vendors\owl.carousel.css" />
+    <Content Include="Content\css\vendors\owl.theme.default.css" />
     <Content Include="Content\Examples\Ticker-JSON-markup.html" />
     <Content Include="Content\fonts\font-awesome\fontawesome-webfont.svg" />
     <Content Include="Content\images\carousel\carousel-barnardos-ipad-1.jpg" />
