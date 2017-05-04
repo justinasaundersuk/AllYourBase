@@ -10,6 +10,25 @@
 
 <body>
 
+    <header>
+        <div class="container-fluid filter-nav">
+            <div class="row-flex">
+                <div class="col-xs-12 col-sm-4 logo">
+                    <a href="/"><img src="~/Content/images/logo-damdigital.png" /></a>
+                </div>
+                <div class="col-xs-12 col-sm-8 filter-options">
+                    <nav>
+                        <a href="#" class="filter-button reset active">Home</a>
+                        <a href="#" class="filter-button" data-filter=".what">What</a>
+                        <a href="#" class="filter-button" data-filter=".who">Who</a>
+                        <a href="#" class="filter-button" data-filter=".look">Look</a>
+                        <a href="#" class="filter-button" data-filter=".contact">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <div class="page-wrapper">
 
         @RenderBody()
