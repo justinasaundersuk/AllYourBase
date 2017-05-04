@@ -28,6 +28,7 @@ body {
     max-width: 99.9%;       // fix for known isotope rendering bug in firefox
 }
 
+// specific to the header
 .row-flex {
     display: flex;
     justify-content: flex-start;
@@ -62,7 +63,7 @@ body {
         padding: 0;
     }
 
-    & a { 
+    & .filter-options a { 
         display: inline-block;
         width: 140px;
         padding: 5px 0;

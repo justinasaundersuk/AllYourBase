@@ -3,9 +3,9 @@
     background: $black;
 
     & .dam-info {
-        list-style-type: none;
         padding: 10px 0 0 0;
         margin: 0 0 0 10px;
+        list-style-type: none;
 
         @include min($bp-md) {
             padding-top: 0;
@@ -23,25 +23,17 @@
     }
 
     & .dam-social {
-        color: $white;
-        list-style-type: none;
-        padding-left: 10px;
+        @extend .dam-info;
+
+        padding: 0 0 0 10px;
 
         @include min($bp-md) {
             padding-left: 0;
             float: right;
         }
 
-        & li {
-            display: inline-block;
-            padding: 10px;
-
-            @include min($bp-md) { padding: 20px; }
-            @include min($bp-lg) { padding: 30px 20px; }
-
-            &:last-of-type {
-                margin-right: 20px;
-            }
+        & li:last-of-type {
+            margin-right: 20px;
         }
     }
 }
