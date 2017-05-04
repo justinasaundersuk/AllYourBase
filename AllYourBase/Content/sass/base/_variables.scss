@@ -32,6 +32,8 @@ $base-line-height: 20px;
 $baseline-px: ($basefont-size * 1px);  // Used in "rem" mixin, base font size in px
 
 // dam font specific unicode values
+$dam_font_angle-left-normal-nospace: "\e906";
+$dam_font_angle-right-normal-nospace: "\e907";
 $dam_font_angle-left-bold: "\e900";
 $dam_font_angle-left-light: "\e901";
 $dam_font_angle-left-normal: "\e902";

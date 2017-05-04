@@ -21,6 +21,18 @@ p {
     font-size: $base-font-size;
 }
 
+blockquote {
+    border-left: 0;
+    margin: 0;
+    padding: 0;
+    font-family: $swissboldcondensed;
+    font-style: italic;
+    color: $white;
+
+    &:before { font-style: normal; }
+    &:after { font-style: normal; }
+}
+
 .page-wrapper {
     flex: 1;    // for sticky footer
 }
@@ -138,33 +150,52 @@ nav.case-studies {
 
     .chevron {
         display: inline-block;
+        width: 17px;
+        font-size: 30px;
         vertical-align: middle;
-        line-height: 40px;
         font-family: dam;
-        font-size: 50px;
         color: $light-grey;
+
+        @include min($bp-ms) {
+            width: 30px;
+            font-size: 50px;
+        }
     }
 
     & .previous a, & .next a {
         display: inline-block;
         vertical-align: middle;
+        font-size: 13px;
+
+        @include min($bp-ms) {
+            font-size: 16px;
+        }
     }
 
     & .previous {
+        padding-right: 0;
+
         & a:before {
             @extend .chevron;
-            content: "\e902";
+            content: "\e906";
         }
     }
 
     & .next {
+        padding-left: 0;
+
         & a:after {
             @extend .chevron;
-            content: "\e905";
+            content: "\e907";
         }
     }
 }
 
 .full-width-panel {
+    padding: 20px;
 
+    & h2 { 
+        margin-bottom: 40px;
+        color: $white;
+    }
 }
