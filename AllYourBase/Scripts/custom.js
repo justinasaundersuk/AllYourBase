@@ -1,11 +1,45 @@
 ﻿
 $(window).load(function () {
-    // initial isotope load
-    $('.grid').isotope({
-        percentPosition: true,
-        itemSelector: '.isotope-item',
-        layoutMode: 'fitRows'
-    });
+    var theHash = window.location.hash;
+
+    if (theHash != '') {
+        // prepare the filter value for isotope
+        theFilter = theHash.replace("#", ".");
+    }
+
+    if (theHash != "") {
+        // Initial load
+        $('.grid').isotope({
+            percentPosition: true,
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
+
+        // filter with transition
+        $('.grid').isotope({
+            percentPosition: true,
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows',
+            filter: theFilter,
+            transitionDuration: '1s',
+            stagger: 80
+        });
+
+        // Set correct nav button active
+        setActiveButtonHash(theFilter);
+    }
+    else {
+        // default load for home
+        $('.grid').isotope({
+            percentPosition: true,
+            itemSelector: '.isotope-item',
+            layoutMode: 'fitRows'
+        });
+
+        // set home active
+        var homeLink = document.getElementById("home");
+        $(homeLink).addClass("active");
+    }
 
     // set height of flip back panel to same height as front (the image)
     $('.flip-container .back').matchHeight({
@@ -63,7 +97,15 @@ $(window).load(function () {
 
 // filter items on button click
 $('.filter-button').on('click', function (e) {
-    e.preventDefault();
+    // if the href has a # value we need to allow the link back to home, then filter based on the hash value
+    // will work in conjunction with a page load check to see if filtering needs to be applied
+    var val = $(this).attr('href');
+    var setButtonState = false;
+
+    if (val.indexOf('#') == -1) {
+        e.preventDefault();
+        setButtonState = true;
+    }
 
     var grid = $('.grid');
     var filterValue = $(this).attr('data-filter');
@@ -81,8 +123,14 @@ $('.filter-button').on('click', function (e) {
         applyFilter(grid, filterValue);
     }
 
-    // Set navigation button active state
-    setActiveButton($(this));
+    if (setButtonState) {
+        // Set navigation button active state
+        setActiveButton($(this));
+    }
+    else {
+        // must be the homepage
+        $('.filter-button.reset').addClass('active');
+    }
 });
 
 function clearFilter(grid) {
@@ -108,11 +156,23 @@ function hideFadeInFooter(element) {
 }
 
 function setActiveButton(buttonObj) {
+    // sets active nav button when on homepage
     // remove all button active states
     $('.filter-button').removeClass('active');
     $('.filter-button.reset').removeClass('active');
 
     $(buttonObj).addClass('active');
+}
+
+function setActiveButtonHash(urlHashValue) {
+    // sets active nav button when clicking from another page
+    var activeButton = document.getElementById(urlHashValue);
+
+    // remove all button active states
+    $('.filter-button').removeClass('active');
+    $('.filter-button.reset').removeClass('active');
+
+    $(activeButton).addClass('active');
 }
 
 // handle the flip toggle
