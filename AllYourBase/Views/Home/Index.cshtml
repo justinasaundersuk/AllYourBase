@@ -262,7 +262,7 @@
             </div>
         </div>
         <div class="col-xs-12 col-ms-6 col-sm-4 col-md-3 col-lg-2 isotope-item what">
-            <div class="flip-container">
+            <div class="flip-container map">
                 <div class="flipper">
                     <div class="front">
                         <div class="content-panel">
@@ -272,7 +272,29 @@
                     <div class="back">
                         <div class="content-panel">
                             <h2 title="Find us">Find us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in finibus lectus. Etiam cursus orci in tincidunt euismod. Aenean tincidunt sem turpis, sed cursus ante sagittis non. Donec consectetur libero tellus, a placerat diam tristique nec. Nunc suscipit ullamcorper urna, et pretium orci placerat eu. Nullam malesuada, ex dapibus blandit sodales.</p>
+                            <div id="map"></div>
+                            
+                            <script>
+                              function initMap() {
+                                var uluru = {lat: -25.363, lng: 131.044};
+                                var map = new google.maps.Map(document.getElementById('map'), {
+                                    zoom: 4,
+                                    panControl: false,
+                                    zoomControl: false,
+                                    scaleControl: false,
+                                    draggable: false,
+                                    navigationControl: false,
+                                    streetViewControl: false,
+                                    scrollwheel: false,
+                                    mapTypeControl: false,
+                                    center: uluru
+                                });
+                                var marker = new google.maps.Marker({
+                                  position: uluru,
+                                  map: map
+                                });
+                              }
+                            </script>
                         </div>
                     </div>
                 </div>

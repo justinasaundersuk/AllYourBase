@@ -65,3 +65,19 @@
 .vertical .back { transform: rotateX(180deg); }
 .vertical.flip-container:hover .back { transform: rotateX(0deg); }
 .vertical.flip-container:hover .front { transform: rotateX(180deg); }
+
+// google map
+.flip-container.map {
+    & .back {
+        padding: 0;
+
+        & h2 {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            right: 0;
+            color: $dark-grey;
+            z-index: 999999;
+        }
+    }
+}

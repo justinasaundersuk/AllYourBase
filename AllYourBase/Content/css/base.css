@@ -12701,6 +12701,20 @@ legend {
   transform: rotateX(180deg);
 }
 
+/* line 71, ../sass/helpers/_flip.scss */
+.flip-container.map .back {
+  padding: 0;
+}
+/* line 74, ../sass/helpers/_flip.scss */
+.flip-container.map .back h2 {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 0;
+  color: #333333;
+  z-index: 999999;
+}
+
 /* line 2, ../sass/helpers/_general.scss */
 .full-width {
   width: 100%;
@@ -13178,4 +13192,17 @@ nav.case-studies .next a:after {
 .full-width-panel h2 {
   margin-bottom: 40px;
   color: #ffffff;
+}
+
+/* line 200, ../sass/partials/_styles.scss */
+#map {
+  height: 0;
+  overflow: hidden;
+  padding-top: 4px;
+  padding-bottom: 145%;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  z-index: 999999;
 }
