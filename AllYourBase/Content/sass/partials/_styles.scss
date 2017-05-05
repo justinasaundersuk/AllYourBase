@@ -37,6 +37,17 @@ blockquote {
     flex: 1;    // for sticky footer
 }
 
+.container {
+    &.seperator {
+        padding: 40px 0;
+        text-align: center;
+    }
+}
+
+.container-fluid.grid {
+    max-width: 99.9%;       // fix for known isotope rendering bug in firefox
+}
+
 .logo { 
     margin-top: 15px;
     margin-bottom: 15px;
@@ -44,10 +55,6 @@ blockquote {
     @include min($bp-md) {
         margin-bottom: 0;
     }
-}
-
-.container-fluid.grid {
-    max-width: 99.9%;       // fix for known isotope rendering bug in firefox
 }
 
 // specific to the header

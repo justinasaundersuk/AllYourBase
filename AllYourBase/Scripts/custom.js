@@ -54,6 +54,7 @@ $(window).load(function () {
         $('#owl-ipad').owlCarousel({
             loop: true,
             margin: 10,
+            navText: ["<span class='dam_font_angle-left-normal-nospace'></span>","<span class='dam_font_angle-right-normal-nospace'></span>"],
             responsiveClass: true,
             responsive: {
                 0: {
@@ -62,7 +63,7 @@ $(window).load(function () {
                 },
                 600: {
                     items: 1,
-                    nav: false
+                    nav: true
                 },
                 1000: {
                     items: 1,
@@ -74,7 +75,8 @@ $(window).load(function () {
 
         $('#owl-iphone').owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 40,
+            navText: ["<span class='dam_font_angle-left-normal-nospace'></span>", "<span class='dam_font_angle-right-normal-nospace'></span>"],
             responsiveClass: true,
             responsive: {
                 0: {
@@ -83,7 +85,29 @@ $(window).load(function () {
                 },
                 600: {
                     items: 3,
-                    nav: false
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+
+        $('#owl-casestudies').owlCarousel({
+            loop: true,
+            margin: 40,
+            navText: ["<span class='dam_font_angle-left-normal-nospace'></span>", "<span class='dam_font_angle-right-normal-nospace'></span>"],
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
                 },
                 1000: {
                     items: 3,

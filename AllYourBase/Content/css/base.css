@@ -12770,6 +12770,107 @@ legend {
   right: 0;
 }
 
+/* line 66, ../sass/helpers/_general.scss */
+.button {
+  width: 140px;
+  padding: 5px 0;
+  border: 1px solid #333333;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+/* line 77, ../sass/helpers/_general.scss */
+.button.hero {
+  margin: 0 auto;
+  padding: 5px 15px;
+}
+
+/* line 3, ../sass/partials/_owlcarousel.scss */
+.owl-nav .owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+}
+@media only screen and (min-width: 48em) {
+  /* line 3, ../sass/partials/_owlcarousel.scss */
+  .owl-nav .owl-prev {
+    left: -80px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  /* line 3, ../sass/partials/_owlcarousel.scss */
+  .owl-nav .owl-prev {
+    left: -100px;
+  }
+}
+/* line 18, ../sass/partials/_owlcarousel.scss */
+.owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+}
+@media only screen and (min-width: 48em) {
+  /* line 18, ../sass/partials/_owlcarousel.scss */
+  .owl-nav .owl-next {
+    right: -80px;
+  }
+}
+@media only screen and (min-width: 62em) {
+  /* line 18, ../sass/partials/_owlcarousel.scss */
+  .owl-nav .owl-next {
+    right: -100px;
+  }
+}
+
+/* line 34, ../sass/partials/_owlcarousel.scss */
+.dam_font_angle-left-normal-nospace:before {
+  content: "\e900";
+  font-family: dam;
+  color: #9a9999;
+  width: 20px;
+  font-size: 40px;
+}
+@media only screen and (min-width: 48em) {
+  /* line 34, ../sass/partials/_owlcarousel.scss */
+  .dam_font_angle-left-normal-nospace:before {
+    width: 40px;
+    font-size: 80px;
+  }
+}
+
+/* line 47, ../sass/partials/_owlcarousel.scss */
+.dam_font_angle-right-normal-nospace:before {
+  content: "\e903";
+  font-family: dam;
+  color: #9a9999;
+  width: 20px;
+  font-size: 40px;
+}
+@media only screen and (min-width: 48em) {
+  /* line 47, ../sass/partials/_owlcarousel.scss */
+  .dam_font_angle-right-normal-nospace:before {
+    width: 40px;
+    font-size: 80px;
+  }
+}
+
+/* line 60, ../sass/partials/_owlcarousel.scss */
+.carousel {
+  padding-bottom: 70px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+/* line 65, ../sass/partials/_owlcarousel.scss */
+.carousel h1 {
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+
 @font-face {
   font-family: "swisscondensed";
   src: url("../fonts/swiss-condensed/swiss-condensed.woff") format("woff"), url("../fonts/swiss-condensed/swiss-condensed.woff2") format("woff2");
@@ -12900,24 +13001,30 @@ blockquote:after {
   flex: 1;
 }
 
-/* line 40, ../sass/partials/_styles.scss */
+/* line 41, ../sass/partials/_styles.scss */
+.container.seperator {
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* line 47, ../sass/partials/_styles.scss */
+.container-fluid.grid {
+  max-width: 99.9%;
+}
+
+/* line 51, ../sass/partials/_styles.scss */
 .logo {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 @media only screen and (min-width: 62em) {
-  /* line 40, ../sass/partials/_styles.scss */
+  /* line 51, ../sass/partials/_styles.scss */
   .logo {
     margin-bottom: 0;
   }
 }
 
-/* line 49, ../sass/partials/_styles.scss */
-.container-fluid.grid {
-  max-width: 99.9%;
-}
-
-/* line 54, ../sass/partials/_styles.scss */
+/* line 61, ../sass/partials/_styles.scss */
 .row-flex {
   display: flex;
   justify-content: flex-start;
@@ -12925,37 +13032,37 @@ blockquote:after {
   margin-top: auto;
 }
 @media only screen and (min-width: 62em) {
-  /* line 54, ../sass/partials/_styles.scss */
+  /* line 61, ../sass/partials/_styles.scss */
   .row-flex {
     flex-direction: row;
   }
 }
-/* line 64, ../sass/partials/_styles.scss */
+/* line 71, ../sass/partials/_styles.scss */
 .row-flex .logo img {
   width: 100%;
   max-width: 317px;
   height: auto;
 }
-/* line 70, ../sass/partials/_styles.scss */
+/* line 77, ../sass/partials/_styles.scss */
 .row-flex nav {
   margin-left: auto;
   margin-top: auto;
 }
-/* line 75, ../sass/partials/_styles.scss */
+/* line 82, ../sass/partials/_styles.scss */
 .row-flex .filter-options {
   display: flex;
 }
 
-/* line 80, ../sass/partials/_styles.scss */
+/* line 87, ../sass/partials/_styles.scss */
 .filter-nav {
   margin-bottom: 20px;
   font-family: swissboldcondensed, Arial, Helvetica, sans-serif;
 }
-/* line 84, ../sass/partials/_styles.scss */
+/* line 91, ../sass/partials/_styles.scss */
 .filter-nav .row {
   padding: 0;
 }
-/* line 88, ../sass/partials/_styles.scss */
+/* line 95, ../sass/partials/_styles.scss */
 .filter-nav .filter-options a {
   display: inline-block;
   width: 140px;
@@ -12969,62 +13076,62 @@ blockquote:after {
   font-size: 16px;
   margin-right: 5px;
 }
-/* line 101, ../sass/partials/_styles.scss */
+/* line 108, ../sass/partials/_styles.scss */
 .filter-nav .filter-options a:last-of-type {
   padding-right: 0;
 }
-/* line 105, ../sass/partials/_styles.scss */
+/* line 112, ../sass/partials/_styles.scss */
 .filter-nav .filter-options a:hover, .filter-nav .filter-options a.active {
   background: #333333;
   color: #ffffff;
 }
 
-/* line 112, ../sass/partials/_styles.scss */
+/* line 119, ../sass/partials/_styles.scss */
 .isotope-item {
   z-index: 2;
 }
 
-/* line 116, ../sass/partials/_styles.scss */
+/* line 123, ../sass/partials/_styles.scss */
 .grid .row {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 120, ../sass/partials/_styles.scss */
+/* line 127, ../sass/partials/_styles.scss */
 .grid .row [class*='col-'] {
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* line 126, ../sass/partials/_styles.scss */
+/* line 133, ../sass/partials/_styles.scss */
 .at-a-glance {
   margin-bottom: 30px;
 }
-/* line 129, ../sass/partials/_styles.scss */
+/* line 136, ../sass/partials/_styles.scss */
 .at-a-glance .row {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 134, ../sass/partials/_styles.scss */
+/* line 141, ../sass/partials/_styles.scss */
 .at-a-glance [class*='col-'] {
   padding-left: 5px;
   padding-right: 5px;
 }
-/* line 139, ../sass/partials/_styles.scss */
+/* line 146, ../sass/partials/_styles.scss */
 .at-a-glance h1 {
   margin-top: 40px;
   margin-bottom: 30px;
   text-align: center;
 }
-/* line 145, ../sass/partials/_styles.scss */
+/* line 152, ../sass/partials/_styles.scss */
 .at-a-glance h2 {
   margin-top: 0;
 }
 
-/* line 148, ../sass/partials/_styles.scss */
+/* line 155, ../sass/partials/_styles.scss */
 nav.case-studies {
   margin: 30px 0;
 }
-/* line 151, ../sass/partials/_styles.scss */
+/* line 158, ../sass/partials/_styles.scss */
 nav.case-studies .chevron, nav.case-studies .previous a:before, nav.case-studies .next a:after {
   display: inline-block;
   width: 17px;
@@ -13034,46 +13141,46 @@ nav.case-studies .chevron, nav.case-studies .previous a:before, nav.case-studies
   color: #9a9999;
 }
 @media only screen and (min-width: 30em) {
-  /* line 151, ../sass/partials/_styles.scss */
+  /* line 158, ../sass/partials/_styles.scss */
   nav.case-studies .chevron, nav.case-studies .previous a:before, nav.case-studies .next a:after {
     width: 30px;
     font-size: 50px;
   }
 }
-/* line 165, ../sass/partials/_styles.scss */
+/* line 172, ../sass/partials/_styles.scss */
 nav.case-studies .previous a, nav.case-studies .next a {
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
 }
 @media only screen and (min-width: 30em) {
-  /* line 165, ../sass/partials/_styles.scss */
+  /* line 172, ../sass/partials/_styles.scss */
   nav.case-studies .previous a, nav.case-studies .next a {
     font-size: 16px;
   }
 }
-/* line 175, ../sass/partials/_styles.scss */
+/* line 182, ../sass/partials/_styles.scss */
 nav.case-studies .previous {
   padding-right: 0;
 }
-/* line 178, ../sass/partials/_styles.scss */
+/* line 185, ../sass/partials/_styles.scss */
 nav.case-studies .previous a:before {
   content: "\e906";
 }
-/* line 184, ../sass/partials/_styles.scss */
+/* line 191, ../sass/partials/_styles.scss */
 nav.case-studies .next {
   padding-left: 0;
 }
-/* line 187, ../sass/partials/_styles.scss */
+/* line 194, ../sass/partials/_styles.scss */
 nav.case-studies .next a:after {
   content: "\e907";
 }
 
-/* line 194, ../sass/partials/_styles.scss */
+/* line 201, ../sass/partials/_styles.scss */
 .full-width-panel {
   padding: 20px;
 }
-/* line 197, ../sass/partials/_styles.scss */
+/* line 204, ../sass/partials/_styles.scss */
 .full-width-panel h2 {
   margin-bottom: 40px;
   color: #ffffff;

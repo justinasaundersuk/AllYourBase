@@ -501,6 +501,7 @@
     <Content Include="Content\fonts\swiss-bold-condensed\swiss-bold-condensed.woff2" />
     <Content Include="Content\fonts\dam\damfont.woff" />
     <Content Include="Content\fonts\dam\damfont.woff2" />
+    <Content Include="Content\sass\partials\_owlcarousel.scss" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\examples.js" />
