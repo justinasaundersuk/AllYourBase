@@ -22,10 +22,10 @@
 }
 
 .dam_font_angle-left-normal-nospace:before, .dam_font_angle-right-normal-nospace:before {
-    font-family: dam;
-    color: $light-grey;
     width: 20px;
     font-size: 40px;
+    font-family: dam;
+    color: $light-grey;
 
     @include min($bp-sm) {
         width: 40px;

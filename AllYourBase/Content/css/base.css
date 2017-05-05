@@ -12829,10 +12829,10 @@ legend {
 
 /* line 24, ../sass/partials/_owlcarousel.scss */
 .dam_font_angle-left-normal-nospace:before, .dam_font_angle-right-normal-nospace:before {
-  font-family: dam;
-  color: #9a9999;
   width: 20px;
   font-size: 40px;
+  font-family: dam;
+  color: #9a9999;
 }
 @media only screen and (min-width: 48em) {
   /* line 24, ../sass/partials/_owlcarousel.scss */
