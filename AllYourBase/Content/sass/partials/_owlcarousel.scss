@@ -6,13 +6,8 @@
         transform: translateY(-50%);
         left: -40px;
 
-        @include min($bp-sm) {
-            left: -80px;
-        }
-
-        @include min($bp-md) {
-            left: -100px;
-        }
+        @include min($bp-sm) { left: -80px; }
+        @include min($bp-md) { left: -100px; }
     }
 
     & .owl-next {
@@ -21,18 +16,12 @@
         transform: translateY(-50%);
         right: -40px;
 
-        @include min($bp-sm) {
-            right: -80px;
-        }
-
-        @include min($bp-md) {
-            right: -100px;
-        }
+        @include min($bp-sm) { right: -80px; }
+        @include min($bp-md) { right: -100px; }
     }
 }
 
-.dam_font_angle-left-normal-nospace:before {
-    content: "\e900";
+.dam_font_angle-left-normal-nospace:before, .dam_font_angle-right-normal-nospace:before {
     font-family: dam;
     color: $light-grey;
     width: 20px;
@@ -44,26 +33,20 @@
     }
 }
 
-.dam_font_angle-right-normal-nospace:before {
-    content: "\e903";
-    font-family: dam;
-    color: $light-grey;
-    width: 20px;
-    font-size: 40px;
-
-    @include min($bp-sm) {
-        width: 40px;
-        font-size: 80px;
-    }
-}
+.dam_font_angle-left-normal-nospace:before { content: "\e900"; }
+.dam_font_angle-right-normal-nospace:before { content: "\e903"; }
 
 .carousel {
-    padding-bottom: 70px;
-    max-width: 80%;
+    max-width: 80%;         // allow room for the navigation arrows either side
     margin: 0 auto;
+    padding-bottom: 70px;
+
+    @include min($bp-lg) {
+        max-width: 100%;
+    }
 
     & h1 {
-        text-align: center;
         margin: 60px 0 30px 0;
+        text-align: center;
     }
 }

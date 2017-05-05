@@ -30,7 +30,7 @@ blockquote {
     color: $white;
 
     &:before { font-style: normal; }
-    &:after { font-style: normal; }
+    &:after  { font-style: normal; }
 }
 
 .page-wrapper {
@@ -52,9 +52,7 @@ blockquote {
     margin-top: 15px;
     margin-bottom: 15px;
 
-    @include min($bp-md) {
-        margin-bottom: 0;
-    }
+    @include min($bp-md) { margin-bottom: 0; }
 }
 
 // specific to the header
@@ -88,9 +86,7 @@ blockquote {
     margin-bottom: 20px;
     font-family: $swissboldcondensed;
 
-    & .row {
-        padding: 0;
-    }
+    & .row { padding: 0; }
 
     & .filter-options a { 
         display: inline-block;
@@ -105,19 +101,13 @@ blockquote {
         font-size: 16px;
         margin-right: 5px;
 
-        &:last-of-type {
-            padding-right: 0;
-        }
+        &:last-of-type { padding-right: 0; }
 
         &:hover, &.active {
             background: $dark-grey;
             color: $white;
         }
     }
-}
-
-.isotope-item {
-    z-index: 2;
 }
 
 .grid .row {
