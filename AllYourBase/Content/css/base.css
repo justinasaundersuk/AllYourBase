@@ -13278,7 +13278,7 @@ nav.case-studies .next a:after {
 
 /* line 256, ../sass/partials/_styles.scss */
 .full-width-panel {
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 /* line 259, ../sass/partials/_styles.scss */
 .full-width-panel h2 {
