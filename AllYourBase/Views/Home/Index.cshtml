@@ -230,13 +230,13 @@
             </div>
         </div>
         <div class="col-xs-12 col-ms-6 col-sm-4 col-md-3 col-lg-2 isotope-item who">
-            <div class="flip-container">
-                <div class="flipper">
-                    <div class="front">
-                        <div class="content-panel">
-                            <img src="~/Content/images/look-pizzaexpress.jpg" />
-                        </div>
+            <a href="#" class="overlay-panel">
+                <div class="front">
+                    <div class="content-panel">
+                        <img src="~/Content/images/look-pizzaexpress.jpg" />
                     </div>
+                </div>
+                <div class="overlay">
                     <div class="back">
                         <div class="content-panel">
                             <h2 title="DAM Digital">DAM Digital</h2>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
         <div class="col-xs-12 col-ms-6 col-sm-4 col-md-3 col-lg-2 isotope-item who">
             <div class="flip-container">
@@ -277,27 +277,27 @@
                         <div class="content-panel">
                             <h2 title="Find us">Find us</h2>
                             <div id="map"></div>
-                            
+
                             <script>
-                              function initMap() {
-                                var uluru = {lat: -25.363, lng: 131.044};
-                                var map = new google.maps.Map(document.getElementById('map'), {
-                                    zoom: 4,
-                                    panControl: false,
-                                    zoomControl: false,
-                                    scaleControl: false,
-                                    draggable: false,
-                                    navigationControl: false,
-                                    streetViewControl: false,
-                                    scrollwheel: false,
-                                    mapTypeControl: false,
-                                    center: uluru
-                                });
-                                var marker = new google.maps.Marker({
-                                  position: uluru,
-                                  map: map
-                                });
-                              }
+                                function initMap() {
+                                    var uluru = { lat: -25.363, lng: 131.044 };
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 4,
+                                        panControl: false,
+                                        zoomControl: false,
+                                        scaleControl: false,
+                                        draggable: false,
+                                        navigationControl: false,
+                                        streetViewControl: false,
+                                        scrollwheel: false,
+                                        mapTypeControl: false,
+                                        center: uluru
+                                    });
+                                    var marker = new google.maps.Marker({
+                                        position: uluru,
+                                        map: map
+                                    });
+                                }
                             </script>
                         </div>
                     </div>

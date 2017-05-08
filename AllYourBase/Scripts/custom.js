@@ -224,6 +224,14 @@ function setActiveButtonHash(urlHashValue) {
     $(activeButton).addClass('active');
 }
 
+$(".overlay-panel").on('mouseenter mouseleave click', function () {
+    $(this).toggleClass('hover');
+});
+
+
+
+
+
 // handle the flip toggle
 $(".flip-container").on('mouseenter mouseleave click', function () {
     $(this).toggleClass('hover');
