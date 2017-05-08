@@ -3,7 +3,7 @@
     background: $black;
 
     & .dam-info {
-        padding: 10px 0 0 0;
+        padding: 10px 10px 10px 10px;
         margin: 0 0 0 10px;
         list-style-type: none;
 
@@ -15,7 +15,7 @@
         & li {
             display: inline-block;
             color: $yellow;
-            padding: 10px;
+            padding: 0 10px 10px 0;
 
             @include min($bp-md) { padding: 20px; }
             @include min($bp-lg) { padding: 30px 20px; }
@@ -25,7 +25,7 @@
     & .dam-social {
         @extend .dam-info;
 
-        padding: 0 0 0 10px;
+        padding: 0 10px;
 
         @include min($bp-md) {
             padding-left: 0;

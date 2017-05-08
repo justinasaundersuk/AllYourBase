@@ -109,8 +109,11 @@ a {
 .filter-nav {
     position: relative;
     width: 100%;
-    margin-bottom: 20px;
     font-family: $swissboldcondensed;
+
+    @include min($bp-md) {
+        margin-bottom: 20px;
+    }
 
     & .logo img {
         width: 100%;
@@ -160,7 +163,7 @@ a {
             @include min($bp-md) { width: 120px; }
             @include min($bp-lg) { width: 140px; }
 
-            &:last-of-type { padding-right: 0; }
+            &:last-of-type { margin-right: 6px; }
 
             &:hover, &.active {
                 background: $dark-grey;
