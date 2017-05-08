@@ -1,11 +1,11 @@
 ﻿
 html {
     height: 100%;
-    overflow-y: scroll;  // stops content jumping when transitioning from scrollbar to no scrollbar
+    overflow-y: scroll; // stops content jumping when transitioning from scrollbar to no scrollbar
 }
 
 body {
-    min-height: 100%;   // for sticky footer
+    min-height: 100%; // for sticky footer
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,12 +29,34 @@ blockquote {
     font-style: italic;
     color: $white;
 
-    &:before { font-style: normal; }
-    &:after  { font-style: normal; }
+    &:before {
+        font-style: normal;
+    }
+
+    &:after {
+        font-style: normal;
+    }
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        color: $yellow;
+    }
+
+    &:visited {
+        color: $white;
+    }
+
+    &:focus {
+        color: $yellow;
+    }
 }
 
 .page-wrapper {
-    flex: 1;    // for sticky footer
+    flex: 1; // for sticky footer
 }
 
 .container {
@@ -45,14 +67,16 @@ blockquote {
 }
 
 .container-fluid.grid {
-    max-width: 99.9%;       // fix for known isotope rendering bug in firefox
+    max-width: 99.9%; // fix for known isotope rendering bug in firefox
 }
 
-.logo { 
+.logo {
     margin-top: 15px;
     margin-bottom: 15px;
 
-    @include min($bp-md) { margin-bottom: 0; }
+    @include min($bp-md) {
+        margin-bottom: 0;
+    }
 }
 
 // specific to the header
@@ -83,29 +107,65 @@ blockquote {
 }
 
 .filter-nav {
+    position: relative;
+    width: 100%;
     margin-bottom: 20px;
     font-family: $swissboldcondensed;
 
-    & .row { padding: 0; }
+    & .logo img {
+        width: 100%;
+        max-width: 317px;
+        height: auto;
+    }
 
-    & .filter-options a { 
-        display: inline-block;
-        width: 140px;
-        padding: 5px 0;
-        border:1px solid $dark-grey;
+    & .row {
+        padding: 0;
+        
+        @include min($bp-sm) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+
+    & nav { width: 100%; }
+
+    & .filter-options {
+        padding: 15px 0;
         text-align: center;
-        text-transform: uppercase;
-        color: $dark-grey;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 16px;
-        margin-right: 5px;
 
-        &:last-of-type { padding-right: 0; }
+        @include min($bp-md) {
+            text-align: right;
+            padding: 0;
+        }
 
-        &:hover, &.active {
-            background: $dark-grey;
-            color: $white;
+        & a {
+            display: inline-block;
+            width: 18%;
+            padding: 5px 0;
+            border: 1px solid $dark-grey;
+            text-align: center;
+            text-transform: uppercase;
+            color: $dark-grey;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 12px;
+
+            @include min($bp-sm) {
+                width: 18%;
+                margin-right: 5px;
+                font-size: 16px;
+            }
+
+            @include min($bp-md) { width: 120px; }
+            @include min($bp-lg) { width: 140px; }
+
+            &:last-of-type { padding-right: 0; }
+
+            &:hover, &.active {
+                background: $dark-grey;
+                color: $white;
+            }
         }
     }
 }
@@ -133,13 +193,15 @@ blockquote {
         padding-right: 5px;
     }
 
-    h1 { 
+    h1 {
         margin-top: 40px;
         margin-bottom: 30px;
         text-align: center;
     }
 
-    & h2 { margin-top: 0; }
+    & h2 {
+        margin-top: 0;
+    }
 }
 
 nav.case-studies {
@@ -191,7 +253,7 @@ nav.case-studies {
 .full-width-panel {
     padding: 20px;
 
-    & h2 { 
+    & h2 {
         margin-bottom: 40px;
         color: $white;
     }

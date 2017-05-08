@@ -54,6 +54,8 @@ $(window).load(function () {
         $('#owl-ipad').owlCarousel({
             loop: true,
             margin: 10,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
             navText: ["<span class='dam_font_angle-left-normal-nospace'></span>","<span class='dam_font_angle-right-normal-nospace'></span>"],
             responsiveClass: true,
             responsive: {
@@ -78,6 +80,8 @@ $(window).load(function () {
             margin: 40,
             navText: ["<span class='dam_font_angle-left-normal-nospace'></span>", "<span class='dam_font_angle-right-normal-nospace'></span>"],
             responsiveClass: true,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
             responsive: {
                 0: {
                     items: 1,
@@ -100,6 +104,8 @@ $(window).load(function () {
             margin: 40,
             navText: ["<span class='dam_font_angle-left-normal-nospace'></span>", "<span class='dam_font_angle-right-normal-nospace'></span>"],
             responsiveClass: true,
+            animateIn: 'fadeIn',
+            animateOut: 'fadeOut',
             responsive: {
                 0: {
                     items: 1,
