@@ -29,9 +29,7 @@ blockquote {
     font-style: italic;
     color: $white;
 
-    &:before {
-        font-style: normal;
-    }
+    &:before { font-style: normal; }
 
     &:after {
         font-style: normal;
@@ -42,22 +40,12 @@ a {
     color: $white;
     text-decoration: none;
 
-    &:hover {
-        color: $yellow;
-    }
-
-    &:visited {
-        color: $white;
-    }
-
-    &:focus {
-        color: $yellow;
-    }
+    &:hover { color: $yellow; }
+    &:visited { color: $white; }
+    &:focus { color: $yellow; }
 }
 
-.page-wrapper {
-    flex: 1; // for sticky footer
-}
+.page-wrapper { flex: 1; }    // for sticky footer
 
 .container {
     &.seperator {
@@ -66,44 +54,13 @@ a {
     }
 }
 
-.container-fluid.grid {
-    max-width: 99.9%; // fix for known isotope rendering bug in firefox
-}
+.container-fluid.grid { max-width: 99.9%; }    // fix for known isotope rendering bug in firefox
 
 .logo {
     margin-top: 15px;
     margin-bottom: 15px;
 
-    @include min($bp-md) {
-        margin-bottom: 0;
-    }
-}
-
-// specific to the header
-.row-flex {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-top: auto;
-
-    @include min($bp-md) {
-        flex-direction: row;
-    }
-
-    & .logo img {
-        width: 100%;
-        max-width: 317px;
-        height: auto;
-    }
-
-    & nav {
-        margin-left: auto;
-        margin-top: auto;
-    }
-
-    & .filter-options {
-        display: flex;
-    }
+    @include min($bp-md) { margin-bottom: 0; }
 }
 
 .filter-nav {
@@ -111,9 +68,7 @@ a {
     width: 100%;
     font-family: $swissboldcondensed;
 
-    @include min($bp-md) {
-        margin-bottom: 20px;
-    }
+    @include min($bp-md) { margin-bottom: 20px; }
 
     & .logo img {
         width: 100%;
@@ -202,9 +157,7 @@ a {
         text-align: center;
     }
 
-    & h2 {
-        margin-top: 0;
-    }
+    & h2 { margin-top: 0; }
 }
 
 nav.case-studies {
@@ -228,6 +181,7 @@ nav.case-studies {
         display: inline-block;
         vertical-align: middle;
         font-size: 13px;
+        color: $dark-grey;
 
         @include min($bp-ms) {
             font-size: 16px;
@@ -272,9 +226,7 @@ nav.case-studies {
 	z-index: 999;
 	right: 20px;
 	bottom: 20px;
-    background: #f4a098 url("/Content/images/up-arrow.png") no-repeat center 43%;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
+    background: $pink url("/Content/images/up-arrow.png") no-repeat center 43%;
 	border-radius: 30px;
     color: $black;
 
@@ -290,7 +242,6 @@ nav.case-studies {
     padding-top: 4px;
     padding-bottom: 145%;
     position: relative;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
     z-index: 999999;
 }
