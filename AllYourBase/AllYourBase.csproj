@@ -184,6 +184,7 @@
     <Content Include="Content\images\carousel\carousel-barnardos-other-1.jpg" />
     <Content Include="Content\images\carousel\carousel-barnardos-other-2.jpg" />
     <Content Include="Content\images\carousel\carousel-barnardos-other-3.jpg" />
+    <Content Include="Content\images\carousel\carousel-crisis-ipad-2.jpg" />
     <Content Include="Content\images\casestudies\barnnardos\feature.jpg" />
     <Content Include="Content\images\dam-a.jpg" />
     <Content Include="Content\images\dam-d.jpg" />
@@ -194,6 +195,7 @@
     <Content Include="Content\images\look-girl.jpg" />
     <Content Include="Content\images\look-pizzaexpress.jpg" />
     <Content Include="Content\images\look-postal.jpg" />
+    <Content Include="Content\images\up-arrow.png" />
     <Content Include="Content\images\what-boat.jpg" />
     <Content Include="Content\images\what-flower.jpg" />
     <Content Include="Content\images\what-germ.jpg" />

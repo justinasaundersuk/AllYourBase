@@ -262,6 +262,28 @@ nav.case-studies {
     }
 }
 
+.back-to-top {
+	display: none;
+    font-size: 40px;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+    background: #f4a098 url("/Content/images/up-arrow.png") no-repeat center 43%;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+    color: $black;
+
+    @include min($bp-sm) {
+        display: none;
+        background: none;
+    }
+}
+
 #map {
     height: 0;
     overflow: hidden;

@@ -4,7 +4,6 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto");
 /* line 8, ../sass/base/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -13287,6 +13286,31 @@ nav.case-studies .next a:after {
 }
 
 /* line 265, ../sass/partials/_styles.scss */
+.back-to-top {
+  display: none;
+  font-size: 40px;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: #f4a098 url("/Content/images/up-arrow.png") no-repeat center 43%;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  color: #000000;
+}
+@media only screen and (min-width: 48em) {
+  /* line 265, ../sass/partials/_styles.scss */
+  .back-to-top {
+    display: none;
+    background: none;
+  }
+}
+
+/* line 287, ../sass/partials/_styles.scss */
 #map {
   height: 0;
   overflow: hidden;
