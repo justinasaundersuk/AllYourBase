@@ -225,7 +225,7 @@ function setActiveButtonHash(urlHashValue) {
 }
 
 $(".overlay-panel").on('mouseenter mouseleave click', function () {
-    $(this).toggleClass('hover');
+    $(this).find('.overlay').toggleClass('active');
 });
 
 
