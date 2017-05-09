@@ -62,11 +62,11 @@ $(window).load(function () {
     $(window).scroll(function () {
         if ($(window).scrollTop() > amountScrolled) {
             $('a.back-to-top').fadeIn('slow');
-        } else {
+        }
+        else {
             $('a.back-to-top').fadeOut('slow');
         }
     });
-
 
     // initiate carousels
     if ($('.owl-carousel').length) {
@@ -224,13 +224,12 @@ function setActiveButtonHash(urlHashValue) {
     $(activeButton).addClass('active');
 }
 
+// homepage card rollover styles
+
+// handle the overlay fadein
 $(".overlay-panel").on('mouseenter mouseleave click', function () {
     $(this).find('.overlay').toggleClass('active');
 });
-
-
-
-
 
 // handle the flip toggle
 $(".flip-container").on('mouseenter mouseleave click', function () {
