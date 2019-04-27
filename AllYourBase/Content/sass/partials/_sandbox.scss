@@ -1,0 +1,67 @@
+﻿.sandbox {
+    /* Function CSS */
+    .toggle-content {
+        display: inline-block;
+        color: #000;
+        cursor: pointer;
+
+        &:before {
+            content: "Open";
+            font-size: 16px;
+            opacity: 1;
+            transition: opacity 1500ms ease;
+        }
+
+        &:after {
+            content: "";
+            opacity: 0;
+            transition: opacity 1500ms ease;
+        }
+
+        &.toggle-active {
+            &:before {
+                content: "";
+                opacity: 0;
+                transition: opacity 1500ms ease;
+            }
+
+            &:after {
+                content: "Close";
+                font-size: 16px;
+                color: #000;
+                opacity: 1;
+                transition: opacity 1500ms ease;
+            }
+        }
+    }
+
+    .wrap {
+        overflow: hidden;
+    }
+
+    .inner {
+        margin-top: -100%;
+        -webkit-transition: margin-top 500ms;
+        transition: margin-top 500ms;
+        transition-timing-function: ease;
+    }
+
+    .inner.open {
+        margin-top: 0px;
+    }
+    /* Styles for Demonstration */
+    .wrap {
+        background-color: orange;
+    }
+
+    .inner {
+        color: white;
+        padding: 20px;
+    }
+
+    .otherDiv {
+        padding: 10px;
+        background-color: blue;
+        color: white;
+    }
+}

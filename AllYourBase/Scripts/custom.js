@@ -8,3 +8,9 @@
 }
 
 publicationCategoryClear();
+
+$('.toggle-content').bind('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('toggle-active');
+    $('.inner').toggleClass('open');
+});

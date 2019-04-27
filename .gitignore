@@ -1,0 +1,12 @@
+
+\.vs/AllYourBase/v15/Server/sqlite3/db\.lock
+
+*.ide
+
+\.vs/AllYourBase/v15/Server/sqlite3/storage\.ide-shm
+
+\.vs/AllYourBase/v15/Server/sqlite3/storage\.ide-wal
+
+AllYourBase/bin/AllYourBase\.dll
+
+*.dll
